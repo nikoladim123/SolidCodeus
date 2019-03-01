@@ -78,16 +78,18 @@ nav{
   justify-content: space-between;
 }
 .logo{
-    position: relative;
-    width: 21.259vw;
-    height: 3.925vw;
-    margin-left: 7vw;
-    /* border: 1px solid blue; */
+  position: relative;
+  width: 21.259vw;
+  height: 3.925vw;
+  margin-left: 7.2vw;
+  top: 0.2vw;
 }
 
 .navigation{
   display: flex;
   align-items: center;
+  position: relative;
+  top: 0.2vw;
 }
 .navigation a{
   transition: 0.4s;
