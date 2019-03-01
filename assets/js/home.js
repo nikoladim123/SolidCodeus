@@ -3,7 +3,7 @@
 //home video load
 //home video load
 var myVideo = document.getElementById('myVideo');
-function videoBreakPoints(){
+function videoBreakPointsBaner(){
   if(window.innerWidth >= 1366){
     myVideo.src = "assets/videos/videos-desktop/background-video.mp4";
   }
@@ -401,10 +401,12 @@ technologiesReadMoreDiv.addEventListener('mouseleave',function(){
 
 window.onload = function(){
   videoBreakPoints();
+  videoBreakPointsBaner();
 }
 
 window.onresize = function(){
   videoBreakPoints();
+  videoBreakPointsBaner();
 }
 
 window.onscroll = function(){
