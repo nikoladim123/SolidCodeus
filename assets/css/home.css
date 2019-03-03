@@ -692,3 +692,119 @@ main{
   font-size: 1.635vw;
 }
 /* technologies section end */
+/* our workflow section start */
+.workflow{
+  border: 1px solid yellow;
+}
+/* our workflow section end */
+/* from the blog section start */
+.blogSection{
+}
+.blogSectionContainer{
+  padding-top: 0.1px;
+  height: 59.15vw;
+  background-color: rgb(216,218,224);
+}
+.blogSection h2{
+  margin: 0;
+  margin-left: 15vw;
+  font-size: 3.51vw;
+  font-family: 'Montserrat-ExtraLight',serif;
+}
+.blogSection h2 span{
+  font-size: 3.51vw;
+  font-family: 'Montserrat-Black',serif;
+}
+.blogArticle{
+  position: relative;
+  width: 69.93vw;
+  height: 22.79vw;
+  margin-left: 15.324vw;
+  margin-top: 4.978vw;
+  background-color: rgb(243,243,245);
+}
+
+.screwContainer{
+  position: absolute;
+  overflow: hidden;
+  top: -0.855vw;
+  left: -0.855vw;
+  height: 24.5vw;
+  width: 22.2vw;
+  border-radius: 1vw;
+}
+.screwDiv{
+  width: 120%;
+  height: 100%;
+  border-radius: 1vw;
+  border-bottom-right-radius: 0;
+  position: relative;
+  left: -12.3vw;
+  background-color: rgb(230,183,41);
+  transform: skewX(-33deg);
+}
+
+.authorDiv{
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: 2.928vw;
+}
+.authorDiv img{
+  width: 4.782vw;
+  height: 4.782vw;
+}
+.authorDiv p{
+  font-family: 'Montserrat-Light',serif;
+  font-size: 1vw;
+  margin-left: 0.5vw
+  color: rgb(101,102,104);
+}
+
+.blogHttps{
+  position: relative;
+  width: 31.332vw;
+  height: 21.327vw;
+  top: -2vw;
+  left: -2vw;
+}
+
+.blogArticle h3{
+  margin: 0;
+  margin-left: 4vw;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 1vw;
+  font-size: 2.928vw;
+  font-family: 'Montserrat-Regular',serif;
+}
+.articleText{
+  /* border: 1px solid; */
+  font-family: 'Montserrat-ExtraLight',serif;
+  font-size: 1.17vw;
+  color: rgb(153,153,153);
+  position: absolute;
+  top: 7vw;
+  left: 30vw;
+  width: 36.359vw;
+  text-align: justify;
+}
+.articleButtonReadMore{
+  transition: 0.4s;
+  position: absolute;
+  font-family: 'Montserrat-Bold',serif;
+  width: 11.224vw;
+  height: 2.928vw;
+  bottom: 1.415vw;
+  right: 2.733vw;
+  color: white;
+  font-size: 1.464vw;
+  background-color: rgb(230,183,41);
+  border: none;
+}
+.articleButtonReadMore:hover{
+  cursor: pointer;
+  filter: brightness(120%);
+}
+/* from the blog section end */
