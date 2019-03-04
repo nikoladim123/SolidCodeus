@@ -30,7 +30,7 @@ header{
   width: 100%;
   height: 200%;
   /* background: radial-gradient(ellipse at center, rgba(255,255,255,0) -100%, rgba(159,134,254,1) 40%); */
-  background: rgba(0,0,0,0.72);
+  background: rgba(16,10,26,0.72);
 }
 
 .quotContainer{
@@ -708,15 +708,48 @@ main{
 /* technologies section end */
 /* discus new ideas section start */
 .discussNewIdeas{
+  position: relative;
+  padding-top: 0.1px;
   height: 26.518vw;
   background-image: url('../images/desktop/disscusProjects.jpg');
   background-size: 100% 200%;
   background-position: 0 0;
 }
+.discussNewIdeas h2{
+  position: relative;
+  font-family: 'Montserrat-Black',serif;
+  color: white;
+  margin: 0;
+  top: 9.629vw;
+  left: 11.111vw;
+  font-size: 2.37vw;
+}
 /* discus new ideas section end */
 /* our workflow section start */
 .workflow{
+  position: relative;
   border: 1px solid yellow;
+}
+
+.workflowHeadingContainer{
+  position: relative;
+  margin-top: 10.148vw;
+  margin-left: 7.037vw;
+}
+.workFlowLine{
+  position: relative;
+  left: 0.5vw;
+  height: 2px;
+  width: 26.74vw;
+  background-color: rgb(244,173,14);
+}
+.workflowHeadingContainer h2{
+  margin: 0;
+  font-size: 5.333vw;
+  font-family: 'Montserrat-Hairline',serif;
+}
+.workflowHeadingContainer h2 span{
+  font-family: 'Montserrat-Bold',serif;
 }
 /* our workflow section end */
 /* from the blog section start */
@@ -743,7 +776,7 @@ main{
   height: 22.79vw;
   margin-left: 15.324vw;
   margin-top: 4.978vw;
-  background-color: rgb(243,243,245);
+  background-color: #fff;
 }
 
 .screwContainer{

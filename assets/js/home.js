@@ -2,18 +2,18 @@
 //home video load
 //home video load
 //home video load
-var myVideo = document.getElementById('myVideo');
-function videoBreakPointsBaner(){
-  if(window.innerWidth >= 1366){
-    myVideo.src = "assets/videos/videos-desktop/background-video.mp4";
-  }
-  if(window.innerWidth < 1366 && window.innerHeight >= 420){
-    myVideo.src = "assets/videos/videos-tablet/background-video-tablet.mp4";
-  }
-  if(window.innerWidth < 420){
-    myVideo.src = "assets/videos/videos-desktop/Help.mp4";
-  }
-}
+// var myVideo = document.getElementById('myVideo');
+// function videoBreakPointsBaner(){
+//   if(window.innerWidth >= 1366){
+//     myVideo.src = "assets/videos/videos-desktop/background-video.mp4";
+//   }
+//   if(window.innerWidth < 1366 && window.innerHeight >= 420){
+//     myVideo.src = "assets/videos/videos-tablet/background-video-tablet.mp4";
+//   }
+//   if(window.innerWidth < 420){
+//     myVideo.src = "assets/videos/videos-desktop/Help.mp4";
+//   }
+// }
 
 //mobile video load
 //mobile video load
@@ -401,9 +401,24 @@ var discussNewIdeas = document.getElementsByClassName('discussNewIdeas')[0];
 
 function newIdeasParalaxFun(){
   if(discussNewIdeas.getBoundingClientRect().y < window.innerHeight){
-    discussNewIdeas.style.backgroundPosition = "0 " + ((-discussNewIdeas.getBoundingClientRect().y/5) - discussNewIdeas.getBoundingClientRect().height/2.5) + "px";
+    discussNewIdeas.style.backgroundPosition = "0 " + ((-discussNewIdeas.getBoundingClientRect().y/5) - discussNewIdeas.getBoundingClientRect().height/3) + "px";
   }
 }
+
+// Discuss new projects contactUs LineANim
+// Discuss new projects contactUs LineANim
+// Discuss new projects contactUs LineANim
+var contactUsMaintenance = document.getElementsByClassName('contactUsMaintenance')[1];
+var maintenanceLineAnim = document.getElementsByClassName('maintenanceLineAnim')[1];
+var svgArrow = document.getElementsByClassName('svgArrow')[1];
+contactUsMaintenance.addEventListener('mouseenter',function(){
+	maintenanceLineAnim.style.width = '90%';
+	svgArrow.style.filter = 'brightness(120%)';
+});
+contactUsMaintenance.addEventListener('mouseleave',function(){
+	maintenanceLineAnim.style.width = '40%';
+	svgArrow.style.filter = 'brightness(100%)';
+});
 
 // window document events
 // window document events
