@@ -408,15 +408,15 @@ function newIdeasParalaxFun(){
 // Discuss new projects contactUs LineANim
 // Discuss new projects contactUs LineANim
 // Discuss new projects contactUs LineANim
-var contactUsMaintenance = document.getElementsByClassName('contactUsMaintenance')[1];
-var maintenanceLineAnim = document.getElementsByClassName('maintenanceLineAnim')[1];
+var contactUsMaintenanceDiscuss = document.getElementsByClassName('contactUsMaintenance')[1];
+var maintenanceLineAnimDiscuss = document.getElementsByClassName('maintenanceLineAnim')[1];
 var svgArrow = document.getElementsByClassName('svgArrow')[1];
-contactUsMaintenance.addEventListener('mouseenter',function(){
-	maintenanceLineAnim.style.width = '90%';
+contactUsMaintenanceDiscuss.addEventListener('mouseenter',function(){
+	maintenanceLineAnimDiscuss.style.width = '90%';
 	svgArrow.style.filter = 'brightness(120%)';
 });
-contactUsMaintenance.addEventListener('mouseleave',function(){
-	maintenanceLineAnim.style.width = '40%';
+contactUsMaintenanceDiscuss.addEventListener('mouseleave',function(){
+	maintenanceLineAnimDiscuss.style.width = '40%';
 	svgArrow.style.filter = 'brightness(100%)';
 });
 
