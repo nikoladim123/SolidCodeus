@@ -2,18 +2,18 @@
 //home video load
 //home video load
 //home video load
-// var myVideo = document.getElementById('myVideo');
-// function videoBreakPointsBaner(){
-//   if(window.innerWidth >= 1366){
-//     myVideo.src = "assets/videos/videos-desktop/background-video.mp4";
-//   }
-//   if(window.innerWidth < 1366 && window.innerHeight >= 420){
-//     myVideo.src = "assets/videos/videos-tablet/background-video-tablet.mp4";
-//   }
-//   if(window.innerWidth < 420){
-//     myVideo.src = "assets/videos/videos-desktop/Help.mp4";
-//   }
-// }
+var myVideo = document.getElementById('myVideo');
+function videoBreakPointsBaner(){
+  if(window.innerWidth >= 1366){
+    myVideo.src = "assets/videos/videos-desktop/background-video.mp4";
+  }
+  if(window.innerWidth < 1366 && window.innerHeight >= 420){
+    myVideo.src = "assets/videos/videos-tablet/background-video-tablet.mp4";
+  }
+  if(window.innerWidth < 420){
+    myVideo.src = "assets/videos/videos-desktop/Help.mp4";
+  }
+}
 
 //mobile video load
 //mobile video load
