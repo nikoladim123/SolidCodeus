@@ -708,6 +708,7 @@ main{
 /* technologies section end */
 /* discus new ideas section start */
 .discussNewIdeas{
+  overflow: hidden;
   position: relative;
   padding-top: 0.1px;
   height: 26.518vw;
@@ -727,8 +728,11 @@ main{
 /* discus new ideas section end */
 /* our workflow section start */
 .workflow{
+  overflow: hidden;
+  width: 100%;
   position: relative;
   border: 1px solid yellow;
+  padding-bottom: 15vw;
 }
 
 .workflowHeadingContainer{
@@ -753,8 +757,58 @@ main{
 }
 
 .workFlowVIdeoDiv{
-  width:
+  padding-left: 3px;
+  position: relative;
+  width:78.222vw;
+  height: 46.296vw;
+  float:right;
+}
+.workFlowVideoOverlay{
+  position: absolute;
+  left: 0;
+  width: calc(100% + 3px);
   height: 52.74vw;
+  background-color: rgba(0,0,0,0.48);
+}
+.workFlowYellowBox{
+  background-color: rgb(235,201,8);
+  width: 50vw;
+  height: 51.777vw;
+  position: absolute;
+  top: 28vw;
+}
+.workFlowYellowBox h3{
+  position: absolute;
+  width: 50vw;
+  margin: 0;
+  margin-top: 4.296vw;
+  margin-left: 10.77vw;
+  color: white;
+  font-size: 3.7vw;
+  font-family: 'Montserrat-Bold';
+}
+.discoveryText{
+  position:absolute;
+  top: 25vw;
+  left: 21.259vw;
+}
+.discoveryText p{
+  font-family: 'Montserrat-Black',serif;
+  color: rgb(246,62,62);
+  font-size: 1.629vw;
+  margin: 0;
+}
+.workflowButton{
+  position:absolute;
+  right: 1.703vw;
+  bottom:6.814vw;
+  font-family: 'Montserrat-Black',serif;
+  font-size: 2.074vw;
+  color: white;
+  background: transparent;
+  height: 7.037vw;
+  width: 28.592vw;
+  border: 1px solid rgba(255,255,255,0.45);
 }
 /* our workflow section end */
 /* from the blog section start */
