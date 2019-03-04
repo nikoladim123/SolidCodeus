@@ -14,13 +14,13 @@ header{
   margin-left: 6.11vw;
   position: relative;
   padding-top: 0.1px;
-  /* top: 6.146vw; */
   top: 0.9vw;
   height: 34.378vw;
   border: 2px solid;
   width: 86.357vw;
   border: 1px solid white;
   outline: 1.111vw solid #e0ddeb;
+  background-color: black;
   box-shadow: 0px 9.44vw 10vw -5.59vw rgba(0,0,0,0.55);
 }
 .videoOverlay{
@@ -731,8 +731,7 @@ main{
   overflow: hidden;
   width: 100%;
   position: relative;
-  border: 1px solid yellow;
-  padding-bottom: 15vw;
+  padding-bottom: 22.37vw;
 }
 
 .workflowHeadingContainer{
@@ -749,7 +748,7 @@ main{
 }
 .workflowHeadingContainer h2{
   margin: 0;
-  font-size: 5.333vw;
+  font-size: 7vw;
   font-family: 'Montserrat-Hairline',serif;
 }
 .workflowHeadingContainer h2 span{

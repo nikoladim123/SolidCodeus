@@ -126,6 +126,7 @@ nav a:hover{
   top: -0.3vw;
   color: white;
   margin-right: 1.5vw;
+  text-shadow: 2px 2px 2px rgba(20,20,120,0.2);
 }
 
 .burgerMenu{
@@ -138,6 +139,7 @@ nav a:hover{
   cursor: pointer;
 }
 .burgerLine{
+  box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.2);
   transition: 0.4s;
   left: 0;
   position: relative;
