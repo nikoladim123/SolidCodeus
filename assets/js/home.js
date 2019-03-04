@@ -394,11 +394,20 @@ technologiesReadMoreDiv.addEventListener('mouseleave',function(){
 	technoLineAnim.style.width = '40%';
 });
 
-// window document events
-// window document events
-// window document events
+// Disscus new project paralax
+// Disscus new project paralax
+// Disscus new project paralax
+var discussNewIdeas = document.getElementsByClassName('discussNewIdeas')[0];
 
+function newIdeasParalaxFun(){
+  if(discussNewIdeas.getBoundingClientRect().y < window.innerHeight){
+    discussNewIdeas.style.backgroundPosition = "0 " + ((-discussNewIdeas.getBoundingClientRect().y/5) - discussNewIdeas.getBoundingClientRect().height/2) + "px";
+  }
+}
 
+// window document events
+// window document events
+// window document events
 window.onload = function(){
   videoBreakPoints();
   videoBreakPointsBaner();
@@ -414,4 +423,5 @@ window.onscroll = function(){
   mobParrotCall();
   webDevelopmentReveal();
   purpleScreens();
+  newIdeasParalaxFun();
 }

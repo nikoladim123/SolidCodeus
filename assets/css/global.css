@@ -28,6 +28,23 @@
   font-display: auto;
   src: url('../fonts/Montserrat-Black.otf') format('truetype');
 }
+
+@font-face {
+  font-family: 'Poppins-Black';
+  font-display: auto;
+  src: url('../fonts/Poppins-Black.otf') format('truetype');
+}
+@font-face {
+  font-family: 'Poppins-Thin';
+  font-display: auto;
+  src: url('../fonts/Poppins-Thin.otf') format('truetype');
+}
+@font-face {
+  font-family: 'Poppins-ExtraLight';
+  font-display: auto;
+  src: url('../fonts/Poppins-ExtraLight.otf') format('truetype');
+}
+
 body{
   margin: 0;
 }
