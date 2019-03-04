@@ -401,7 +401,7 @@ var discussNewIdeas = document.getElementsByClassName('discussNewIdeas')[0];
 
 function newIdeasParalaxFun(){
   if(discussNewIdeas.getBoundingClientRect().y < window.innerHeight){
-    discussNewIdeas.style.backgroundPosition = "0 " + ((-discussNewIdeas.getBoundingClientRect().y/5) - discussNewIdeas.getBoundingClientRect().height/3) + "px";
+    discussNewIdeas.style.backgroundPosition = "0 " + ((-discussNewIdeas.getBoundingClientRect().y/7) - discussNewIdeas.getBoundingClientRect().height/3) + "px";
   }
 }
 
@@ -410,14 +410,14 @@ function newIdeasParalaxFun(){
 // Discuss new projects contactUs LineANim
 var contactUsMaintenanceDiscuss = document.getElementsByClassName('contactUsMaintenance')[1];
 var maintenanceLineAnimDiscuss = document.getElementsByClassName('maintenanceLineAnim')[1];
-var svgArrow = document.getElementsByClassName('svgArrow')[1];
+var svgArrowDiscuss = document.getElementsByClassName('svgArrow')[1];
 contactUsMaintenanceDiscuss.addEventListener('mouseenter',function(){
 	maintenanceLineAnimDiscuss.style.width = '90%';
-	svgArrow.style.filter = 'brightness(120%)';
+	svgArrowDiscuss.style.filter = 'brightness(120%)';
 });
 contactUsMaintenanceDiscuss.addEventListener('mouseleave',function(){
 	maintenanceLineAnimDiscuss.style.width = '40%';
-	svgArrow.style.filter = 'brightness(100%)';
+	svgArrowDiscuss.style.filter = 'brightness(100%)';
 });
 
 // window document events
