@@ -401,7 +401,7 @@ var discussNewIdeas = document.getElementsByClassName('discussNewIdeas')[0];
 
 function newIdeasParalaxFun(){
   if(discussNewIdeas.getBoundingClientRect().y < window.innerHeight){
-    discussNewIdeas.style.backgroundPosition = "0 " + ((-discussNewIdeas.getBoundingClientRect().y/5) - discussNewIdeas.getBoundingClientRect().height/2) + "px";
+    discussNewIdeas.style.backgroundPosition = "0 " + ((-discussNewIdeas.getBoundingClientRect().y/5) - discussNewIdeas.getBoundingClientRect().height/2.5) + "px";
   }
 }
 
