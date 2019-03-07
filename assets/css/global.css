@@ -166,4 +166,7 @@ video{
   height: 100%;
   position: absolute;
 }
+.videoDiv{
+  outline: 1.111vw solid #e0ddeb;
+}
 /* video end */
