@@ -2,7 +2,7 @@ button:hover{
   cursor: pointer;
 }
 body{
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 header{
   padding-top: 0.1px;
@@ -138,6 +138,7 @@ main{
   position: relative;
   padding-top: 0.1px;
   padding-bottom: 0.1px;
+  background-color: #e0ddeb;
 }
 .narrowWrapper{
   position: absolute;
@@ -177,10 +178,10 @@ main{
   padding-top: 0.1px;
   padding-bottom: 4vw;
   position: relative;
-  left: 5vw;
+  left: 5%;
   top: -0vw;
   background-color: rgb(244,244,244);
-  width: 95vw;
+  width: 95%;
   /* height: 100%; */
 }
 .contentOne h1{
