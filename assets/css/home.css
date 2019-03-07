@@ -29,7 +29,7 @@ header{
   width: 100%;
   height: 200%;
   /* background: radial-gradient(ellipse at center, rgba(255,255,255,0) -100%, rgba(159,134,254,1) 40%); */
-  background: rgba(16,10,26,0.68);
+  background: rgba(16,10,26,0.63);
 }
 
 .quotContainer{
@@ -1046,6 +1046,7 @@ main{
   font-size: 3.51vw;
   font-family: 'Montserrat-Black',serif;
 }
+
 .blogArticle{
   position: relative;
   width: 69.93vw;

@@ -23,7 +23,8 @@ header{
   width: 100%;
   height: 100%;
   top: 0;
-  background: radial-gradient(ellipse at center, rgba(255,255,255,0) -100%, rgba(159,134,254,1) 70%);
+  background: rgba(16,10,26,0.63);
+  /* background: radial-gradient(ellipse at center, rgba(255,255,255,0) -100%, rgba(159,134,254,1) 70%); */
 }
 
 .zero,.three{
