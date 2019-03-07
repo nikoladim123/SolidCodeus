@@ -1,3 +1,9 @@
+button:hover{
+  cursor: pointer;
+}
+body{
+  overflow-x: hidden;
+}
 header{
   padding-top: 0.1px;
   background: linear-gradient(135deg, #e6b929 0%, #e0c366 100%);
@@ -132,7 +138,6 @@ main{
   position: relative;
   padding-top: 0.1px;
   padding-bottom: 0.1px;
-  background-color: rgb(216,218,224);
 }
 .narrowWrapper{
   position: absolute;
@@ -166,100 +171,218 @@ main{
 .homeDesign a:hover{
   text-decoration: underline;
 }
-/* main end */
-
-/* blog posts start */
-.blogArticle{
+/* blog start */
+.content{
+  /* border: 1px solid black; */
+  padding-top: 0.1px;
+  padding-bottom: 4vw;
   position: relative;
-  width: 69.93vw;
-  height: 22.79vw;
-  margin-left: 15.324vw;
-  margin-top: 4.978vw;
-  margin-bottom: 4.978vw;
-  background-color: #fff;
+  left: 5vw;
+  top: -0vw;
+  background-color: rgb(244,244,244);
+  width: 95vw;
+  /* height: 100%; */
 }
-
-.screwContainer{
+.contentOne h1{
+  font-family: 'Montserrat-Black';
+  font-size: 3.55vw;
+  color: rgb(60,60,60);
+}
+.contactUsDivBut{
   position: absolute;
-  overflow: hidden;
-  top: -0.855vw;
-  left: -0.855vw;
-  height: 24.5vw;
-  width: 22.2vw;
-  border-radius: 1vw;
+  right: 4.814vw;
+  top: 8vw;
 }
-.screwDiv{
-  width: 120%;
-  height: 100%;
-  border-radius: 1vw;
-  border-bottom-right-radius: 0;
-  position: relative;
-  left: -12.3vw;
-  background-color: rgb(230,183,41);
-  transform: skewX(-33deg);
-}
-
-.authorDiv{
-  position: relative;
-  display: flex;
-  align-items: center;
-  margin-left: 2.928vw;
-}
-.authorDiv img{
-  width: 4.782vw;
-  height: 4.782vw;
-}
-.authorDiv p{
-  font-family: 'Montserrat-Light',serif;
-  font-size: 1vw;
-  margin-left: 0.5vw
-  color: rgb(101,102,104);
-}
-
-.blogHttps{
-  position: relative;
-  width: 31.332vw;
-  height: 21.327vw;
-  top: -2vw;
-  left: -2vw;
-}
-
-.blogArticle h3{
-  margin: 0;
-  margin-left: 4vw;
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  top: 1vw;
-  font-size: 2.928vw;
-  font-family: 'Montserrat-Regular',serif;
-}
-.articleText{
-  /* border: 1px solid; */
-  font-family: 'Montserrat-ExtraLight',serif;
-  font-size: 1.17vw;
-  color: rgb(153,153,153);
-  position: absolute;
-  top: 7vw;
-  left: 30vw;
-  width: 36.359vw;
-  text-align: justify;
-}
-.articleButtonReadMore{
-  transition: 0.4s;
-  position: absolute;
-  font-family: 'Montserrat-Bold',serif;
-  width: 11.224vw;
-  height: 2.928vw;
-  bottom: 1.415vw;
-  right: 2.733vw;
+.contactUsDivBut button{
+  font-family: 'Montserrat-Black',serif;
   color: white;
-  font-size: 1.464vw;
-  background-color: rgb(230,183,41);
+  font-size: 2.1vw;
   border: none;
+  width: 23.481vw;
+  height: 5.555vw;
+  margin-bottom: 0.74vw;
 }
-.articleButtonReadMore:hover{
-  cursor: pointer;
-  filter: brightness(120%);
+.contactUsDivBut button:nth-child(1){
+  background-color: rgb(217,8,10);
 }
-/* blog posts start end */
+.contactUsDivBut button:nth-child(3){
+  background-color: rgb(230,213,50);
+  /* background-color: red; */
+}
+
+.contentImgTextBigBox{
+  /* overflow-y: scroll; */
+  min-height: 40.07vw;
+  /* border: 1px solid green; */
+  position: relative;
+  left: 3vw;
+  top: 3.259vw;
+  width: 63vw;
+}
+.imgText{
+  overflow: hidden;
+  margin-bottom: 4vw;
+  display: flex;
+  border-bottom: 0.518vw solid rgb(236,236,236);
+}
+
+.screen{
+  /* display: flex; */
+  transition: 2s;
+  position: relative;
+  margin-right: 3.8vw;
+  width: 100%;
+  right: 0;
+}
+.author{
+  display: flex;
+}
+.cyImage{
+width: 6.5vw;
+height: 6.5vw;
+}
+.picAutor p:nth-child(1){
+  font-family: 'Montserrat-Bold';
+  color: rgb(60,60,60);
+  font-size:1.186vw;
+  margin: 0;
+  margin-top: 1.5vw;
+  margin-bottom: 0.5vw;
+  margin-left: 0.7vw;
+}
+.picAutor p:nth-child(2){
+  font-family: 'Montserrat-Light';
+  color: rgb(119,119,119);
+  font-size: 0.889vw;
+  margin: 0;
+  margin-left: 0.7vw;
+}
+.http{
+  position: relative;
+  left: 0vw;
+  background-size: 100% 100%;
+  width: 100%;
+  margin-bottom: 10vw;
+}
+
+.socialMediaArticle{
+  position: absolute;
+  /* margin-bottom: -0.5vw; */
+  display: flex;
+  justify-content: space-around;
+  bottom: 1.5vw;
+  width: 48%;
+  padding-left: 27.5%;
+  padding-right: 27.5%;
+}
+.socialMediaArticle .fab{
+    transition: 0.4s;
+    color: rgb(174,174,174);
+    font-size: 1.23vw;
+    border: 2px solid rgb(174,174,174);
+    border-radius: 50%;
+    width: 1.7vw;
+    height: 1.7vw;
+    padding-top: 0.7vw;
+    padding-left: 0.7vw;
+}
+.socialMediaArticle .fab:hover{
+  color: black;
+  border-color: black;
+}
+
+
+.images{
+  transition: 2s;
+  overflow: hidden;
+  min-width: 31.28vw;
+  width: 31.28vw;
+  position: relative;
+  padding-bottom: 1vw;
+}
+
+.text{
+  position: relative;
+  left: 0;
+  transition: 2s;
+  overflow: hidden;
+  color: rgb(112,112,112);
+  text-align: justify;
+  font-size: 1.185vw;
+}
+.textWraperAnimDiv{
+  overflow: hidden;
+  position: relative;
+}
+
+.text p{
+  font-family: 'Montserrat-Light',serif;
+  margin-right: 2.962vw;
+  margin-left: 1.5vw;
+  color: #404143;
+  font-size: 1.3vw;
+  line-height: 2.2vw;
+}
+.text h2{
+  font-family: 'Montserrat-Black',serif;
+  margin-left: 2.074vw;
+  font-size: 2.296vw;
+  margin-bottom: 1vw;
+}
+.readMore{
+  border: none;
+  background-color: rgb(236,70,35);
+  width: 24.981vw;
+  height: 4.966vw;
+  margin-top: 2vw;
+  margin-right: 2.92vw;
+  margin-bottom: 0.5vw;
+  color: white;
+  font-size: 2vw;
+  float: right;
+  font-family: 'Montserrat-Black',serif;
+}
+.readMore:hover{
+  background-color: rgb(246,90,55);
+}
+
+.articleInspiration{
+  font-family: 'Montserrat-Light';
+  font-size: 1.3vw;
+  color: #404143;
+  margin-right: 2.92vw;
+}
+.shitSpam{
+  color: #e4080a;
+  font-family: 'Montserrat-Light';
+  font-size: 1.3vw;
+}
+.secundArticleButtonBox{
+  display: flex;
+  justify-content: space-between;
+}
+.socialArticleTwo{
+  margin-left: 5vw;
+  width: 13.4vw;
+  padding: 0;
+}
+.OptimizedAnimBox{
+  transition: 2s;
+  position: relative;
+  right: 0;
+}
+
+.alertImg{
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+
+.speedImg{
+  transition: 2s;
+  position: absolute;
+  top: 0;
+  right: -8vw;
+  width: 8vw;
+  height: 8vw;
+}
+/* main end */

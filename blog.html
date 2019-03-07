@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="assets/css/global.css">
     <link rel="stylesheet" href="assets/css/blog.css" media="none" onload="if(media!='all')media='all'" defer>
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" media="none" onload="if(media!='all')media='all'" defer>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" media="none" onload="if(media!='all')media='all'" defer>
   </head>
   <body>
 
@@ -82,54 +83,117 @@
         </div>
       </div>
 
-      <article class="blogArticle">
-        <div class="screwContainer">
-          <div class="screwDiv"></div>
+      <div class="content">
+        <div class="contactUsDivBut">
+          <button type="button" name="button">CONTACT US</button> <br>
+          <button type="button" name="button">CALL BACK</button>
         </div>
-        <div class="authorDiv">
-          <img src="assets/images/desktop/cyrus.png" alt="Picture of Cyrus khamak">
-          <p>By:<br>
-            Cyrus Khamak </p>
-        </div>
-        <picture>
-          <source media="(min-width: 1360px)" srcset="assets/images/desktop/HTTPS.png">
-          <source media="(max-width: 1360px) and (min-width: 760px)" srcset="assets/images/tablet/HTTPS.png">
-          <source media="(max-width: 760px)" srcset="assets/img/mobile-img/mobilePng/browBrush.png">
-          <img class="blogHttps" src="" alt="image of HTTP versus HTTPS">
-        </picture>
-        <h3>Fast and secured TSL</h3>
-        <p class="articleText">Semantic HTML or semantic markup is HTML
-          that introduces meaning to the web page rather than just presentation. For example,
-          a &#60;p> tag indicates that the enclosed text is a paragraph. This is both semantic and presentational,
-           because people know what paragraphs are and browsers know how to display them.</p>
-           <button class="articleButtonReadMore" type="button" name="button">Read More</button>
-      </article>
+        <!-- content One -->
+          <div class="contentImgTextBigBox contentOne">
+            <h1>Secure and Optimized TLS</h1>
+            <div class="imgText">
+              <div class="images">
+                <div class="screen">
+                  <div class="author">
+                    <img class="cyImage" src="assets\images\desktop\cyrus.png" alt="">
+                    <div class="picAutor">
+                      <p><b>By Cyrus Khamak</b></p>
+                      <p>2 years 1 month ago</p>
+                    </div>
+                  </div>
+                  <img class="http" src="assets\images\desktop\HTTPS.png" alt="">
 
-      <article class="blogArticle">
-        <div class="screwContainer">
-          <div class="screwDiv"></div>
-        </div>
-        <div class="authorDiv">
-          <img src="assets/images/desktop/cyrus.png" alt="Picture of Cyrus khamak">
-          <p>By:<br>
-            Cyrus Khamak </p>
-        </div>
-        <picture>
-          <source media="(min-width: 1360px)" srcset="assets/images/desktop/scam.png">
-          <source media="(max-width: 1360px) and (min-width: 760px)" srcset="assets/images/tablet/scam.png">
-          <source media="(max-width: 760px)" srcset="assets/img/mobile-img/mobilePng/browBrush.png">
-          <img class="blogHttps" src="" alt="image of HTTP versus HTTPS">
-        </picture>
-        <h3>Fast and secured TSL</h3>
-        <p class="articleText">Semantic HTML or semantic markup is HTML
-          that introduces meaning to the web page rather than just presentation. For example,
-          a &#60;p> tag indicates that the enclosed text is a paragraph. This is both semantic and presentational,
-           because people know what paragraphs are and browsers know how to display them.</p>
-           <button class="articleButtonReadMore" type="button" name="button">Read More</button>
-      </article>
+                </div>
+                <div class="socialMediaArticle">
+                  <i class="fab fa-linkedin-in"></i>
+                  <i class="fab fa-twitter"></i>
+                  <i class="fab fa-facebook-f"></i>
+                  <i class="fab fa-google-plus-g"></i>
+                </div>
+              </div>
+              <div class="textWraperAnimDiv">
+                <div class="text">
+                  <p>
+                  This article is part of a web performance and web optimization series
+                  I had promised you at the bottom of this page. The main
+                  purpose of this topic is to have a basic understanding of how a network
+                  connection that uses TLS/SSL gets started and how this process may affect a
+                  website’s performance and page load speed. Furthermore, let us try to make
+                   sure that we install our TLS correctly, set up our server optimally and make
+                   sure that the installed TLS gives us the intended protection against the bad
+                   guys. In the meantime, there seem to be a confusion regarding TLS and SSL, so le...
+                 </p>
+                 <button onclick="location.href='https://nikoladim123.github.io/cySolidBlogDetails/'" class="readMore" type="button" name="button">Read More</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="imgText">
+            <div class="OptimizedAnimBox">
+              <h1>Optimized tools will boost your bottom line</h1>
+              <div class="author">
+                <img class="cyImage" src="assets/img/png/cy.png" alt="">
+                <div class="picAutor">
+                  <p><b>By Cyrus Khamak</b></p>
+                  <p>2 years 1 month ago</p>
+                </div>
+              </div>
+              <p class="articleInspiration">This is what inspired me to write this article: Facebook was A/B testing an ad publishing functionality on some of its pages. So, I responded by publishing an ad on one of our pages and forgot all about it. When I visited Facebook “home” page a little later, I saw our ad with what I thought at the time, a “nasty” comment on it. The comment read as follows:</p>
+              <p class="shitSpam">&nbsp “If you're going to start spamming us with s**tt I'm going <b>to</b> unlike the...</p>
+              <div class="secundArticleButtonBox">
+                <div class="socialMediaArticle socialArticleTwo">
+                  <i class="fab fa-linkedin-in"></i>
+                  <i class="fab fa-twitter"></i>
+                  <i class="fab fa-facebook-f"></i>
+                  <i class="fab fa-google-plus-g"></i>
+                </div>
+                  <button class="readMore" type="button" name="button">Read More</button>
+              </div>
+            </div>
+            </div> -->
+
+            <h1>How SolidcodeUs was scammed for over $42,000</h1>
+            <div class="imgText">
+              <div class="images">
+                <div class="screen">
+                  <div class="author">
+                    <img class="cyImage" src="assets/img/png/cy.png" alt="">
+                    <div class="picAutor">
+                      <p><b>By Cyrus Khamak</b></p>
+                      <p>2 years 1 month ago</p>
+                    </div>
+                  </div>
+                  <img class="http alertImg" src="assets\images\desktop\scam.png" alt="">
+
+                </div>
+                <div class="socialMediaArticle">
+                  <i class="fab fa-linkedin-in"></i>
+                  <i class="fab fa-twitter"></i>
+                  <i class="fab fa-facebook-f"></i>
+                  <i class="fab fa-google-plus-g"></i>
+                </div>
+              </div>
+              <div class="textWraperAnimDiv">
+                <div class="text">
+                  <p>
+                    On March 29th, 2016, solidCodeUs received an email which seemed to be coming from a large company
+                    that most of us already know about. In this email, they stated that solidCodeUs had been chosen to
+                    lead the development of a banking application, with a business model such as PayPal. They had also
+                    demanded that the project needed to be fully developed and delivered  "in less than 5 weeks time".
+                    In our reply, we emphasized the fact that there were so much involved in building a banking application
+                    such as PayPal that it would make it impossible for us to successfully build and...
+                  </p>
+                 <button class="readMore" type="button" name="button">Read More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </div>
 
     </main>
 
     <script type="text/javascript" src="assets/js/global.js"></script>
+    <script type="text/javascript" src="assets/js/blog.js"></script>
   </body>
 </html>
