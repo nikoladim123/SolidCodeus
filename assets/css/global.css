@@ -310,4 +310,11 @@ video{
   font-size: 1.779vw;
   writing-mode: tb-rl;
 }
+.bodyHome header{
+  overflow: hidden;
+  padding-top: 0.1px;
+  background-size: 100% 100%;
+  position: relative;
+  min-height:  97.77vw;
+}
 /* body home */
