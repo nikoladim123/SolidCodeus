@@ -170,3 +170,144 @@ video{
   outline: 1.111vw solid #e0ddeb;
 }
 /* video end */
+/* body home */
+.bodyHome .videoDiv{
+  overflow: hidden;
+  margin-left: 6.11vw;
+  position: relative;
+  padding-top: 0.1px;
+  top: 0.9vw;
+  height: 34.378vw;
+  width: 86.357vw;
+  border: 1px solid white;
+  background-color: black;
+  box-shadow: 0px 9.44vw 10vw -5.59vw rgba(0,0,0,0.55);
+}
+
+.bodyHome .videoOverlay{
+  position: absolute;
+  top: -50%;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  background: rgba(16,10,26,0.58);
+}
+.bodyHome .quotContainer{
+  position: absolute;
+  top: 1.85vw;
+  left: 1.85vw;
+  width: auto;
+  height: auto;
+}
+.bodyHome .quotationPng{
+  position: absolute;
+  top: 0vw;
+  left: 0.777vw;
+  width: 6.222vw;
+  height: 4.37vw;
+}
+
+.bodyHome .animQuot{
+  position: absolute;
+  width: 30vw;
+  opacity: 0;
+  transition: 1s;
+  margin-top: 2.5vw;
+  margin-left: 3.81vw;
+  font-family: 'Montserrat-Bold',serif;
+  color: white;
+  font-size: 1.464vw;
+}
+.bodyHome .quotContainer p:nth-child(2){
+  opacity: 1;
+}
+.bodyHome .quotContainer p:nth-child(3){
+  opacity: 0;
+}
+
+.bodyHome .videoDiv h1{
+  width: 100%;
+  text-align: center;
+  top: 16vw;
+  position: absolute;
+  color: white;
+  font-size: 4.444vw;
+  font-family: 'Montserrat-Hairline',serif;
+}
+.bodyHome .videoDiv h1 span{
+  font-family: 'Poppins-Black',serif;
+}
+
+.bodyHome .highPerformance{
+  font-family: 'Pacifico',serif;
+  position: absolute;
+  width: 100%;
+  bottom: 1vw;
+  text-align: center;
+  font-size: 3.36vw;
+  color: white;
+}
+.bodyHome .getInTouchBtn{
+  transition: 0.4s;
+  font-family: 'Montserrat-Regular',serif;
+  position: absolute;
+  background-color: rgba(255,160,49,1);
+  color: white;
+  border: none;
+  width: 12.89vw;
+  height: 2.965vw;
+  border-radius: 2vw;
+  font-size: 1.186vw;
+  margin-left: 50%;
+  left: -6.445vw;
+  bottom: 1.2vw;
+}
+.bodyHome .getInTouchBtn:hover{
+  cursor: pointer;
+  background-color: rgba(255,174,69,0.6);
+}
+
+.bodyHome .videoSlider{
+  transition: 2s;
+  background-color: rgb(255,175,7);
+  position: absolute;
+  width: 0vw;
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+.bodyHome .arrowHolder{
+  position: absolute;
+  overflow: hidden;
+  width: 5vw;
+  height: 4vw;
+  top: 14.165vw;
+  left: -5vw;
+}
+.bodyHome .arrow{
+  transition: 0.4s;
+  transform: rotate(45deg);
+  position: absolute;
+  width: 2vw;
+  height: 2vw;
+  background-color: #ffae45;
+  right: -1vw;
+  top: 1vw;
+}
+.bodyHome .arrow:hover{
+  cursor: pointer;
+}
+
+.bodyHome .FREE{
+  position: absolute;
+  right: -0.3vw;
+  top: 10vw;
+}
+.bodyHome .FREE p{
+  color: #ffae45;
+  font-family: 'Montserrat-Black',serif;
+  margin: 0;
+  font-size: 1.779vw;
+  writing-mode: tb-rl;
+}
+/* body home */
