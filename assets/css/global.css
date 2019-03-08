@@ -322,3 +322,83 @@ video{
   min-height:  97.77vw;
 }
 /* body home */
+/* burger menu overlay and all */
+.wholePageOverlay{
+  transition: 1s;
+  filter: blur(0px);
+}
+/* burger overlay */
+.burgerMenuOverlayWhite{
+  transition: 1s;
+  position: fixed;
+  right: -10px;
+  width: 0vw;
+  height: 100vh;
+  background-color: rgb(231,231,231,0.9);
+  z-index: 3;
+}
+.burgerOverlayBlackBox{
+  color: white;
+  transition: 0.5s;
+  position: absolute;
+  right: 0px;
+  background-color: black;
+  width: 0%;
+  height: 100vh;
+  overflow: hidden;
+}
+.closeBox{
+  border: 1px solid black;
+  position: relative;
+  margin-left: 70%;
+  margin-top: 2vw;
+  width:2vw;
+  height: 2vw;
+  transform: rotate(45deg);
+  transition: 0.5s;
+}
+.closeBox:hover{
+  cursor: pointer;
+  transform: rotate(225deg);
+}
+.closeBox div{
+  height: 2px;
+  background-color: white;
+  width: 100%;
+}
+.closeBox div:nth-child(1){
+  margin-top: 1vw;
+  margin-bottom: -2px;
+  transform: rotate(90deg);
+}
+.burgerBlackBoxText{
+  margin-left: 10%;
+}
+.burgerBlackBoxText h2{
+  font-family: 'Montserrat-Bold';
+  font-size: 3vw;
+}
+.burgerBlackBoxText h2 span{
+  color:#f1df34;
+}
+.burgerBlackBoxText p{
+  width: 10vw;
+  transition: 1s;
+  border-bottom: 0.2vw solid #f1df34;
+  position: relative;
+  font-family: 'Montserrat-Light';
+  font-size: 1.5vw;
+  padding-left: 0vw;
+  margin-left: 0vw;
+}
+.burgerBlackBoxText p:hover{
+  padding-left: 1vw;
+  margin-left: -1vw;
+}
+.burgerBlackBoxText a{
+  color: white;
+}
+.burgerBlackBoxText a:hover{
+  color:yellow;
+}
+/* burger menu overlay and all */
