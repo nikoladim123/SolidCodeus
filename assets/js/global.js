@@ -22,4 +22,19 @@ function stickyMenuFunc(){
 
 window.addEventListener('scroll', ()=>{
   stickyMenuFunc();
+  contactUsDivButFixedFun();
 });
+//testing
+var contactUsDivBut = document.getElementsByClassName('contactUsDivBut')[0];
+var content = document.getElementsByClassName('content')[0];
+
+function contactUsDivButFixedFun(){
+  if(content.getBoundingClientRect().y <= 0){
+    contactUsDivBut.style.position ='fixed';
+    // contactUsDivBut.style.top ='1px';
+  }
+  else{
+    contactUsDivBut.style.position ='absolute';
+    // contactUsDivBut.style.top ='8vw';
+  }
+}

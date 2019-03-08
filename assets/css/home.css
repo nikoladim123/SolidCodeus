@@ -1,13 +1,12 @@
 
 /* header start */
-header{
+/* header{
   overflow: hidden;
   padding-top: 0.1px;
   background-size: 100% 100%;
   position: relative;
   min-height:  97.77vw;
-  /* background: linear-gradient(135deg, #e6b929 0%, #e0c366 100%); */
-}
+} */
 
 /* .videoDiv{
   overflow: hidden;
@@ -58,9 +57,9 @@ header{
 /* .quotContainer p:nth-child(2){
   opacity: 1;
 } */
-.quotContainer p:nth-child(3){
+/* .quotContainer p:nth-child(3){
   opacity: 0;
-}
+} */
 
 /* .videoDiv h1{
   width: 100%;
