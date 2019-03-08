@@ -212,24 +212,27 @@ main{
 }
 .other-contact>div {
   transition: 0.4s;
-    text-align: center;
-    font-family: 'Montserrat Light';
-    font-size: 1.197vw;
-    color: #6b6c72;
-    margin: 16px 0;
+  text-align: center;
+  font-family: 'Montserrat Light';
+  font-size: 1.197vw;
+  color: #6b6c72;
+  margin: 16px 0;
 }
 .other-contact>div span {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 7px;
-    margin-top: -3px;
-    font-size: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 7px;
+  margin-top: -3px;
+  font-size: 30px;
 }
 
 .contentOne h1{
   font-family: 'Montserrat-Black';
   font-size: 3.55vw;
   color: rgb(60,60,60);
+  line-height: 1;
+  margin-bottom: 6vw;
+  margin-top: 4vw;
 }
 
 .contentImgTextBigBox{
@@ -239,15 +242,19 @@ main{
   position: relative;
   left: 3vw;
   top: 3.259vw;
-  width: 64.814vw;
+  width: 61vw;
 }
 .imgText{
+  text-align: justify;
+  line-height: 2;
   overflow: hidden;
   margin-bottom: 4vw;
   display: flex;
   border-bottom: 0.518vw solid rgb(236,236,236);
 }
-
+.imgText p{
+  margin-bottom: 5vw;
+}
 .screen{
   /* display: flex; */
   transition: 2s;
@@ -260,8 +267,8 @@ main{
   display: flex;
 }
 .cyImage{
-width: 6.5vw;
-height: 6.5vw;
+  width: 6.5vw;
+  height: 6.5vw;
 }
 .picAutor p:nth-child(1){
   font-family: 'Montserrat-Bold';
@@ -295,15 +302,15 @@ height: 6.5vw;
   padding-right: 27.5%;
 }
 .socialMediaArticle .fab{
-    transition: 0.4s;
-    color: rgb(174,174,174);
-    font-size: 1.23vw;
-    border: 2px solid rgb(174,174,174);
-    border-radius: 50%;
-    width: 1.7vw;
-    height: 1.7vw;
-    padding-top: 0.7vw;
-    padding-left: 0.7vw;
+  transition: 0.4s;
+  color: rgb(174,174,174);
+  font-size: 1.23vw;
+  border: 2px solid rgb(174,174,174);
+  border-radius: 50%;
+  width: 1.7vw;
+  height: 1.7vw;
+  padding-top: 0.7vw;
+  padding-left: 0.7vw;
 }
 
 .images{
@@ -358,25 +365,24 @@ height: 6.5vw;
 
 .articleInspiration{
   font-family: 'Montserrat-Light';
-  font-size: 1.3vw;
+  font-size: 1.464vw;
   color: #404143;
-  margin-right: 2.92vw;
 }
 .shitSpam{
   color: #e4080a;
   font-family: 'Montserrat-Light';
-  font-size: 1.3vw;
+  font-size: 1.464vw;
 }
 .detailBlogP{
   margin-top: 4vw;
   color: #404143;
   font-family: 'Montserrat-Light';
-  font-size: 1.2vw;
+  font-size: 1.3vw;
 }
 .detailBlogPTwo{
   color: #404143;
   font-family: 'Montserrat-Light';
-  font-size: 1.2vw;
+  font-size: 1.464vw;
 }
 .detailBlogPTwo span{
   color: #e5080d;
@@ -385,7 +391,7 @@ height: 6.5vw;
 .detailBlogPThree{
   color: #404143;
   font-family: 'Montserrat-Light';
-  font-size: 1.4vw;
+  font-size: 1.464vw;
 }
 
 .loader{
