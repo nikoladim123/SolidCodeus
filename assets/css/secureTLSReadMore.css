@@ -255,6 +255,9 @@ main{
 .imgText p{
   margin-bottom: 5vw;
 }
+.imgText p span{
+  color: #e5080d;
+}
 .screen{
   /* display: flex; */
   transition: 2s;
@@ -286,16 +289,40 @@ main{
   margin: 0;
   margin-left: 0.7vw;
 }
-.http{
-  position: relative;
-  left: 2vw;
-  background-size: 100% 100%;
-  width: 100%;
+
+.articleTextNormal{
+  font-size: 1.464vw;
+  font-family: 'Montserrat-Light';
+}
+
+.bucketBrigade{
+  font-family: 'Montserrat-Regular';
+  font-size: 2.196vw;
+  line-height: 1.5;
+}
+
+.HTTPS{
+  width: 50vw;
+  height: 30vw;
+}
+.cipher{
+  width: 50vw;
+  height: 30vw;
+}
+.sslLab{
+  width: 45vw;
+  height: 20vw;
+}
+
+.tcpTls{
+  width: 40vw;
+  height: 60vw;
 }
 
 .socialMediaArticle{
+  margin-top: 5vw;
+  margin-bottom: 1vw;
   position: relative;
-  margin-bottom: -0.5vw;
   display: flex;
   justify-content: space-around;
   padding-left: 27.5%;
@@ -311,159 +338,4 @@ main{
   height: 1.7vw;
   padding-top: 0.7vw;
   padding-left: 0.7vw;
-}
-
-.images{
-  transition: 2s;
-  overflow: hidden;
-  min-width: 31.28vw;
-  width: 31.28vw;
-  position: relative;
-  padding-bottom: 1vw;
-}
-
-.text{
-  position: relative;
-  left: -40vw;
-  transition: 2s;
-  overflow: hidden;
-  color: rgb(112,112,112);
-  text-align: justify;
-  font-size: 1.185vw;
-}
-.textWraperAnimDiv{
-  overflow: hidden;
-  position: relative;
-}
-
-.text p{
-  font-family: 'Montserrat-Light',serif;
-  margin-right: 2.962vw;
-  margin-left: 1.5vw;
-  color: #404143;
-  font-size: 1.3vw;
-  line-height: 2.2vw;
-}
-.text h2{
-  font-family: 'Montserrat-Black',serif;
-  margin-left: 2.074vw;
-  font-size: 2.296vw;
-  margin-bottom: 1vw;
-}
-.readMore{
-  border: none;
-  background-color: rgb(236,70,35);
-  width: 24.981vw;
-  height: 4.966vw;
-  margin-top: 2vw;
-  margin-right: 2.92vw;
-  color: white;
-  font-size: 2vw;
-  float: right;
-  font-family: 'Montserrat-Black',serif;
-}
-
-.articleInspiration{
-  font-family: 'Montserrat-Light';
-  font-size: 1.464vw;
-  color: #404143;
-}
-.shitSpam{
-  color: #e4080a;
-  font-family: 'Montserrat-Light';
-  font-size: 1.464vw;
-}
-.detailBlogP{
-  margin-top: 4vw;
-  color: #404143;
-  font-family: 'Montserrat-Light';
-  font-size: 1.3vw;
-}
-.detailBlogPTwo{
-  color: #404143;
-  font-family: 'Montserrat-Light';
-  font-size: 1.464vw;
-}
-.detailBlogPTwo span{
-  color: #e5080d;
-}
-
-.detailBlogPThree{
-  color: #404143;
-  font-family: 'Montserrat-Light';
-  font-size: 1.464vw;
-}
-
-.loader{
-  margin-left: 40%;
-}
-.download{
-  position: relative;
-  width: 40vw;
-  height: 10vw;
-  margin-left: 50%;
-  left: -20vw;
-}
-.hacked{
-  width: 60%;
-  height: 10vw;
-  margin-left: 20%;
-}
-.socialMediaArticle{
-  margin-top: 5vw;
-  margin-bottom: 1vw;
-}
-.previousArticle{
-
-}
-.previousArticle h2{
-  font-size: 2vw;
-  color: #e5080d;
-  font-family: 'Montserrat-Black';
-}
-.previousArticle a{
-  transition: 0.4s;
-  display: block;
-  text-decoration: none;
-}
-.previousArticle a:hover{
-  color: #e5080d;
-}
-.comments{
-  display: flex;
-  justify-content:  space-between;
-  width: 60%;
-}
-.comments select{
-  height: 2vw;
-}
-.fbComnts{
-  width: 60%;
-  display: flex;
-}
-.sortBy{
-  display: flex;
-  align-items: center;
-}
-.profil{
-  width: 3vw;
-  height: 3vw;
-}
-form{
-  width: 100%;
-}
-textarea{
-  width: 100%;
-  outline: none;
-}
-textarea::placeholder{
-  font-size: 1.3vw;
-}
-.logInToPost{
-  background-color: #4267b2;
-  color: white;
-  min-height: 1.5vw;
-  min-width: 5vw;
-  margin-left: 28vw;
-  font-family: 'Montserrat-Regular';
 }
