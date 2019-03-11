@@ -278,7 +278,7 @@ main{
 .imgBox{
   position: relative;
   overflow: hidden;
-  /* width: 33.33%; */
+  width: 33.33%;
   height: 21.2vw;
 }
 .imgBox:hover{

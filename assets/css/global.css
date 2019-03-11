@@ -255,7 +255,7 @@ video{
   transition: 0.4s;
   font-family: 'Montserrat-Regular',serif;
   position: absolute;
-  background-color: rgba(255,160,49,1);
+  background: linear-gradient(to right, rgba(255,222,32,1) 0%, rgba(254,169,33,1) 100%);
   color: white;
   border: none;
   width: 12.89vw;
@@ -265,10 +265,11 @@ video{
   margin-left: 50%;
   left: -6.445vw;
   bottom: 1.2vw;
+  filter: brightness(100%);
 }
 .bodyHome .getInTouchBtn:hover{
   cursor: pointer;
-  background-color: rgba(255,174,69,0.6);
+  filter: brightness(110%);
 }
 
 .bodyHome .videoSlider{
@@ -305,14 +306,15 @@ video{
 .bodyHome .FREE{
   position: absolute;
   right: -0.3vw;
-  top: 10vw;
+  top: 7vw;
 }
 .bodyHome .FREE p{
   color: #ffae45;
-  font-family: 'Montserrat-Black',serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   font-size: 1.779vw;
   writing-mode: tb-rl;
+  letter-spacing: 1vw;
 }
 .bodyHome header{
   overflow: hidden;
