@@ -60,7 +60,7 @@ a{
     z-index: 2;
     position: fixed;
     height: 0vw;
-    width: 100vw;
+    width: 100%;
     background-color: black;
     border-bottom: 1px solid gray;
     overflow: hidden;
@@ -324,6 +324,7 @@ video{
 /* body home */
 /* burger menu overlay and all */
 .wholePageOverlay{
+  position: relative;
   transition: 1s;
   filter: blur(0px);
 }

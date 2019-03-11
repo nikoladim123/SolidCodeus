@@ -10,6 +10,22 @@
   </head>
   <body>
 
+    <div class="burgerMenuOverlayWhite">
+      <div class="burgerOverlayBlackBox">
+        <div class="closeBox">
+          <div class=""></div>
+          <div class=""></div>
+        </div>
+        <div class="burgerBlackBoxText">
+          <h2>SolidCode<span>us</span> </h2>
+          <a href="#hrefOne"><p class="closeMeClass">Recent Work</p></a>
+          <a href="#hrefTwoKids" class="closeMeClass"><p>Services</p></a>
+          <a href="#hrefThreeInstagram" class="closeMeClass"><p>Workflow</p></a>
+          <a href="#hrefFourEvents" class="closeMeClass"><p>Team</p></a>
+          <a href="#hrefFourContacts" class="closeMeClass"><p>Contact</p></a>
+        </div>
+      </div>
+    </div>
 
     <div class="stickyMenu" style="height: 0vw;">
       <a href="https://nikoladim123.github.io/SolidCodeus/"><img class="logo" src="assets/images/global-images/png/logo.png" alt=""></a>
@@ -17,7 +33,7 @@
         <a href="#" id="searchID">&#8981;</a>
         <a href="#">Portfolio</a>
         <a href="#">Services</a>
-        <a href="#">Blog</a>
+        <a href="blog.html">Blog</a>
         <a href="#">More</a>
         <div class="burgerMenu">
           <div class="burgerLine"></div>
@@ -27,7 +43,11 @@
       </div>
     </div>
 
+   <div class="wholePageOverlay">
+
+
     <header>
+
       <!-- global component -->
       <div class="topBandLayer"></div>
       <nav>
@@ -36,7 +56,7 @@
           <a href="#" id="searchID">&#8981;</a>
           <a href="#">Portfolio</a>
           <a href="#">Services</a>
-          <a href="https://nikoladim123.github.io/cySolidBlog/">Blog</a>
+          <a href="blog.html">Blog</a>
           <a href="#">More</a>
           <div class="burgerMenu">
             <div class="burgerLine"></div>
@@ -115,32 +135,33 @@
                   </div>
                 </div>
                 <img class="HTTPS" src="assets\images\desktop\httpsDetail.png" alt="">
-                <p class="articleTextNormal">This article is part of a web performance and web optimization series I had promised you at the bottom of <a href="optimizeReadMore.html"><span><b>this page.</b></span></a>. The main purpose of this topic is to have a basic understanding of how a network connection that uses TLS/SSL gets started and how this process may affect a website’s performance and page load speed. Furthermore, let us try to make sure that we install our TLS correctly, set up our server optimally and make sure that the installed TLS gives us the intended protection against the bad guys. In the meantime, there seem to be a confusion regarding TLS and SSL, so let us clear that out first:</p>
+                <p class="articleTextNormal">This article is part of a web performance and web optimization series I had promised you at the bottom of <a href="optimizeReadMore.html" target="_blank"><span><b>this page.</b></span></a>. The main purpose of this topic is to have a basic understanding of how a network connection that uses TLS/SSL gets started and how this process may affect a website’s performance and page load speed. Furthermore, let us try to make sure that we install our TLS correctly, set up our server optimally and make sure that the installed TLS gives us the intended protection against the bad guys. In the meantime, there seem to be a confusion regarding TLS and SSL, so let us clear that out first:</p>
 
                 <p class="articleTextNormal">SSL (Secure Socket Layer) was invented by Netscape Navigator and has been around for over 21 years. SSLV1 was never released. SSLV2 was released in 1995 but due to many security holes, in 1996, it was replaced with SSLV3. Since then, many security compromises in SSLV3 have been identified and corrected. As an aging protocol, it was only a matter of time before someone would find the next big issue in SSL and after 19 years of industry service, would force it to rest.</p>
 
-                <p class="articleTextNormal">TLS (transport Layer Security) has been in existence since 1999. After <a href="https://security.googleblog.com/2014/10/this-poodle-bites-exploiting-ssl-30.html"><span>Poodle Atttack</span></a> on SSLV3 on October 14 of 2014, TLSV1 became a clear replacement for SSLV3.  To make the transition smooth and seamless, one could consider TLSV1 as SSLV3.1 and TLSV1.1 as SSLV3.2 and TLSV1.3 as SSLV3.3  In fact in “Client Hello” section of SSL Handshake, client using TLSV1.2 for instance, would introduce itself as using SSL{3,3}.</p>
+                <p class="articleTextNormal">TLS (transport Layer Security) has been in existence since 1999. After <a href="https://security.googleblog.com/2014/10/this-poodle-bites-exploiting-ssl-30.html" target="_blank"><span>Poodle Atttack</span></a> on SSLV3 on October 14 of 2014, TLSV1 became a clear replacement for SSLV3.  To make the transition smooth and seamless, one could consider TLSV1 as SSLV3.1 and TLSV1.1 as SSLV3.2 and TLSV1.3 as SSLV3.3  In fact in “Client Hello” section of SSL Handshake, client using TLSV1.2 for instance, would introduce itself as using SSL{3,3}.</p>
 
-                <p class="bucketBrigade">TLS or SSL is not the cure-all answer for an application security. It provides identification, authentication, confidentiality and Integrity of data in TRANSIT ONLY. Therefore, SSL is just ONE part of an overall application security. Furthermore, for TLS to be effective and to protect our data in transit it must be <a href="https://github.com/ssllabs/research/wiki/SSL-and-TLS-Deployment-Best-Practices"><span>installed properly</span></a> and the server also must be configured correctly.</p>
+                <p class="bucketBrigade">TLS or SSL is not the cure-all answer for an application security. It provides identification, authentication, confidentiality and Integrity of data in TRANSIT ONLY. Therefore, SSL is just ONE part of an overall application security. Furthermore, for TLS to be effective and to protect our data in transit it must be <a href="https://github.com/ssllabs/research/wiki/SSL-and-TLS-Deployment-Best-Practices"  target="_blank"><span>installed properly</span></a> and the server also must be configured correctly.</p>
 
-                <p class="articleTextNormal">At least for the past several years, website performance and page upload speed has been in the forefront of application development best practices. In fact, as far back as April of 2010, <a href="https://webmasters.googleblog.com/2010/04/using-site-speed-in-web-search-ranking.html"><span>Google announced</span></a> that website upload speed would be a factor in search engine ranking. We also know that in 2014 Google started to give a
-                <a href="https://webmasters.googleblog.com/2014/08/https-as-ranking-signal.html"><span>ranking boost</span></a> to TLS/SSL secured websites. Recently, it has become even more aggressive by suggesting that HTTPS should be <a href="https://www.digicert.com/blog/google-takes-another-step-to-help-encourage-https-everywhere/"><span>everywhere</span></a> on the net..</p>
+                <p class="articleTextNormal">At least for the past several years, website performance and page upload speed has been in the forefront of application development best practices. In fact, as far back as April of 2010, <a href="https://webmasters.googleblog.com/2010/04/using-site-speed-in-web-search-ranking.html" target="_blank"><span>Google announced</span></a> that website upload speed would be a factor in search engine ranking. We also know that in 2014 Google started to give a
+                <a href="https://webmasters.googleblog.com/2014/08/https-as-ranking-signal.html" target="_blank"><span>ranking boost</span></a> to TLS/SSL secured websites. Recently, it has become even more aggressive by suggesting that HTTPS should be <a href="https://www.digicert.com/blog/google-takes-another-step-to-help-encourage-https-everywhere/" target="_blank"><span>everywhere</span></a> on the net..</p>
 
                 <p class="bucketBrigade">While secure sites and “HTTPS everywhere” are necessary and welcome innitiatives, then how about its “negative impact” on site performance? After all, on a secure website, we make frequent extra calls to server and the server in turn, makes extra number crunching to encrypt data and keep a connection secure.</p>
 
-                <p class="articleTextNormal">There certainly seems to be a performance cost overhead when switching to HTTPS. As mentioned above, with each transaction, there are extra calls to server and there is also some stress on the CPU encrypting and decrypting complex strings of characters. But the question is, with today’s high bandwidth network connectivity and CPUs that support dedicated AES cryptographic instructions at <a href="https://www.intel.com/content/www/us/en/architecture-and-technology/advanced-encryption-standard-aes/data-protection-aes-general-technology.html"><span>hardware level</span></a>, can we still afford to compromise our online data transmission? Isn’t an extra 1-3% of CPU number crunching worth protecting our visitors and users’ data exchange?</p>
+                <p class="articleTextNormal">There certainly seems to be a performance cost overhead when switching to HTTPS. As mentioned above, with each transaction, there are extra calls to server and there is also some stress on the CPU encrypting and decrypting complex strings of characters. But the question is, with today’s high bandwidth network connectivity and CPUs that support dedicated AES cryptographic instructions at
+                  <a href="https://www.intel.com/content/www/us/en/architecture-and-technology/advanced-encryption-standard-aes/data-protection-aes-general-technology.html" target="_blank"><span>hardware level</span></a>, can we still afford to compromise our online data transmission? Isn’t an extra 1-3% of CPU number crunching worth protecting our visitors and users’ data exchange?</p>
 
                 <p class="bucketBrigade">If TLS is properly installed and some optimization steps taken, it will provide even more security and its performance overhead will be drastically minimized.</p>
 
-                <p class="articleTextNormal">Before we do any TLS optimization however, we need to install TLS on our server. if you don’t want to pay for a TLS certificate, the folks at  <a href="https://letsencrypt.org/"><span><b>Lets Encrypt</b></span></a>  are doing a great job of providing it for free.</p>
+                <p class="articleTextNormal">Before we do any TLS optimization however, we need to install TLS on our server. if you don’t want to pay for a TLS certificate, the folks at  <a href="https://letsencrypt.org/" target="_blank"><span><b>Lets Encrypt</b></span></a>  are doing a great job of providing it for free.</p>
 
-                <p class="articleTextNormal">After TLS installation, you can go to <a href="https://www.ssllabs.com/ssltest/"><span>SSL Labs</span></a> and test your new install and examine your server configuration. Check the security level and whether your server is vulnerable against SSL downgrading, or any of the known attacks such as Poodle and Beast. Any TLS or server configuration warning need to be addressed otherwise your TLS install would probably not fully protect your data in transit. For instance, if you have weak cipher suite on your list, they will look as follows and they will have to be removed and/or replaced:</p>
+                <p class="articleTextNormal">After TLS installation, you can go to <a href="https://www.ssllabs.com/ssltest/" target="_blank"><span>SSL Labs</span></a> and test your new install and examine your server configuration. Check the security level and whether your server is vulnerable against SSL downgrading, or any of the known attacks such as Poodle and Beast. Any TLS or server configuration warning need to be addressed otherwise your TLS install would probably not fully protect your data in transit. For instance, if you have weak cipher suite on your list, they will look as follows and they will have to be removed and/or replaced:</p>
 
                 <img class="cipher" src="assets\images\desktop\TLSCipherDetail.png" alt="">
 
                 <p class="bucketBrigade">Do you have HSTS Response Header installed?</p>
 
-                <p class="articleTextNormal">HSTS is a security enhancement and an acronym for HTTP Strict Transport Security. It is a <a href="https://www.owasp.org/index.php/HTTP_Strict_Transport_Security_Cheat_Sheet"><span>server setting</span></a> that requires user agents to, next time, access a website using secure HTTPS connection ONLY. During the first visit of a client to a website however it can go straight to the HTTP version of a page, instead of HTTPS. This can happen inadvertently through using a bookmark or maliciously by requesting the insecure HTTP version of a page if it exists. At this point, the server feels violated and redirects the user agent to the HTTPS version of the page instead. So you see, even with the use of HSTS, the first visit of a client can always be an insecure one and an attacker can already do damages. Also, when you compare the 301 redirection overhead of 100a of ms, to browser redirection of several ms, we can clearly see the performance advantage of HTST for clients’ subsequent visits.</p>
+                <p class="articleTextNormal">HSTS is a security enhancement and an acronym for HTTP Strict Transport Security. It is a <a href="https://www.owasp.org/index.php/HTTP_Strict_Transport_Security_Cheat_Sheet" target="_blank"><span>server setting</span></a> that requires user agents to, next time, access a website using secure HTTPS connection ONLY. During the first visit of a client to a website however it can go straight to the HTTP version of a page, instead of HTTPS. This can happen inadvertently through using a bookmark or maliciously by requesting the insecure HTTP version of a page if it exists. At this point, the server feels violated and redirects the user agent to the HTTPS version of the page instead. So you see, even with the use of HSTS, the first visit of a client can always be an insecure one and an attacker can already do damages. Also, when you compare the 301 redirection overhead of 100a of ms, to browser redirection of several ms, we can clearly see the performance advantage of HTST for clients’ subsequent visits.</p>
 
                 <p class="articleTextNormal">Finally, if you have properly installed HSTS and optimized TLS installation, you should receive an A or A+ from SSL Lab:</p>
 
@@ -148,10 +169,10 @@
 
                 <p class="bucketBrigade">As much as HTTP Strict Transport Security can help, that very first client visit to a page could be insecure. To take full advantage of HSTS, you may submit your site to the Chromium HSTS Preload list. </p>
 
-                <p class="articleTextNormal">If you are serious and would like your site to be protected against the first visit also, then you may want to submit your domain to <a href="https://hstspreload.org/"><span>HSTS preload list</span></a>. This is a list maintained by <a href="https://www.chromium.org/"><span>Chromium</span></a> Projects and the domains on this list are hard coded in Chrome, Firefox, Safari, Opera Ie and Edge. Please read and review the “Removal’ section at the bottom of this page, as it would take months to remove your domain from the preload list. If you are interested in this subject, you may read more about it at <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security"><span>Mozila Developer Network</span></a></p>
+                <p class="articleTextNormal">If you are serious and would like your site to be protected against the first visit also, then you may want to submit your domain to <a href="https://hstspreload.org/" target="_blank"><span>HSTS preload list</span></a>. This is a list maintained by <a href="https://www.chromium.org/" target="_blank"><span>Chromium</span></a> Projects and the domains on this list are hard coded in Chrome, Firefox, Safari, Opera Ie and Edge. Please read and review the “Removal’ section at the bottom of this page, as it would take months to remove your domain from the preload list. If you are interested in this subject, you may read more about it at <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security" target="_blank"><span>Mozila Developer Network</span></a></p>
 
                 <p class="articleTextNormal">If you don’t have any special reason for not adding your domain to preload list maintained by Chromium, doing so will greatly improve your website’s security. This is so as the first time visitors will also be redirected to the HTTPS version of your site and it will be done at the browser level. According to
-                <a href="https://news.netcraft.com/archives/2016/03/17/95-of-https-servers-vulnerable-to-trivial-mitm-attacks.html"><span>Netcradt report</span></a>, a vast majority of servers (95%) are not protected against secured connection downgrade vulnerabilities such as MIMA attach and
+                <a href="https://news.netcraft.com/archives/2016/03/17/95-of-https-servers-vulnerable-to-trivial-mitm-attacks.html" target="_blank"><span>Netcradt report</span></a>, a vast majority of servers (95%) are not protected against secured connection downgrade vulnerabilities such as MIMA attach and
                 Logjam attack. As a result, an attacker can force a user agent to make unencrypted connections to these servers and steal or modify the user data. HSTS header can further protect against other vulnerabilities such as malicious cookie hijacking. HSTS is supported by almost all modern browsers.</p>
 
                 <p class="articleTextNormal">Now that we have covered the basics of TLS installations, we are ready to see what happens when we make a connection to a secure website. We know that the process starts with a TCP and a TLS handshake, which I will cover in the next and final pat of  Secure and Optimized TLS. For now, I will leave you with this</p>
@@ -195,6 +216,9 @@
       </div>
     </main>
 
+    <!-- under is the end of wholePageOverlayer -->
+    </div>
+
     <script type="text/javascript" src="assets/js/global.js"></script>
     <!-- small inline JS for sticky contactus-->
     <script type="text/javascript">
@@ -203,11 +227,12 @@
 
       function contactUsDivButFixedFun(){
         if(content.getBoundingClientRect().y <= 0){
-          contactUsDivBut.style.position ='fixed';
+          // contactUsDivBut.style.position ='fixed';
           // contactUsDivBut.style.top ='1px';
+          contactUsDivBut.style.top = window.scrollY - window.innerHeight/100*96 + 'px';
         }
         else{
-          contactUsDivBut.style.position ='absolute';
+          // contactUsDivBut.style.position ='absolute';
           // contactUsDivBut.style.top ='8vw';
         }
       }

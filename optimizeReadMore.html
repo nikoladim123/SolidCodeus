@@ -10,6 +10,22 @@
   </head>
   <body>
 
+    <div class="burgerMenuOverlayWhite">
+      <div class="burgerOverlayBlackBox">
+        <div class="closeBox">
+          <div class=""></div>
+          <div class=""></div>
+        </div>
+        <div class="burgerBlackBoxText">
+          <h2>SolidCode<span>us</span> </h2>
+          <a href="#hrefOne"><p class="closeMeClass">Recent Work</p></a>
+          <a href="#hrefTwoKids" class="closeMeClass"><p>Services</p></a>
+          <a href="#hrefThreeInstagram" class="closeMeClass"><p>Workflow</p></a>
+          <a href="#hrefFourEvents" class="closeMeClass"><p>Team</p></a>
+          <a href="#hrefFourContacts" class="closeMeClass"><p>Contact</p></a>
+        </div>
+      </div>
+    </div>
 
     <div class="stickyMenu" style="height: 0vw;">
       <a href="https://nikoladim123.github.io/SolidCodeus/"><img class="logo" src="assets/images/global-images/png/logo.png" alt=""></a>
@@ -17,7 +33,7 @@
         <a href="#" id="searchID">&#8981;</a>
         <a href="#">Portfolio</a>
         <a href="#">Services</a>
-        <a href="#">Blog</a>
+        <a href="blog.html">Blog</a>
         <a href="#">More</a>
         <div class="burgerMenu">
           <div class="burgerLine"></div>
@@ -26,6 +42,9 @@
         </div>
       </div>
     </div>
+
+   <div class="wholePageOverlay">
+
 
     <header>
       <!-- global component -->
@@ -36,7 +55,7 @@
           <a href="#" id="searchID">&#8981;</a>
           <a href="#">Portfolio</a>
           <a href="#">Services</a>
-          <a href="https://nikoladim123.github.io/cySolidBlog/">Blog</a>
+          <a href="blog.html">Blog</a>
           <a href="#">More</a>
           <div class="burgerMenu">
             <div class="burgerLine"></div>
@@ -172,6 +191,9 @@
       </div>
     </main>
 
+    <!-- under is the end of wholePageOverlayer -->
+    </div>
+
     <script type="text/javascript" src="assets/js/global.js"></script>
     <!-- small inline JS for sticky contactus-->
     <script type="text/javascript">
@@ -180,11 +202,12 @@
 
       function contactUsDivButFixedFun(){
         if(content.getBoundingClientRect().y <= 0){
-          contactUsDivBut.style.position ='fixed';
+          // contactUsDivBut.style.position ='fixed';
           // contactUsDivBut.style.top ='1px';
+          contactUsDivBut.style.top = window.scrollY - window.innerHeight/100*96 + 'px';
         }
         else{
-          contactUsDivBut.style.position ='absolute';
+          // contactUsDivBut.style.position ='absolute';
           // contactUsDivBut.style.top ='8vw';
         }
       }

@@ -10,13 +10,30 @@
   </head>
   <body>
 
+    <div class="burgerMenuOverlayWhite">
+      <div class="burgerOverlayBlackBox">
+        <div class="closeBox">
+          <div class=""></div>
+          <div class=""></div>
+        </div>
+        <div class="burgerBlackBoxText">
+          <h2>SolidCode<span>us</span> </h2>
+          <a href="#hrefOne"><p class="closeMeClass">Recent Work</p></a>
+          <a href="#hrefTwoKids" class="closeMeClass"><p>Services</p></a>
+          <a href="#hrefThreeInstagram" class="closeMeClass"><p>Workflow</p></a>
+          <a href="#hrefFourEvents" class="closeMeClass"><p>Team</p></a>
+          <a href="#hrefFourContacts" class="closeMeClass"><p>Contact</p></a>
+        </div>
+      </div>
+    </div>
+
     <div class="stickyMenu" style="height: 0vw;">
       <a href="https://nikoladim123.github.io/SolidCodeus/"><img class="logo" src="assets/images/global-images/png/logo.png" alt=""></a>
       <div class="navigation">
         <a href="#" id="searchID">&#8981;</a>
         <a href="#">Portfolio</a>
         <a href="#">Services</a>
-        <a href="#">Blog</a>
+        <a href="blog.html">Blog</a>
         <a href="#">More</a>
         <div class="burgerMenu">
           <div class="burgerLine"></div>
@@ -25,6 +42,9 @@
         </div>
       </div>
     </div>
+
+   <div class="wholePageOverlay">
+
 
     <header>
       <!-- global component -->
@@ -35,7 +55,7 @@
           <a href="#" id="searchID">&#8981;</a>
           <a href="#">Portfolio</a>
           <a href="#">Services</a>
-          <a href="https://nikoladim123.github.io/cySolidBlog/">Blog</a>
+          <a href="blog.html">Blog</a>
           <a href="#">More</a>
           <div class="burgerMenu">
             <div class="burgerLine"></div>
@@ -101,7 +121,7 @@
                       <p>2 years 1 month ago</p>
                     </div>
                   </div>
-                  <img class="http" src="assets\images\desktop\C:\Users\Windows 10\Desktop\practise\nSolid\assets\images\desktop\httpsDetail.png" alt="">
+                  <img class="http" src="assets\images\desktop\HTTPS.png" alt="">
 
                 </div>
                 <div class="socialMediaArticle">
@@ -123,7 +143,7 @@
                    sure that the installed TLS gives us the intended protection against the bad
                    guys. In the meantime, there seem to be a confusion regarding TLS and SSL, so le...
                  </p>
-                 <button onclick="location.href='secureTLSReadMore.html'" class="readMore" type="button" name="button">Read More</button>
+                 <a href="secureTLSReadMore.html" target="_blank"><button class="readMore" type="button" name="button">Read More</button></a>
                 </div>
               </div>
             </div>
@@ -148,7 +168,7 @@
                   <i class="fab fa-google-plus-g"></i>
                 </div>
                 <div style="clear:both"></div>
-                  <button onclick='location.href="optimizeReadMore.html"' class="readMore" type="button" name="button">Read More</button>
+                  <a href="optimizeReadMore.html" target="_blank"><button class="readMore" type="button" name="button">Read More</button></a>
               </div>
             </div>
             </div>
@@ -184,7 +204,7 @@
                     In our reply, we emphasized the fact that there were so much involved in building a banking application
                     such as PayPal that it would make it impossible for us to successfully build and...
                   </p>
-                 <button class="readMore" type="button" name="button">Read More</button>
+                 <a href="scamReadMore.html" target="_blank"><button class="readMore" type="button" name="button">Read More</button></a>
                 </div>
               </div>
             </div>
@@ -194,7 +214,30 @@
 
     </main>
 
+    <!-- under is the end of wholePageOverlayer -->
+    </div>
+
     <script type="text/javascript" src="assets/js/global.js"></script>
     <script type="text/javascript" src="assets/js/blog.js"></script>
+    <!-- small inline JS for sticky contactus-->
+    <script type="text/javascript">
+      var contactUsDivBut = document.getElementsByClassName('contactUsDivBut')[0];
+      var content = document.getElementsByClassName('content')[0];
+
+      function contactUsDivButFixedFun(){
+        if(content.getBoundingClientRect().y <= 0){
+          // contactUsDivBut.style.position ='fixed';
+          // contactUsDivBut.style.top ='1px';
+          contactUsDivBut.style.top = window.scrollY - window.innerHeight/100*96 + 'px';
+        }
+        else{
+          // contactUsDivBut.style.position ='absolute';
+          // contactUsDivBut.style.top ='8vw';
+        }
+      }
+      window.addEventListener('scroll', ()=>{
+        contactUsDivButFixedFun();
+      });
+    </script>
   </body>
 </html>
