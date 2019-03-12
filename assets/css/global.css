@@ -295,7 +295,7 @@ video{
   position: absolute;
   width: 2vw;
   height: 2vw;
-  background-color: #ffae45;
+  background-color: rgb(255,220,32);
   right: -1vw;
   top: 1vw;
 }
