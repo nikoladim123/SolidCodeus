@@ -69,9 +69,7 @@ a{
     justify-content: space-between;
     /* padding-top: 0.4vw; */
 }
-.stickyMenu .navigation{
-  /* margin-right: 1vw; */
-}
+
 .stickyMenu .navigation a{
   color: white !important;
 }
@@ -405,3 +403,168 @@ video{
   color:yellow;
 }
 /* burger menu overlay and all */
+/* node article */
+.nodeArticle .videoDiv{
+  background-color: rgb(220,220,220);
+}
+.nodeArticle .videoDiv img{
+  position: absolute;
+  top: 10%;
+  left:10%;
+  width: 80%;
+  height: 80%;
+}
+
+.nodeArticle .glowEffect{
+  position: absolute;
+  width: 5vw;
+  height: 5vw;
+  border: 1px solid red;
+  box-shadow: 0px 0px 187px 46px rgba(255,255,255,1);
+}
+.nodeArticle .glowEffect div{
+  border: 1px solid blue;
+  position: absolute;
+}
+.topLeft{
+  width: 5vw;
+  height: 1px;
+  top: 0;
+  left: 5vw;
+  box-shadow: 0px 0px 171px 21px rgba(41,217,53,1);
+}
+.topRight{
+  top: 0;
+  right: 0;
+  /* box-shadow: 0px 0px 122px 25px rgba(41,217,53,1); */
+}
+.botLeft{
+  bottom: 0;
+  left: 0;
+  /* box-shadow: 0px 0px 122px 25px rgba(41,217,53,1); */
+}
+.botRight{
+  bottom: 0;
+  right: 0;
+  /* box-shadow: 0px 0px 171px 21px rgba(41,217,53,1); */
+}
+/* disable for desktop */
+.mobileBR{
+  display: none;
+}
+/* phone query */
+/* phone query */
+/* phone query */
+@media (orientation:portrait) {
+  /* display for mobile */
+  .mobileBR{
+    display: block
+  }
+  .mobileHide{
+    display: none;
+  }
+
+  .navigation{
+    width: 100%;
+    justify-content: space-between;
+  }
+  .navigation a{
+    display: none;
+  }
+  .navigation a:nth-child(1){
+    display: block;
+  }
+  .topBandLayer {
+    width: 100%;
+    height: 15.384vw;
+    background-color: black;
+}
+.stickyMenu {
+    display: block;
+    justify-content: space-between;
+    /* padding-top: 0.4vw; */
+}
+  nav{
+    padding-top: 0.4vw;
+    height: 15.384vw;
+    display: block;
+  }
+  .logo {
+    display: none;
+    width: 78.46vw;
+    height: 14.769vw;
+    margin-left: 10.2vw;
+    top: 5.2vw;
+  }
+  #searchID {
+    font-size: 13vw;
+    top: -3vw;
+    color: rgb(88,84,95);
+    margin-left: 5vw;
+    transform: rotateY(180deg);
+    font-weight: 800;
+  }
+  .burgerMenu {
+    width: 14.153vw;
+    margin-top: -2.75vw;
+  }
+  .burgerLine{
+      height: 1.538vw;
+      border-top-left-radius: 0;
+      border-bottom-left-radius:0;
+      margin-bottom:1.23vw;
+  }
+  .bodyHome .videoDiv {
+    overflow: hidden;
+    margin-left: 0;
+    position: relative;
+    padding-top: 0.1px;
+    top: 0;
+    height: 143.076vw;
+    width: 98.154vw;
+    border: 0.923vw solid rgb(217,218,220);
+    background-color: none;
+    box-shadow: none;
+    border-bottom: 5.23vw solid rgb(217,218,220);
+    margin-bottom: 5vw;
+  }
+  .bodyHome .videoDiv h1{
+    font-size: 9.23vw;
+  }
+
+  .bodyHome .highPerformance {
+    bottom: 68vw;
+    font-size: 5.538vw;
+}
+
+  .bodyHome .FREE{
+    top:74vw;
+    right: -2.3vw;
+  }
+  .bodyHome .FREE p{
+    font-size: 9.23vw;
+    letter-spacing: 6vw;
+  }
+  .bodyHome .arrowHolder {
+    width: 10vw;
+    height: 19vw;
+    top: 110.165vw;
+    left: -10vw;
+  }
+  .bodyHome .arrow {
+    width: 10vw;
+    height: 10vw;
+    right: -5vw;
+    top: 5vw;
+  }
+
+  .bodyHome .getInTouchBtn {
+    width: 58.461vw;
+    height: 11.692vw;
+    border-radius: 9vw;
+    font-size: 4.923vw;
+    margin-left: 50%;
+    left: -29.2vw;
+    bottom: 6.461vw;
+  }
+}

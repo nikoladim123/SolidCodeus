@@ -1,0 +1,330 @@
+header{
+  padding-top: 0.1px;
+  background: linear-gradient(135deg, #e6b929 0%, #e0c366 100%);
+  background-size: 100% 100%;
+  position: relative;
+  height: calc(100vh + 6vw);
+}
+
+.videoDiv{
+  padding-top: 0.1px;
+  top: 0.9vw;
+  margin-left: 6.11vw;
+  position: relative;
+  height: 25.648vw;
+  width: 86.357vw;
+  border: 1px solid white;
+  box-shadow: 0px 9.44vw 10vw -5.59vw rgba(0,0,0,0.55);
+  /* outline: 1.111vw solid #e0ddeb; */
+}
+
+.videoOverlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: rgba(16,10,26,0.75);
+  /* background: radial-gradient(ellipse at center, rgba(255,255,255,0) -100%, rgba(159,134,254,1) 70%); */
+}
+
+.zero,.three{
+  position: relative;
+}
+.zeroParagraph{
+  margin: 0;
+  margin-left: 4.373vw;
+  margin-top: 4.5vw;
+  margin-bottom: 1vw;
+  font-family: 'Montserrat-Black';
+  font-size: 7.5vw;
+  color: #ffae45;
+  opacity: 0.2;
+}
+.fastSecured{
+  transition: 0.4s;
+  z-index: 1;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  left: 10.5vw;
+  font-size: 2.4vw;
+  font-family: 'Montserrat-Light';
+  color: #ffae45;
+}
+.fastSecured:hover{
+  filter: brightness(150%);
+  cursor: pointer;
+}
+.threeParagraph{
+  margin: 0;
+  margin-left: 4.373vw;
+  margin-top: -3vw;
+  margin-bottom: -1vw;
+  font-family: 'Montserrat-Black';
+  font-size: 7.5vw;
+  color: #ffae45;
+  opacity: 0.2;
+}
+.byKhamak{
+  transition: 0.4s;
+  margin: 0;
+  position: absolute;
+  bottom: 3vw;
+  left: 10.5vw;
+  font-size: 1.1vw;
+  font-family: 'Montserrat-Regular';
+  color: #ffae45;
+}
+.byKhamak:hover{
+  filter: brightness(150%);
+  cursor: pointer;
+}
+
+.theInformation{
+  transition: 0.4s;
+  position: absolute;
+  top: 6.5596vw;
+  right: 2.81vw;
+  width: 38.917vw;
+  height: 11.934vw;
+  border:1px solid rgb(255,255,255,0.5);
+  box-shadow: 0px 0px 0px 0px rgba(255,255,255,0.25);
+}
+.theInformation:hover{
+  filter: brightness(150%);
+  box-shadow: 0px 0px 50px 0px rgba(255,255,255,0.15);
+  cursor: pointer;
+}
+.theInformation p:nth-child(1){
+  font-family: 'Montserrat-Light';
+  color: white;
+  font-size: 1.186vw;
+  margin-left: 2.52vw;
+  margin-top: 3.484vw;
+}
+.theInformation p:nth-child(2){
+  font-family: 'Montserrat-Regular';
+  color: white;
+  font-size: 1.186vw;
+  margin-left: 2.52vw;
+  margin-top: 1vw;
+}
+
+.solidCodeUsBlog{
+  margin-left: 5.5vw;
+  position: absolute;
+  bottom: 6.5vw;
+}
+.solidCodeUsBlog p{
+  font-size: 4.444vw;
+  margin: 0;
+  color: white;
+}
+.solidCodeUsBlog p:nth-child(1){
+  margin-bottom: -1.2vw;
+  font-family: 'Montserrat-ExtraLight',serif;
+}
+.solidCodeUsBlog p:nth-child(2){
+  font-family: 'Montserrat-Black',serif;
+}
+
+main{
+  min-height: 5vw;
+  position: relative;
+  padding-top: 0.1px;
+  padding-bottom: 0.1px;
+  background-color: #e0ddeb;
+}
+.narrowWrapper{
+  position: absolute;
+  top: -6vw;
+  left:0;
+  width: 100%;
+  overflow:hidden;
+  height: 6vw;
+}
+.narrowBG{
+  box-shadow: 1.7vw 7px 50px -30px rgba(0,0,0,0.75);
+  height: 200vw;
+  width: 56vw;
+  position: absolute;
+  background-color: #e0ddeb;
+  transform: rotate(18deg);
+  top: -15vw;
+  left: -36vw;
+}
+.homeDesign{
+  position: relative;
+  left: 4vw;
+  top: 4vw;
+}
+.homeDesign a,.homeDesign span{
+  font-family: 'Montserrat-Bold',serif;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2vw;
+}
+.homeDesign a:hover{
+  text-decoration: underline;
+}
+.content{
+  /* border: 1px solid black; */
+  padding-top: 0.1px;
+  padding-bottom: 4vw;
+  position: relative;
+  left: 5%;
+  top: -0vw;
+  background-color: rgb(244,244,244);
+  width: 95%;
+  /* height: 100%; */
+}
+
+.contactUsDivBut{
+  position: absolute;
+  right: 1vw;
+  top: 8vw;
+}
+.contactUsDivBut button{
+  font-family: 'Montserrat-Black',serif;
+  color: white;
+  font-size: 2.1vw;
+  border: none;
+  width: 23.481vw;
+  height: 5.555vw;
+  margin-bottom: 0.74vw;
+}
+.contactUsDivBut button:nth-child(1){
+  background-color: rgb(217,8,10);
+}
+.contactUsDivBut button:nth-child(3){
+  background-color: rgb(230,213,50);
+}
+.other-contact div a{
+  transition: 0.4s;
+  text-decoration:none;
+  color: #6b6c72;
+}
+.other-contact div a:hover{
+  color:rgb(230,213,50);
+}
+.other-contact div:hover{
+  color:rgb(230,213,50);
+}
+.other-contact>div {
+  transition: 0.4s;
+  text-align: center;
+  font-family: 'Montserrat Light';
+  font-size: 1.197vw;
+  color: #6b6c72;
+  margin: 16px 0;
+}
+.other-contact>div span {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 7px;
+  margin-top: -3px;
+  font-size: 30px;
+}
+
+.contentOne h1{
+  font-family: 'Montserrat-Black';
+  font-size: 3.55vw;
+  color: rgb(60,60,60);
+  line-height: 1;
+  margin-bottom: 6vw;
+  margin-top: 4vw;
+}
+
+.contentImgTextBigBox{
+  /* overflow-y: scroll; */
+  min-height: 40.07vw;
+  /* border: 1px solid green; */
+  position: relative;
+  left: 3vw;
+  top: 3.259vw;
+  width: 55vw;
+}
+.imgText{
+  line-height: 2;
+  overflow: hidden;
+  margin-bottom: 4vw;
+  display: flex;
+  border-bottom: 0.518vw solid rgb(236,236,236);
+}
+.imgText p{
+  text-align: justify;
+  margin-bottom: 5vw;
+}
+.imgText p span{
+  color: #e5080d;
+}
+.screen{
+  /* display: flex; */
+  transition: 2s;
+  position: relative;
+  margin-right: 3.8vw;
+  width: 100%;
+  right: -24vw;
+}
+.author{
+  display: flex;
+}
+.cyImage{
+  width: 6.5vw;
+  height: 6.5vw;
+}
+.picAutor p:nth-child(1){
+  font-family: 'Montserrat-Bold';
+  color: rgb(60,60,60);
+  font-size:1.186vw;
+  margin: 0;
+  margin-top: 1.5vw;
+  margin-bottom: 0.5vw;
+  margin-left: 0.7vw;
+}
+.picAutor p:nth-child(2){
+  font-family: 'Montserrat-Light';
+  color: rgb(119,119,119);
+  font-size: 0.889vw;
+  margin: 0;
+  margin-left: 0.7vw;
+}
+
+.articleTextNormal{
+  font-size: 1.464vw;
+  font-family: 'Montserrat-Light';
+}
+
+.bucketBrigade{
+  font-family: 'Montserrat-Regular';
+  font-size: 2.196vw;
+  line-height: 1.5;
+}
+
+.socialMediaArticle{
+  margin-top: 5vw;
+  margin-bottom: 1vw;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 27.5%;
+  padding-right: 27.5%;
+}
+.socialMediaArticle .fab{
+  transition: 0.4s;
+  color: rgb(174,174,174);
+  font-size: 1.23vw;
+  border: 2px solid rgb(174,174,174);
+  border-radius: 50%;
+  width: 1.7vw;
+  height: 1.7vw;
+  padding-top: 0.7vw;
+  padding-left: 0.7vw;
+}
+
+.nodeJS{
+  width: 55vw;
+  height: 15vw;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+}

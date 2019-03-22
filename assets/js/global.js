@@ -7,7 +7,7 @@ function stickyMenuFunc(){
     if(window.innerWidth > window.innerHeight){
         stickyMenu.style.height = '5.2vw';
     }else{
-      stickyMenu.style.height = '17vw';
+      stickyMenu.style.height = '15.384vw';
     }
   }
   else {
