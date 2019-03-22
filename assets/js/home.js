@@ -11,7 +11,7 @@ function videoBreakPointsBaner(){
     myVideo.src = "assets/videos/videos-tablet/background-video-tablet.mp4";
   }
   if(window.innerWidth < 420){
-    myVideo.src = "assets/videos/videos-desktop/background-video-tablet.mp4";
+    myVideo.src = "assets/videos/videos-tablet/background-video-tablet.mp4";
   }
 }
 
