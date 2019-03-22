@@ -1182,6 +1182,8 @@ main{
 
   .blackLayerInside{
     text-align: center;
+    width: 100%;
+    left: 0;
   }
   .blackLayerInside h2{
     font-size:10.26vw;
@@ -1192,6 +1194,8 @@ main{
     width: auto;
     font-size: 3.4vw;
     margin-top: 0;
+    margin-left: 5%;
+    margin-right: 5%;
   }
   .readMoreDiv {
     font-size: 4.635vw;
