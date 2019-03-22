@@ -493,6 +493,9 @@ video{
     padding-top: 0.4vw;
     height: 15.384vw;
     display: block;
+    margin-left: 0.923vw;
+    margin-right: 0.923vw;
+    background: black;
   }
   .logo {
     width: 78.46vw;
@@ -501,6 +504,9 @@ video{
     top: 0;
     margin-top: 4vw;
     margin-bottom: 2vw;
+  }
+  .logoMobile{
+    background: rgb(217,218,220);
   }
   #searchID {
     font-size: 13vw;
@@ -532,7 +538,11 @@ video{
     background-color: none;
     box-shadow: none;
     border-bottom: 5.23vw solid rgb(217,218,220);
+    border-top: 2px solid rgb(217,218,220);
     margin-bottom: 5vw;
+  }
+  .videoDiv{
+    outline: 0;
   }
   .bodyHome .videoDiv h1{
     font-size: 9.23vw;
