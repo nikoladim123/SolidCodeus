@@ -1137,12 +1137,18 @@ main{
   filter: brightness(120%);
 }
 /* from the blog section end */
-
+/* hide desktop */
+.hideDesktop{
+  display: none;
+}
 
 /* MOBILE MEDIA */
 /* MOBILE MEDIA */
 /* MOBILE MEDIA */
 @media (orientation:portrait){
+  .hideDesktop{
+    display: block;
+  }
   .rectWorkImageBox{
     flex-direction: column;
   }
