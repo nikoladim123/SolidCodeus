@@ -1029,8 +1029,9 @@ main{
 .blogSection{
 }
 .blogSectionContainer{
+  overflow: hidden;
   padding-top: 0.1px;
-  height: 59.15vw;
+  /* min-height: 59.15vw; */
   background-color: rgb(216,218,224);
 }
 .blogSection h2{
@@ -1045,9 +1046,10 @@ main{
 }
 
 .blogArticle{
+  margin-bottom: 4vw;
   position: relative;
   width: 69.93vw;
-  height: 22.79vw;
+  min-height: 22.79vw;
   margin-left: 15.324vw;
   margin-top: 4.978vw;
   background-color: #fff;
@@ -1159,6 +1161,25 @@ main{
   }
   .imgBox::before {
     content: none;
+  }
+  /* recent projects */
+  .webDevelopment{
+    bottom: 0vw;
+    left: -60vw;
+  }
+
+  .webDevelopment p{
+    font-size: 8vw;
+  }
+  .narrowBG{
+    left: 30vw;
+  }
+  .homeDesign{
+    left: 60vw;
+    top:0;
+  }
+  .homeDesign a, .homeDesign span{
+    font-size:4.2vw;
   }
   /* what we do */
   .whatWeDoHtwo{
@@ -1284,5 +1305,78 @@ main{
   .svgArrow {
     width: 27vw !important;
     height: 26vw !important;
+  }
+
+  .discussNewIdeas{
+    height: 56.5vw;
+    background-size: 200% 200%;
+  }
+  .discussNewIdeas h2{
+    top: 4.629vw;
+    font-size: 4.3vw;
+  }
+  .contUsHearFromYou{
+    bottom: 23vw;
+    right: -3vw;
+  }
+  /* blog */
+  .blogSectionContainer{
+  }
+  .blogSection h2{
+    font-size: 8vw;
+  }
+  .blogSection h2 span{
+    font-size: 8vw;
+  }
+  .blogArticle{
+    width: 95vw;
+    margin-left: 2.5vw;
+    min-height: 132.79vw;
+  }
+  .screwContainer{
+    width:97vw;
+  }
+  .screwDiv{
+    width: 115%;
+  }
+  .authorDiv img {
+    width: 9.782vw;
+    height: 9.782vw;
+  }
+  .authorDiv p {
+    font-size: 3vw;
+    margin-left: 1vw;
+    color: rgb(101,102,104);
+  }
+  .blogSection h2{
+    margin-left: 2vw;
+  }
+  .blogArticle h3 {
+    top: 13vw;
+    font-size: 5.928vw;
+  }
+
+  .blogHttps {
+    width: 96.332vw;
+    height: 38.327vw;
+    top: 13vw;
+    left: -1vw;
+  }
+  .articleText {
+    font-size: 4.3vw;
+    color: black;
+    position: absolute;
+    top: 63vw;
+    left: 7vw;
+    width: 80.359vw;
+    text-align: justify;
+  }
+  .articleButtonReadMore {
+    width: 50%;
+    height: 8.928vw;
+    bottom: 2.415vw;
+    right: auto;
+    left: 25%;
+    font-size: 4.464vw;
   }
 }

@@ -11,7 +11,7 @@ function videoBreakPointsBaner(){
     myVideo.src = "assets/videos/videos-tablet/background-video-tablet.mp4";
   }
   if(window.innerWidth < 420){
-    myVideo.src = "assets/videos/videos-tablet/background-video-tablet.mp4";
+    myVideo.src = "assets/videos/videos-mobile/background-video-mobile.mp4";
   }
 }
 
@@ -128,9 +128,16 @@ function	mobParrotCall(){
 // webDevelopment text anim;
 var webDevelopment = document.getElementsByClassName('webDevelopment')[0];
 function webDevelopmentReveal(){
-	if(webDevelopment.getBoundingClientRect().y < window.innerHeight/100 *90){
-		webDevelopment.style.left = '8vw'
-	}
+  if(window.innerWidth >window.innerHeight){
+    if(webDevelopment.getBoundingClientRect().y < window.innerHeight/100 *90){
+      webDevelopment.style.left = '8vw'
+    }
+  }else{
+    if(webDevelopment.getBoundingClientRect().y < window.innerHeight/100 *90){
+      webDevelopment.style.left = '1vw'
+    }
+  }
+
 }
 
 // recent project hover
@@ -400,11 +407,17 @@ technologiesReadMoreDiv.addEventListener('mouseleave',function(){
 var discussNewIdeas = document.getElementsByClassName('discussNewIdeas')[0];
 
 function newIdeasParalaxFun(){
-  if(discussNewIdeas.getBoundingClientRect().y < window.innerHeight){
-    discussNewIdeas.style.backgroundPosition = "0 " + ((-discussNewIdeas.getBoundingClientRect().y/7) - discussNewIdeas.getBoundingClientRect().height/3) + "px";
+  if (window.innerWidth>window.innerHeight) {
+    if(discussNewIdeas.getBoundingClientRect().y < window.innerHeight){
+      discussNewIdeas.style.backgroundPosition = "0 " + ((-discussNewIdeas.getBoundingClientRect().y/7) - discussNewIdeas.getBoundingClientRect().height/3) + "px";
+    }
+  }else{
+    if(discussNewIdeas.getBoundingClientRect().y < window.innerHeight){
+      discussNewIdeas.style.backgroundPosition = "-25vw " + (100+(-discussNewIdeas.getBoundingClientRect().y/7) - discussNewIdeas.getBoundingClientRect().height/3) + "px";
+    }
   }
-}
 
+}
 // Discuss new projects contactUs LineANim
 // Discuss new projects contactUs LineANim
 // Discuss new projects contactUs LineANim
