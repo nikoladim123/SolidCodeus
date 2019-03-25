@@ -1354,6 +1354,7 @@ main{
   .blogArticle h3 {
     top: 13vw;
     font-size: 5.928vw;
+    margin-left: 0vw;
   }
 
   .blogHttps {
