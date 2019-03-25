@@ -438,7 +438,9 @@ contactUsMaintenanceDiscuss.addEventListener('mouseleave',function(){
 // window document events
 window.onload = function(){
   videoBreakPoints();
-  videoBreakPointsBaner();
+  setTimeout(function () {
+    videoBreakPointsBaner();
+  }, 300);
 }
 
 window.onresize = function(){
