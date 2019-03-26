@@ -1380,4 +1380,94 @@ main{
     left: 25%;
     font-size: 4.464vw;
   }
+  /* tecnhologies */
+  .technologies {
+    height: 100vh;
+  }
+  .technoPhone {
+    width: 56vh;
+    height: 101vh;
+    transform: rotate(19deg);
+    top: 0;
+    left: 0vh;
+  }
+  .technoMobileFlexContainer {
+    width: 63vw;
+    top: 124.5vw;
+    left: 18vw;
+  }
+  .technoFlexDiv img {
+    width: 14.8vw;
+    height: 15vw;
+  }
+  .technoFlexDiv p {
+    font-family: 'Montserrat-Light',serif;
+    /* color: rgb(122,127,117); */
+    font-size: 2.9vw;
+    text-align: center;
+    position: relative;
+    margin: 0;
+    /* margin-left: -1vw; */
+    margin-top: 3.2vw;
+  }
+  .technoMobileLittleGrid {
+    width: 59vw;
+    height: 51vw;
+    top: 61vw;
+    left: 19vw;
+  }
+  .wooImage {
+    width: 49vw;
+    height: 9vw;
+  }
+  .magentoImage {
+    width: 27vw;
+    height: 27vw;
+    top: -5.5vw;
+    left: -3vw;
+  }
+  .drupalImage {
+    width: 46vw;
+    height: 44vw;
+    top: -14.5vw;
+    left: -12.2vw;
+  }
+  .nodeDiv {
+    left: 8vw;
+    top: 13vw;
+  }
+  .nodeJS {
+    width: 38.11vw;
+    height: 38.3vw;
+  }
+  .nodeDiv p {
+    font-size: 3.9vw;
+    margin-top: -7vw;
+  }
+
+  .angularDiv {
+    left: 30.5vw;
+    top: 14vw;
+  }
+  .angularJS {
+    width: 37.11vw;
+    height: 37.3vw;
+  }
+  .angularDiv p {
+    font-size: 3.9vw;
+    margin-top: -7vw;
+  }
+
+  .reactDiv {
+    left: 49.7vw;
+    top: 14vw;
+  }
+  .reactJS {
+    width: 41.11vw;
+    height: 42.3vw;
+  }
+  .reactDiv p {
+    font-size: 3.9vw;
+    margin-top: -12vw;
+  }
 }
