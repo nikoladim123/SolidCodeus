@@ -183,7 +183,7 @@ video{
   width: 86.357vw;
   border: 1px solid white;
   background-color:rgb(217,218,220);
-  /* box-shadow: 0px 9.44vw 10vw -5.59vw rgba(0,0,0,0.55); */
+  box-shadow: 0px 9.44vw 5vw -5.59vw rgba(0,0,0,0.55);
 }
 
 .bodyHome .videoOverlay{
@@ -233,7 +233,7 @@ video{
   top: 16vw;
   position: absolute;
   color: white;
-  font-size: 4.444vw;
+  font-size: 4vw;
   font-family: 'Montserrat-Hairline',serif;
 }
 .bodyHome .videoDiv h1 span{
@@ -264,6 +264,7 @@ video{
   left: -6.445vw;
   bottom: 1.2vw;
   filter: brightness(100%);
+  box-shadow: 0px 0px 3.9vw 1.562vw rgba(255,177,42,0.3);
 }
 .bodyHome .getInTouchBtn:hover{
   cursor: pointer;
