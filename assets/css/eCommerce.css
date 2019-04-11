@@ -215,3 +215,14 @@ main{
     height: 90%;
   }
 }
+/* UI/UX body */
+/* UI/UX body */
+/* UI/UX body */
+.UIUXbody .videoDiv{
+  /* background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(75,80,236,1) 100%); */
+}
+
+#UIUXvid{
+  position: relative;
+  width: 100%;
+}
