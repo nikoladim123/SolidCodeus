@@ -25,7 +25,20 @@ var burgerMenuOverlayWhite = document.getElementsByClassName('burgerMenuOverlayW
 var burgerOverlayBlackBox = document.getElementsByClassName('burgerOverlayBlackBox')[0];
 var wholePageOverlay = document.getElementsByClassName('wholePageOverlay')[0];
 var closeBox = document.getElementsByClassName('closeBox')[0];
+var moreSticky = document.getElementById('moreSticky');
+var more = document.getElementById('more');
+
+
 var stickySwitch = 0;
+
+more.addEventListener('click',function(){
+  openMenu();
+})
+
+moreSticky.addEventListener('click',function(){
+  openMenu();
+})
+
 burgerDiv[0].addEventListener('click',function(){
   openMenu();
 })

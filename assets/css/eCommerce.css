@@ -14,7 +14,7 @@ header{
   height: 25.648vw;
   width: 86.357vw;
   border: 1px solid white;
-  box-shadow: 0px 9.44vw 10vw -5.59vw rgba(0,0,0,0.55);
+  box-shadow: 0px 9.44vw 5vw -5.59vw rgba(0,0,0,0.55);
   /* outline: 1.111vw solid #e0ddeb; */
 }
 .videoDiv img{
