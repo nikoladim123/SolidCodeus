@@ -28,7 +28,7 @@
   font-display: auto;
   src: url('../fonts/Montserrat-Black.otf') format('truetype');
 }
-
+/* popin */
 @font-face {
   font-family: 'Poppins-Black';
   font-display: auto;
@@ -43,6 +43,43 @@
   font-family: 'Poppins-ExtraLight';
   font-display: auto;
   src: url('../fonts/Poppins-ExtraLight.otf') format('truetype');
+}
+/* roboto */
+@font-face {
+  font-family: 'Roboto-Thin';
+  font-display: auto;
+  src: url('../fonts/roboto/Roboto-Thin.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Roboto-Light';
+  font-display: auto;
+  src: url('../fonts/roboto/Roboto-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Roboto-Regular';
+  font-display: auto;
+  src: url('../fonts/roboto/Roboto-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Roboto-Black';
+  font-display: auto;
+  src: url('../fonts/roboto/Roboto-Black.ttf') format('truetype');
+}
+/* play fair */
+@font-face {
+  font-family: 'PlayfairDisplay-Regular';
+  font-display: auto;
+  src: url('../fonts/playfair/PlayfairDisplay-Regular.otf') format('truetype');
+}
+@font-face {
+  font-family: 'PlayfairDisplay-Bold';
+  font-display: auto;
+  src: url('../fonts/playfair/PlayfairDisplay-Bold.otf') format('truetype');
+}
+@font-face {
+  font-family: 'PlayfairDisplay-BoldItalic';
+  font-display: auto;
+  src: url('../fonts/playfair/PlayfairDisplay-BoldItalic.otf') format('truetype');
 }
 
 body{
@@ -75,7 +112,7 @@ a{
 }
 /* sticky end */
 header{
-  background: linear-gradient(135deg, #e6b929 0%, #e0c366 100%);
+  background: linear-gradient(135deg, #f2b441 0%, #e49b13 100%);
 }
 /* nav start */
 .topBandLayer{
@@ -144,7 +181,7 @@ nav a:hover{
   transition: 0.4s;
   left: 0;
   position: relative;
-  background-color: rgb(255,252,7);
+  background-color: #f2b441;
   height: 0.296vw;
   border-top-left-radius: 14px;
   border-bottom-left-radius: 14px;
