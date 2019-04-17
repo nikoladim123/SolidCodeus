@@ -407,6 +407,7 @@ technologiesReadMoreDiv.addEventListener('mouseleave',function(){
 var discussNewIdeas = document.getElementsByClassName('discussNewIdeas')[0];
 
 function newIdeasParalaxFun(){
+
   if (window.innerWidth>window.innerHeight) {
     if(discussNewIdeas.getBoundingClientRect().y < window.innerHeight){
       discussNewIdeas.style.backgroundPosition = "0 " + ((-discussNewIdeas.getBoundingClientRect().y/7) - discussNewIdeas.getBoundingClientRect().height/3) + "px";
@@ -418,6 +419,7 @@ function newIdeasParalaxFun(){
   }
 
 }
+
 // Discuss new projects contactUs LineANim
 // Discuss new projects contactUs LineANim
 // Discuss new projects contactUs LineANim
@@ -432,6 +434,23 @@ contactUsMaintenanceDiscuss.addEventListener('mouseleave',function(){
 	maintenanceLineAnimDiscuss.style.width = '40%';
 	svgArrowDiscuss.style.filter = 'brightness(100%)';
 });
+
+
+// carousel logic
+// carousel logic
+// carousel logic
+var leftCarArrowBox = document.getElementsByClassName('leftCarArrowBox')[0];
+var rightCarArrowBox = document.getElementsByClassName('rightCarArrowBox')[0];
+var blogCarContainer = document.getElementsByClassName('blogCarContainer')[0];
+
+leftCarArrowBox.addEventListener('click',()=>{
+  blogCarContainer.style.left = '0vw';
+});
+
+rightCarArrowBox.addEventListener('click',()=>{
+  blogCarContainer.style.left = '-77vw';
+});
+
 
 // window document events
 // window document events

@@ -31,13 +31,13 @@ var more = document.getElementById('more');
 
 var stickySwitch = 0;
 
-more.addEventListener('click',function(){
-  openMenu();
-})
-
-moreSticky.addEventListener('click',function(){
-  openMenu();
-})
+// more.addEventListener('click',function(){
+//   openMenu();
+// })
+//
+// moreSticky.addEventListener('click',function(){
+//   openMenu();
+// })
 
 burgerDiv[0].addEventListener('click',function(){
   openMenu();
