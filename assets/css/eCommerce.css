@@ -1,6 +1,6 @@
 header{
   padding-top: 0.1px;
-  background: linear-gradient(135deg, #e6b929 0%, #e0c366 100%);
+  /* background: linear-gradient(135deg, #e6b929 0%, #e0c366 100%); */
   background-size: 100% 100%;
   position: relative;
   height: calc(100vh + 6vw);
@@ -13,7 +13,7 @@ header{
   position: relative;
   height: 25.648vw;
   width: 86.357vw;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   box-shadow: 0px 9.44vw 5vw -5.59vw rgba(0,0,0,0.55);
   /* outline: 1.111vw solid #e0ddeb; */
 }

@@ -150,6 +150,7 @@ nav{
   align-items: center;
   position: relative;
   top: 0.2vw;
+  margin-right: 6vw;
 }
 .navigation a{
   transition: 0.4s;
@@ -160,7 +161,7 @@ nav{
   padding: 5px 10px;
 }
 nav a:hover{
-  color: rgb(253,216,47);
+  color: #f2b441;
 }
 #searchID{
   font-size: 3vw;

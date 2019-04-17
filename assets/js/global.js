@@ -20,7 +20,7 @@ function stickyMenuFunc(){
 // burger overlay logic
 // burger overlay logic
 //burgerMenu
-var burgerDiv = document.getElementsByClassName('burgerMenu');
+// var burgerDiv = document.getElementsByClassName('burgerMenu');
 var burgerMenuOverlayWhite = document.getElementsByClassName('burgerMenuOverlayWhite')[0];
 var burgerOverlayBlackBox = document.getElementsByClassName('burgerOverlayBlackBox')[0];
 var wholePageOverlay = document.getElementsByClassName('wholePageOverlay')[0];
@@ -39,12 +39,13 @@ var stickySwitch = 0;
 //   openMenu();
 // })
 
-burgerDiv[0].addEventListener('click',function(){
-  openMenu();
-})
-burgerDiv[1].addEventListener('click',function(){
-  openMenu();
-})
+// burgerDiv[0].addEventListener('click',function(){
+//   openMenu();
+// })
+// burgerDiv[1].addEventListener('click',function(){
+//   openMenu();
+// })
+
 function openMenu(){
   stickySwitch =1;
   burgerMenuOverlayWhite.style.width = "102%";

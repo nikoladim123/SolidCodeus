@@ -170,7 +170,9 @@ main{
 /* main end */
 /* whatwe do text section */
 .whatWeDoTextSection{
+  padding: 0.1px;
   text-align: center;
+  position: relative;
 }
 
 .whatWeDoTextSection p{
@@ -809,7 +811,7 @@ main{
 /* discus new ideas section end */
 /* our workflow section start */
 .workflow{
-      background-color: #e0ddeb;
+  background-color: #f9f9f9;
   overflow: hidden;
   width: 100%;
   position: relative;
@@ -966,7 +968,7 @@ main{
 /* our workflow section end */
 /* bryon FeedBack Section start*/
 .bryonFeedBackSection{
-  background-color: #e0ddeb;
+  background-color: #f9f9f9;
   padding: 0.1px;
 }
 
@@ -1439,10 +1441,13 @@ footer{
 /* fixed contact us */
 
 .fixedSideContactUs{
-  position: fixed;
+  z-index: 4;
+  position: absolute;
   left: -10.7vw;
+  top: 1vw;
+  /* top: 42%; */
+  top: 139vw;
   height: 1vw;
-  top: 42%;
   display: flex;
   align-items: center;
   transform: rotate(90deg);
@@ -1460,6 +1465,8 @@ footer{
   font-family: 'Roboto-Bold';
   font-size: 1.333vw;
   margin-left: 0.888vw;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 

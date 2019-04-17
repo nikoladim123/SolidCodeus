@@ -452,6 +452,22 @@ rightCarArrowBox.addEventListener('click',()=>{
 });
 
 
+// contact us fixed /apsolute
+// contact us fixed /apsolute
+// contact us fixed /apsolute
+var fixedSideContactUs = document.getElementsByClassName('fixedSideContactUs')[0];
+var whatWeDoTextSection = document.getElementsByClassName('whatWeDoTextSection')[0];
+function contactUsFun() {
+  if(whatWeDoTextSection.getBoundingClientRect().top <= window.innerHeight /100 * 7){
+    fixedSideContactUs.style.position = 'fixed';
+    fixedSideContactUs.style.top = "22vw";
+  }else{
+    fixedSideContactUs.style.position = 'absolute';
+    fixedSideContactUs.style.top = "139vw";
+  }
+  console.log(whatWeDoTextSection.getBoundingClientRect().top);
+}
+
 // window document events
 // window document events
 // window document events
@@ -466,6 +482,7 @@ window.onresize = function(){
 }
 
 window.onscroll = function(){
+  contactUsFun();
   mobVidCall();
   mobParrotCall();
   webDevelopmentReveal();
