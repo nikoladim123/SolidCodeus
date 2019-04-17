@@ -173,13 +173,22 @@ main{
   text-align: center;
 }
 
+.whatWeDoTextSection p{
+  font-family: 'Roboto-Light';
+  font-size: 2.666vw
+}
+
 .whatWeDoHtwo{
-  font-family: 'Montserrat-Light';
+  font-family: 'Roboto-Thin';
   text-align: center;
   /* margin-top: 14vw; */
   /* margin-bottom: 3.5vw; */
   font-size: 2.5vw;
 }
+.whatWeDoHtwo span{
+  font-family: 'Roboto-Black';
+}
+
 /* what we do section start */
 /* four image grid */
 .fourImgGrid{
@@ -1431,7 +1440,7 @@ footer{
 .fixedSideContactUs{
   /* border: 1px solid red; */
   position: fixed;
-  left: -9.15vw;
+  left: -10.15vw;
   /* width: 1vw; */
   height: 1vw;
   top: 42%;
