@@ -8,6 +8,7 @@ header{
 
 .videoDiv{
   padding-top: 0.1px;
+  border: 1px solid red;
   top: 0.9vw;
   margin-left: 6.11vw;
   position: relative;
@@ -16,6 +17,7 @@ header{
   /* border: 1px solid white; */
   box-shadow: 0px 9.44vw 5vw -5.59vw rgba(0,0,0,0.55);
   /* outline: 1.111vw solid #e0ddeb; */
+  overflow: hidden;
 }
 .videoDiv img{
   position: relative;

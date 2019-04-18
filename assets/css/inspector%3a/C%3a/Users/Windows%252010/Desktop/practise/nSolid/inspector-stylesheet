@@ -1,0 +1,11 @@
+.purpSkewtwo {}
+
+.purpSkewtwo {}.purpSkewtwo {
+    width: 100vw;
+    height: 50vw;
+    background: rgb(83,19,77);
+    transform: rotateZ(-20deg);
+    position: absolute;
+    left: -1vw;
+    top: 16vw;
+}

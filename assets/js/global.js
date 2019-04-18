@@ -29,7 +29,7 @@ var moreSticky = document.getElementById('moreSticky');
 var more = document.getElementById('more');
 
 
-var stickySwitch = 0;
+// var stickySwitch = 0;
 
 // more.addEventListener('click',function(){
 //   openMenu();
@@ -46,38 +46,38 @@ var stickySwitch = 0;
 //   openMenu();
 // })
 
-function openMenu(){
-  stickySwitch =1;
-  burgerMenuOverlayWhite.style.width = "102%";
-  stickyMenu.style.height = '0vw';
-  setTimeout(function(){
-    if(window.innerWidth > window.innerHeight){
-    burgerOverlayBlackBox.style.width = '30vw';
-  }else{
-    burgerOverlayBlackBox.style.width = '75vw';
-  }
-    wholePageOverlay.style.filter = 'blur(10px)';
-  },1000)
-}
+// function openMenu(){
+//   stickySwitch =1;
+//   burgerMenuOverlayWhite.style.width = "102%";
+//   stickyMenu.style.height = '0vw';
+//   setTimeout(function(){
+//     if(window.innerWidth > window.innerHeight){
+//     burgerOverlayBlackBox.style.width = '30vw';
+//   }else{
+//     burgerOverlayBlackBox.style.width = '75vw';
+//   }
+//     wholePageOverlay.style.filter = 'blur(10px)';
+//   },1000)
+// }
 
-closeBox.addEventListener('click',function(){
-  closeBoxFun();
-});
-function closeBoxFun(){
-  stickySwitch = 0;
-  wholePageOverlay.style.filter = 'blur(0px)';
-  setTimeout(function(){
-    burgerMenuOverlayWhite.style.width = "0%";
-    burgerOverlayBlackBox.style.width = '0vw';
-  },700)
-}
+// closeBox.addEventListener('click',function(){
+//   closeBoxFun();
+// });
+// function closeBoxFun(){
+//   stickySwitch = 0;
+//   wholePageOverlay.style.filter = 'blur(0px)';
+//   setTimeout(function(){
+//     burgerMenuOverlayWhite.style.width = "0%";
+//     burgerOverlayBlackBox.style.width = '0vw';
+//   },700)
+// }
 //<a> slider close on click
-var closeMeClass = document.getElementsByClassName('closeMeClass');
-for(var i=0;i<closeMeClass.length;i++){
-  closeMeClass[i].addEventListener('click',function(){
-    closeBoxFun();
-  });
-}
+// var closeMeClass = document.getElementsByClassName('closeMeClass');
+// for(var i=0;i<closeMeClass.length;i++){
+//   closeMeClass[i].addEventListener('click',function(){
+//     closeBoxFun();
+//   });
+// }
 
 // global window on scroll
 // global window on scroll
