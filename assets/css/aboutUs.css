@@ -1,0 +1,51 @@
+.videoDiv{
+  perspective: 10vw;
+}
+.calculatorScreen {
+  width: 1.7vw;
+  height: 0.6vw;
+  background: rgba(240,0,0,0.8);
+  position: absolute;
+  top: 18.4vw;
+  left: 57.21vw;
+  animation-name: calculatorScreen;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes calculatorScreen {
+  0%{
+    background: rgba(240,0,0,0.8);
+  }
+  100%{
+    background: rgba(240,0,0,0);
+  }
+}
+
+.solidCodeUsBlog{
+  display: flex;
+}
+
+.steam {
+  width: 3vw;
+  height: 4vw;
+  position: absolute;
+  top: 15vw;
+  left: 28vw;
+  background-size: 100% 100%;
+  background-image: url('../images/desktop/aboutUs/steamOne.png');
+  opacity: 1;
+  animation-name: steam;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes steam {
+  0%{
+    opacity: 0.3;
+  }
+  100%{
+    opacity: 1;
+  }
+}

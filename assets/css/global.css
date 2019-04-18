@@ -259,7 +259,7 @@ video{
   transition: 1s;
   margin-top: 2.5vw;
   margin-left: 3.81vw;
-  font-family: 'Montserrat-Bold',serif;
+  font-family: 'Roboto-Bold';
   color: white;
   font-size: 1.464vw;
 }
@@ -277,19 +277,20 @@ video{
   position: absolute;
   color: white;
   font-size: 4vw;
-  font-family: 'Montserrat-Hairline',serif;
+  font-family: 'Roboto-Thin';
+  font-weight: 100;
 }
 .bodyHome .videoDiv h1 span{
-  font-family: 'Poppins-Black',serif;
+  font-family: 'Roboto-Black';
 }
 
 .bodyHome .highPerformance{
   font-family: 'Pacifico',serif;
   position: absolute;
   width: 100%;
-  bottom: 1vw;
+  bottom: 2vw;
   text-align: center;
-  font-size: 3.36vw;
+  font-size: 3vw;
   color: white;
 }
 .bodyHome .getInTouchBtn{

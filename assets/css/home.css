@@ -1444,7 +1444,7 @@ footer{
   z-index: 4;
   position: absolute;
   left: -10.7vw;
-  top: 1vw;
+  /* top: 1vw; */
   /* top: 42%; */
   top: 139vw;
   height: 1vw;
