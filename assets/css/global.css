@@ -70,6 +70,12 @@
   font-display: auto;
   src: url('../fonts/roboto/Roboto-Black.ttf') format('truetype');
 }
+@font-face {
+  font-family: 'Roboto-BlackItalic';
+  font-display: auto;
+  src: url('../fonts/roboto/Roboto-BlackItalic.ttf') format('truetype');
+}
+
 /* play fair */
 @font-face {
   font-family: 'PlayfairDisplay-Regular';
@@ -154,7 +160,7 @@ nav{
 }
 .navigation a{
   transition: 0.4s;
-  font-family: 'Montserrat-Light',serif;
+  font-family: 'Roboto-Regular';
   color: rgb(57,61,78);
   font-size: 1.171vw;
   text-decoration: none;
@@ -276,8 +282,8 @@ video{
   top: 16vw;
   position: absolute;
   color: white;
-  font-size: 4vw;
-  font-family: 'Roboto-Thin';
+  font-size: 4.81vw;
+  font-family: 'Roboto-Black';
   font-weight: 100;
 }
 .bodyHome .videoDiv h1 span{

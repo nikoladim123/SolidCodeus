@@ -130,7 +130,7 @@ var webDevelopment = document.getElementsByClassName('webDevelopment')[0];
 function webDevelopmentReveal(){
   if(window.innerWidth >window.innerHeight){
     if(webDevelopment.getBoundingClientRect().y < window.innerHeight/100 *90){
-      webDevelopment.style.left = '8vw'
+      webDevelopment.style.left = '6.3vw'
     }
   }else{
     if(webDevelopment.getBoundingClientRect().y < window.innerHeight/100 *90){
@@ -465,7 +465,7 @@ function contactUsFun() {
     fixedSideContactUs.style.position = 'absolute';
     fixedSideContactUs.style.top = "139vw";
   }
-  console.log(whatWeDoTextSection.getBoundingClientRect().top);
+  // console.log(whatWeDoTextSection.getBoundingClientRect().top);
 }
 
 // window document events

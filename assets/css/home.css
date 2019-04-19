@@ -67,16 +67,17 @@
 }
 
 .webDevelopment p{
-  font-size: 4.444vw;
+  font-size: 5.925vw;
   margin: 0;
   color: white;
 }
 .webDevelopment p:nth-child(1){
   margin-bottom: -1.2vw;
-  font-family: 'Montserrat-Hairline',serif;
+  font-family: 'Roboto-Thin';
+  font-weight: 100;
 }
 .webDevelopment p:nth-child(2){
-  font-family: 'Montserrat-Black',serif;
+  font-family: 'Roboto-Black';
 }
 /* header end */
 /* main start */
@@ -188,8 +189,8 @@ main{
   margin-bottom: 4.888vw;
   font-size: 3.555vw;
 }
-.whatWeDoHtwo span{
-  font-family: 'Roboto-Black';
+.whatWeDoHtwo h2{
+  font-family: 'Roboto-Regular';
 }
 
 /* what we do section start */
@@ -246,13 +247,14 @@ main{
 
 .gridParaBox p:nth-child(1){
   margin: 0;
-  font-family: 'Montserrat-Light';
+  font-family: 'Roboto-Thin';
+  font-weight: 100;
   color: white;
   font-size: 4.7vw;
 }
 .gridParaBox p:nth-child(2){
   margin: 0;
-  font-family: 'Montserrat-Black';
+  font-family: 'Roboto-Bold';
   color: white;
   font-size: 4.7vw;
 }
@@ -410,37 +412,37 @@ main{
 
 .supMain{
   position: absolute;
-  right: 9.7vw;
+  right: 14.7vw;
   top: 4.2vw;
   height: auto;
 }
 .supMain h2{
   margin: 0;
   margin-top: 1vw;
-  font-size: 5.8vw;
-  font-family: 'Montserrat-Hairline';
+  font-size: 5.925vw;
+  font-family: 'Roboto-Thin';
   font-weight: 100;
 }
 .supMain h2 span{
-  font-family: 'Montserrat-Black';
+  font-family: 'Roboto-Black';
   position: relative;
   top: -1vw;
 }
 
 .supMainText{
-  font-family: 'Montserrat-Regular';
-  font-size: 1.45vw;
+  font-family: 'Roboto-Regular';
+  font-size: 1.4814vw;
   position: absolute;
   margin: 0;
   top: 18.9vw;
-  right: 9.3vw;
+  right: 13.3vw;
 }
 .feedBackSingle{
   border: 1px solid rgb(162,202,152);
   background-color: rgba(162,202,152,0.3);
   position: absolute;
   bottom: 17.5vw;
-  right: 5vw;
+  right: 9vw;
   padding-top: 1.186vw;
   padding-left: 1.11vw;
   padding-right: 1.111vw;
@@ -470,7 +472,7 @@ main{
 .feedBackText p{
   margin-left: 4.8924vw;
   font-size: 1.05vw;
-  font-family: 'Montserrat-Light';
+  font-family: 'Roboto-Regular';
   line-height: 1.2;
   font-weight: 800;
 }
@@ -752,7 +754,7 @@ main{
   color: rgb(51,51,51);
   margin: 0;
   font-size: 2.9vw;
-  font-family: 'Montserrat-Light';
+  font-family: 'Roboto-Light';
 }
 
 .technologiesArticle{
@@ -762,7 +764,7 @@ main{
 }
 .technologiesArticle p{
   margin: 0;
-  font-family: 'Montserrat-Light';
+  font-family: 'Roboto-Light';
   color: rgb(153,153,153);
   font-size: 1vw;
 }
@@ -801,7 +803,7 @@ main{
 }
 .discussNewIdeas h2{
   position: relative;
-  font-family: 'Montserrat-Black',serif;
+  font-family: 'Roboto-Black';
   color: white;
   margin: 0;
   top: 9.629vw;
@@ -879,9 +881,9 @@ main{
   bottom: 0;
 }
 .skewBoxInside h3{
-  font-family: 'PlayfairDisplay-BoldItalic',serif;
+  font-family: 'Roboto-BlackItalic';
   color: white;
-  font-size: 4.392vw;
+  font-size: 4.4444vw;
   line-height: 0.9;
   margin: 0;
   margin-left: 7.125vw;
@@ -935,7 +937,7 @@ main{
 
 .findOutMore p{
   color: white;
-  font-family: 'PlayfairDisplay-Regular';
+  font-family: 'Roboto-Regular';
   font-size: 1.756vw;
   margin-right: 1vw;
 }
@@ -998,13 +1000,13 @@ main{
   height: 9.66vw;
 }
 .bryonProf p{
-  font-family: 'PlayfairDisplay-Regular';
+  font-family: 'Roboto-Regular';
   font-size: 1.024vw;
   color: rgb(236,181,27);
   margin-top: -2vw;
 }
 .bryonProf a{
-  font-family: 'PlayfairDisplay-Regular';
+  font-family: 'Roboto-Regular';
   text-decoration: none;
   color: rgb(236,181,27);
   font-size: 0.878vw;
@@ -1013,7 +1015,7 @@ main{
 .feedBackContainer h2{
   margin: 0;
   margin-top: 4.17vw;
-  font-family: 'PlayfairDisplay-Bold';
+  font-family: 'Roboto-Regular';
   font-size: 2.63vw;
   color: white;
   text-align: center;
@@ -1096,6 +1098,7 @@ main{
   margin-bottom: -1vw;
   /* font-family: 'Montserrat-ExtraLight',serif; */
   font-family: 'Roboto-Thin';
+  font-weight: 100;
 }
 .blogSection h2 span{
   /* font-size: 3.51vw; */
@@ -1170,20 +1173,20 @@ main{
 }
 
 .blogArticle h3 {
-  font-family: 'PlayfairDisplay-Bold';
+  font-family: 'Roboto-Black';
   margin: 0;
-  margin-left: 10.4vw;
+  margin-left: 6.4vw;
   position: absolute;
   width: 100%;
   text-align: center;
   top: 2vw;
-  font-size: 2.222vw;
+  font-size: 2.666vw;
 }
 .articleText{
   /* border: 1px solid; */
   /* font-family: 'Montserrat-ExtraLight',serif; */
   font-family: 'Roboto-Regular';
-  font-size: 1.111vw;
+  font-size: 1.333vw;
   color: rgb(119,119,119);
   position: absolute;
   top: 7vw;
@@ -1312,7 +1315,7 @@ footer{
 }
 
 .AboutUs h2{
-  font-family: 'Montserrat-Black';
+  font-family: 'Roboto-Black';
   color:hsla(0,0%,100%,.5);
   font-size:2.48vw;
 }
@@ -1323,7 +1326,7 @@ footer{
   border: none;
 }
 .AboutUs p{
-  font-family: 'Montserrat-Light';
+  font-family: 'Roboto-Light';
   font-size: 1.317vw;
   color: white;
   text-align: justify;
@@ -1359,12 +1362,12 @@ footer{
 }
 .contactUs h2{
   font-size: 6vh;
-  font-family: 'Montserrat-Black';
+  font-family: 'Roboto-Black';
   margin: 0;
   color: white;
 }
 .contactUs h4{
-  font-family: 'Montserrat-Light';
+  font-family: 'Roboto-Light';
   font-size: 2vh;
   font-weight: 400;
   color: white;
@@ -1432,7 +1435,7 @@ footer{
 }
 
 .footDiv p{
-  font-family: 'Montserrat-Light';
+  font-family: 'Roboto-Light';
   font-size: 0.8vw;
   font-weight: 400;
   color: white;
