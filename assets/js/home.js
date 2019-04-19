@@ -444,11 +444,17 @@ var rightCarArrowBox = document.getElementsByClassName('rightCarArrowBox')[0];
 var blogCarContainer = document.getElementsByClassName('blogCarContainer')[0];
 
 leftCarArrowBox.addEventListener('click',()=>{
+  if(window.innerWidth > window.innerHeight){
+    blogCarContainer.style.left = '0vw';
+  }else
   blogCarContainer.style.left = '0vw';
 });
 
 rightCarArrowBox.addEventListener('click',()=>{
-  blogCarContainer.style.left = '-77vw';
+  if(window.innerWidth > window.innerHeight){
+    blogCarContainer.style.left = '-77vw';
+  }else
+  blogCarContainer.style.left = '-105vw';
 });
 
 

@@ -108,7 +108,7 @@ main{
   top: 4vw;
 }
 .homeDesign a,.homeDesign span{
-  font-family: 'Montserrat-Bold',serif;
+  font-family: 'Roboto-Bold';
   color: white;
   text-decoration: none;
   font-size: 1.2vw;
@@ -257,6 +257,30 @@ main{
   font-family: 'Roboto-Bold';
   color: white;
   font-size: 4.7vw;
+}
+
+.gear {
+  width: 10%;
+  height: 8vh;
+  background-image: url('../images/desktop/SEO/gearOne.png');
+  background-size: 100% 100%;
+  position: absolute;
+  left: 48.5%;
+  top: 15vh;
+  transform: rotate(0deg);
+  animation-name: gear;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes gear {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
 }
 
 .blackTextLayer{
@@ -951,6 +975,9 @@ main{
   justify-content: center;
   align-items: center;
 }
+.findMoreButOutside:hover{
+  cursor: pointer;
+}
 .findMoreBut{
   transition: 0.4s;
   border-radius: 50%;
@@ -1083,6 +1110,7 @@ main{
   background: #f9f9f9;
   padding: 0.1px;
 }
+
 .blogSectionContainer{
   position: relative;
   overflow: hidden;
@@ -1334,8 +1362,8 @@ footer{
 
 .meetTheTeam{
   transition: 0.4s;
-  font-family: 'Montserrat-Light';
-  font-size: 1.464vw;
+  font-family: 'Roboto-Light';
+  font-size: 1.564vw;
   color: white;
   width: 17.3vw;
   height: 4.392vw;
@@ -1553,6 +1581,10 @@ footer{
   .gridParaBox p:nth-child(2){
     font-size: 10.7vw;
   }
+  .gear{
+    height: 6vh;
+    top: 8vh;
+  }
 
   .blackLayerInside{
     text-align: center;
@@ -1667,7 +1699,13 @@ footer{
     right: -3vw;
   }
   /* blog */
+  .carBigContainer {
+    height: 150vw;
+    width: 100%;
+    left: auto;
+  }
   .blogSectionContainer{
+    min-height: 152.15vw;
   }
   .blogSection h2{
     font-size: 8vw;
@@ -1697,7 +1735,7 @@ footer{
     color: rgb(101,102,104);
   }
   .blogSection h2{
-    margin-left: 2vw;
+    /* margin-left: 0vw; */
   }
   .blogArticle h3 {
     top: 13vw;
@@ -1817,5 +1855,20 @@ footer{
   .reactDiv p {
     font-size: 3.9vw;
     margin-top: -12vw;
+  }
+  .AboutUs h2{
+    font-size: 7.5vw;
+  }
+  .AboutUs p{
+    font-size: 3.2vw;
+  }
+
+  .meetTheTeam {
+    font-size: 3.564vw;
+    width: 33vw;
+    height: 9.392vw;
+    border-radius: 6vw;
+    left: -15vw;
+    margin-top: 6vh;
   }
 }
