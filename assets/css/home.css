@@ -529,6 +529,8 @@ main{
   margin:0;
 }
 .svgArrow{
+  width: 5vw;
+  height: 5vw;
   transition: 1s;
   margin-top: 0.7vw;
   filter: brightness(100%);
