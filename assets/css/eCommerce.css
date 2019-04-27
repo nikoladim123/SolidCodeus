@@ -229,3 +229,142 @@ main{
   position: relative;
   width: 100%;
 }
+
+
+/* MEET THE TEAM */
+/* MEET THE TEAM */
+/* MEET THE TEAM */
+
+.meetTheTeam .purpOverlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(137,97,255,0.6);
+}
+.meetTheTeam .purpOverlayTwo{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8.81481vw;
+  background-color: rgba(137,97,255,0.6);
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+}
+.meetTheTeam h1{
+  font-size: 2.2222vw;
+  font-family: 'Roboto-Light';
+  color: white;
+}
+
+.meetTheTeamApplyButton{
+  font-family: 'Roboto-Bold';
+  color: white;
+  width: 11.4814vw;
+  height: 2.518vw;
+  border-radius: 1vw;
+  background-color: rgba(240,177,59);
+  border:2px solid rgb(247,217,163);
+  font-size: 1.333vw;
+}
+.meetTheTeam .narrowBG{
+  background-color: rgb(147,146,219);
+}
+
+.meetTheTeam main{
+  background-color: rgb(147,146,219);
+}
+.meetTheTeam .Cyrus,.meetTheTeam .sara{
+  position: relative;
+  min-height: 50vw;
+  margin-bottom: 5vw;
+}
+.meetTheTeam .sara{
+  margin-top: 6.65vw;
+}
+
+.meetTheTeam .redSquareOne{
+  position: absolute;
+  width: 31.6296vw;
+  height: 25.1111vw;
+  top: 3.03703vw;
+  left: 2.7407vw;
+  background-color: rgb(245,45,26);
+}
+
+.mebmerNameBox{
+  width: 18.29629vw;
+  height: 37.0370vw;
+  background-color: rgb(97,79,150);
+  top: 15.3333vw;
+  left: 39.3333vw;
+  position: absolute;
+}
+
+.mebmerNameBox h2{
+  font-size: 3.5555vw;
+  writing-mode:tb-rl;
+  font-family: 'Roboto-Black';
+  color: white;
+  margin-left: 5vw;
+  margin-top: 1.5vw;
+}
+
+.mebmerNameBox p{
+  font-family: 'Roboto-Bold';
+  font-size: 1.3333vw;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  margin: 1vw;
+}
+
+.memberPicutre{
+  position: absolute;
+  width: 37.0370vw;
+  height: 37.0370vw;
+  top: 11.4814vw;
+  left: 7.1851vw;
+}
+
+
+.memberPicutre img{
+  width: 100%;
+  height: 100%;
+}
+
+.sideText{
+  /* border: 1px solid blue; */
+  width: 27.4814vw;
+  position: absolute;
+  right: 6.2962vw;
+  top: 17.0370vw;
+  color: rgb(56,29,109);
+}
+.sideText p{
+  font-family: 'Roboto-Regular';
+  font-size: 1.629vw;
+  text-align: justify;
+}
+.sideText h3{
+  font-family: 'Roboto-Bold';
+  font-size: 2.222vw;
+}
+
+/* animboxes */
+.redQuareAnimBoxOne,.mebmerNameBoxAnimBox,.memberPicutreAnimBox,.sideTextAnimBox{
+  transition: 1s;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(244,244,244);
+  /* background: green; */
+  top: 0;
+}
+.memberPicutreAnimBox{
+  right: 0;
+}
