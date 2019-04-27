@@ -304,6 +304,9 @@ main{
   left: 39.3333vw;
   position: absolute;
 }
+.sara .mebmerNameBox{
+  background-color: rgb(245,45,26);
+}
 
 .mebmerNameBox h2{
   font-size: 3.5555vw;
@@ -314,6 +317,7 @@ main{
   margin-top: 1.5vw;
 }
 
+
 .mebmerNameBox p{
   font-family: 'Roboto-Bold';
   font-size: 1.3333vw;
@@ -322,6 +326,7 @@ main{
   bottom: 0;
   margin: 1vw;
 }
+
 
 .memberPicutre{
   position: absolute;
@@ -350,9 +355,15 @@ main{
   font-size: 1.629vw;
   text-align: justify;
 }
+.sara .sideText p{
+  color:rgb(245,45,26);
+}
 .sideText h3{
   font-family: 'Roboto-Bold';
   font-size: 2.222vw;
+}
+.sara .sideText h3{
+  color:rgb(245,45,26);
 }
 
 /* animboxes */
