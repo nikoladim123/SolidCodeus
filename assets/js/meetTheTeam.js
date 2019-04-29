@@ -21,8 +21,8 @@ function cyrusRevealAnimFun() {
   }
 }
 
-// sara
-function saraRevealAnimFun() {
+// sarvesh
+function sarveshRevealAnimFun() {
   if(redQuareAnimBoxOne[1].getBoundingClientRect().top - window.innerHeight <= -(window.innerHeight/100 * 20) ){
     redQuareAnimBoxOne[1].style.width = '0%';
   }
@@ -37,7 +37,24 @@ function saraRevealAnimFun() {
   }
 }
 
+// sara
+function saraRevealAnimFun() {
+  if(redQuareAnimBoxOne[2].getBoundingClientRect().top - window.innerHeight <= -(window.innerHeight/100 * 20) ){
+    redQuareAnimBoxOne[2].style.width = '0%';
+  }
+  if(mebmerNameBoxAnimBox[2].getBoundingClientRect().top - window.innerHeight <= -(window.innerHeight/100 * 20) ){
+    mebmerNameBoxAnimBox[2].style.width = '0%';
+  }
+  if(memberPicutreAnimBox[2].getBoundingClientRect().top - window.innerHeight <= -(window.innerHeight/100 * 20) ){
+    memberPicutreAnimBox[2].style.width = '0%';
+  }
+  if(sideTextAnimBox[2].getBoundingClientRect().top - window.innerHeight <= -(window.innerHeight/100 * 20) ){
+    sideTextAnimBox[2].style.height = '0%';
+  }
+}
+
 window.onscroll = ()=>{
   cyrusRevealAnimFun();
+  sarveshRevealAnimFun();
   saraRevealAnimFun();
 }
