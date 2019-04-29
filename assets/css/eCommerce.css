@@ -307,6 +307,29 @@ main{
 .sara .mebmerNameBox{
   background-color: rgb(245,45,26);
 }
+.profileButton{
+  position: absolute;
+  width: 4.74vw;
+  height: 4.74vw;
+  border-radius: 50%;
+  background-color: rgb(202,52,37);
+  right: 1.481vw;
+  bottom: 4.74vw;;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profTriangleBlack{
+  /* background: black; */
+  margin-top: 4vw;
+  width: 0vw;
+  height: 0vw;
+  /* border-radius: 50%; */
+  border: 2vw solid black;
+  border-bottom: 3vw solid transparent;
+  border-left: 2vw solid transparent;
+  border-right: 2vw solid transparent;
+}
 
 .mebmerNameBox h2{
   font-size: 3.5555vw;
