@@ -305,9 +305,7 @@ main{
   left: 39.3333vw;
   position: absolute;
 }
-.sara .mebmerNameBox{
-  background-color: rgb(245,45,26);
-}
+
 .profileButton{
   position: absolute;
   width: 4.74vw;
@@ -402,6 +400,9 @@ main{
 #sarvesh .profileButton{
   background-color: rgba(206,147,196,0.5);
 }
+#sarvesh .mebmerNameBox{
+  background-color: rgb(160,127,213);
+}
 
 
 #sara .redSquareOne{
@@ -409,6 +410,9 @@ main{
 }
 #sara .profileButton{
   background-color: rgb(202,52,37);
+}
+#sara .mebmerNameBox{
+  background-color: rgb(245,45,26);
 }
 
 /* animboxes */
