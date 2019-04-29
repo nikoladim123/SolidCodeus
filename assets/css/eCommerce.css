@@ -313,7 +313,7 @@ main{
   border-radius: 50%;
   background-color: rgb(202,52,37);
   background-color: #e068a4;
-  opacity: 0.5;
+  /* opacity: 0.5; */
   right: 1.481vw;
   bottom: 4.74vw;;
   display: flex;
@@ -393,6 +393,9 @@ main{
 #cyrus .redSquareOne{
   background-color: #e068a4;
 }
+#cyrus .profileButton{
+  background-color: rgba(164,78,152,0.5);
+}
 
 #sarvesh .redSquareOne{
   background-color: rgb(206,147,196);
@@ -409,7 +412,7 @@ main{
   background-color: rgb(245,45,26);
 }
 #sara .profileButton{
-  background-color: rgb(202,52,37);
+  background-color: rgba(202,52,37,0.5);
 }
 #sara .mebmerNameBox{
   background-color: rgb(245,45,26);
