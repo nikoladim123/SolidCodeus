@@ -293,7 +293,7 @@ main{
   height: 25.1111vw;
   top: 3.03703vw;
   left: 2.7407vw;
-  background-color: rgb(245,45,26);
+  background-color: #e068a4;
 }
 
 .mebmerNameBox{
@@ -312,7 +312,8 @@ main{
   width: 4.74vw;
   height: 4.74vw;
   border-radius: 50%;
-  background-color: rgb(202,52,37);
+  /* background-color: rgb(202,52,37); */
+  background-color: #e068a4;
   right: 1.481vw;
   bottom: 4.74vw;;
   display: flex;
