@@ -314,6 +314,7 @@ main{
   border-radius: 50%;
   /* background-color: rgb(202,52,37); */
   background-color: #e068a4;
+  opacity: 0.5;
   right: 1.481vw;
   bottom: 4.74vw;;
   display: flex;
