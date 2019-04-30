@@ -23,6 +23,33 @@ header{
   height: 100%;
 }
 
+.bigConnectionsBox{
+  position: absolute;
+  width: 44.1%;
+  height: 69.423%;
+  top: 1.2vw;
+  left: 27.2vw;
+  filter: hue-rotate(0deg);
+  animation-name: bigConnectionsBox;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  opacity: 0.5;
+}
+
+@keyframes bigConnectionsBox {
+  0%{
+    filter: hue-rotate(0deg);
+  }
+  100%{
+    filter: hue-rotate(360deg);
+  }
+}
+
+.bigConnectionsBox img{
+  width: 100%;
+  height: 100%;
+}
+
 .solidCodeUsBlog{
   margin-left: 5.5vw;
   position: absolute;
