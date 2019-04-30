@@ -110,8 +110,31 @@ header{
   background-image: url("../images/desktop/meetTheTeam/diagram.png");
   width: 9vw;
   height: 9vw;
-  top: 0vw;
+  top: -1.5vw;
   left: 0;
+}
+.PCguy{
+  position: absolute;
+  background-size: 100% 100%;
+  background-image: url("../images/desktop/meetTheTeam/PCguy.png");
+  top: 11vw;
+  left: 16vw;
+  width: 11.492%;
+  height: 29.038%;
+  animation-name: PCguy;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+@keyframes PCguy {
+  0%{
+    top: 11vw;
+  }
+  50%{
+    top: 10vw;
+  }
+  100%{
+    top: 11vw;
+  }
 }
 
 .bigConnectionsBox img{
@@ -338,6 +361,9 @@ main{
   left: 0;
   width: 100%;
   height: 100%;
+  background-color: rgba(137,97,255,0.6);
+}
+#meetTheTeamTest{
   background-color: rgba(137,97,255,0.2);
 }
 .meetTheTeam .purpOverlayTwo{
@@ -346,7 +372,7 @@ main{
   bottom: 0;
   width: 100%;
   height: 8.81481vw;
-  background-color: rgba(137,97,255,0.6);
+  /* background-color: rgba(137,97,255,0.6); */
   display: flex;
   /* justify-content: center; */
   align-items: center;

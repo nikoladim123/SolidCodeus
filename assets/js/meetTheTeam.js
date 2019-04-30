@@ -64,6 +64,16 @@ function graphLineFun() {
   graphLine[2].style.height = "10vw";
   graphLine[3].style.height = "8vw";
   graphLine[4].style.height = "12vw";
+  setTimeout(function () {
+    graphLine[0].style.height = "0vw";
+    graphLine[1].style.height = "0vw";
+    graphLine[2].style.height = "0vw";
+    graphLine[3].style.height = "0vw";
+    graphLine[4].style.height = "0vw";
+    setTimeout(function () {
+      graphLineFun();
+    }, 6000);
+  }, 6000);
 }
 
 
