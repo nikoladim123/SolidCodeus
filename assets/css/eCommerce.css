@@ -13,6 +13,7 @@ header{
   position: relative;
   height: 25.648vw;
   width: 86.357vw;
+  perspective: 100vw;
   /* border: 1px solid white; */
   box-shadow: 0px 9.44vw 5vw -5.59vw rgba(0,0,0,0.55);
   /* outline: 1.111vw solid #e0ddeb; */
@@ -36,6 +37,21 @@ header{
   opacity: 0.5;
 }
 
+.lefMonitorTriangle{
+  animation-name: bigConnectionsBox;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  /* opacity: 0.5; */
+  position: absolute;
+  /* border: 1px solid red; */
+  top: 10.7vw;
+  left: 19.3vw;
+  width: 9.774%;
+  height: 28.269%;
+  background-size: 100% 100%;
+  background-image: url("../images/desktop/meetTheTeam/leftMonitorTriangle.png");
+}
+
 @keyframes bigConnectionsBox {
   0%{
     filter: hue-rotate(0deg);
@@ -43,6 +59,59 @@ header{
   100%{
     filter: hue-rotate(360deg);
   }
+}
+
+
+
+.graphBox {
+    top: 4vw;
+    left: 49vw;
+    position: absolute;
+    /* border: 1px solid red; */
+    height: 11.7369vw;
+    width: 20.1421vw;
+    transform: rotateY(-70deg);
+    perspective-origin: 30vw;
+}
+
+.graphWraper{
+  background-image: url("../images/desktop/meetTheTeam/graphBox.png");
+  background-size: 100% 100%;
+  transform: scale(0.8);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.graphWraperFather{
+  transform: rotate(20deg);
+  width: 100%;
+  height: 100%;
+}
+
+.graphLine{
+  bottom: -2vw;
+  left: 0.5vw;
+  transition: 5s;
+  background-image: url("../images/desktop/meetTheTeam/graphLine.png");
+  position: relative;
+  background-size: 100% 100%;
+  width: 2vw;
+  height: 1vw;
+  align-self: flex-end;
+}
+
+.diagram{
+  position: absolute;
+  background-size: 100% 100%;
+  background-image: url("../images/desktop/meetTheTeam/diagram.png");
+  width: 9vw;
+  height: 9vw;
+  top: 0vw;
+  left: 0;
 }
 
 .bigConnectionsBox img{
@@ -269,7 +338,7 @@ main{
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(137,97,255,0.6);
+  background-color: rgba(137,97,255,0.2);
 }
 .meetTheTeam .purpOverlayTwo{
   position: absolute;

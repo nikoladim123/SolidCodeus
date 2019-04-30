@@ -2,6 +2,8 @@ var redQuareAnimBoxOne = document.getElementsByClassName('redQuareAnimBoxOne');
 var mebmerNameBoxAnimBox = document.getElementsByClassName('mebmerNameBoxAnimBox');
 var memberPicutreAnimBox = document.getElementsByClassName('memberPicutreAnimBox');
 var sideTextAnimBox = document.getElementsByClassName('sideTextAnimBox');
+  // graphLine
+var graphLine = document.getElementsByClassName('graphLine');
 
 
 
@@ -53,8 +55,26 @@ function saraRevealAnimFun() {
   }
 }
 
+// graph anim
+// graph anim
+// graph anim
+function graphLineFun() {
+  graphLine[0].style.height = "6vw";
+  graphLine[1].style.height = "8vw";
+  graphLine[2].style.height = "10vw";
+  graphLine[3].style.height = "8vw";
+  graphLine[4].style.height = "12vw";
+}
+
+
+
+
 window.onscroll = ()=>{
   cyrusRevealAnimFun();
   sarveshRevealAnimFun();
   saraRevealAnimFun();
+}
+
+window.onload = ()=>{
+  graphLineFun();
 }
