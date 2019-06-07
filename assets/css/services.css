@@ -215,22 +215,133 @@ main{
 }
 
 .UIUXdesign{
+  overflow: hidden;
+  position: relative;
   transition: 0.5s;
   background-color: blue;
-  width: 35%;
+  width: 100%;
 }
 .wordpressDevelopment{
+  overflow: hidden;
+  position: relative;
   transition: 0.5s;
   background-color: red;
-  width: 35%;
+  width: 2.5%;
 }
 .seoMarketing{
+  overflow: hidden;
+  position: relative;
   transition: 0.5s;
   background-color: yellow;
-  width: 35%;
+  width: 2.5%;
 }
 .ecommerceSolutions{
+  overflow: hidden;
+  position: relative;
   transition: 0.5s;
   background-color: purple;
-  width: 35%;
+  width: 2.5%;
+}
+.UIUXdesign:hover,
+.wordpressDevelopment:hover,
+.seoMarketing:hover,
+.ecommerceSolutions:hover{
+  cursor: pointer;
+}
+
+.container{
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 86.357vw;
+  /* border: 3px solid green; */
+}
+
+.wordpressDevelopment .container{
+  left: -3vw;
+}
+
+.ecommerceSolutions .container{
+  left: -8vw;
+}
+
+/* seo */
+.gearOne {
+  position: absolute;
+  top: 5vw;
+  left: 42.5vw;
+  background-size: 100% 100%;
+  width: 5vw;
+  height: 5vw;
+  background-image: url('../images/desktop/SEO/gearOne.png');
+  animation-name: gearOne;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes gearOne {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.gearTwo {
+  position: absolute;
+  top: 10.8vw;
+  left: 41.7vw;;
+  background-size: 100% 100%;
+  width: 4vw;
+  height: 4vw;
+  background-image: url('../images/desktop/SEO/gearTwo.png');
+  animation-name: gearTwo;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes gearTwo {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(-360deg);
+  }
+}
+
+
+.uiuxText{
+  width: 40vw;
+  margin: 0;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  margin-left: 1vw;
+  transform-origin: left;
+  transition: 0.3s;
+  position: relative;
+  font-size: 2vw;
+  pointer-events: none;
+  transform: rotate(90deg);
+  /* writing-mode: rl; */
+  /* text-orientation: upright; */
+}
+.UIUXdesign .uiuxText{
+  transform: rotate(0deg);
+}
+
+
+.uiuxText span:nth-child(1){
+  font-family: 'Roboto-Thin';
+  font-weight: 100;
+  color: white;
+}
+
+.uiuxText span:nth-child(2){
+  font-family: 'Roboto-Black';
+  color: white;
 }
