@@ -3,6 +3,9 @@ var wordpressDevelopment = document.getElementsByClassName('wordpressDevelopment
 var seoMarketing = document.getElementsByClassName('seoMarketing')[0];
 var ecommerceSolutions = document.getElementsByClassName('ecommerceSolutions')[0];
 var uiuxText = document.getElementsByClassName('uiuxText');
+var clickable = document.getElementsByClassName('clickable');
+var banDiv = document.getElementsByClassName('banDiv');
+
 
 function textChange() {
   uiuxText[0].style.transform = 'rotate(90deg)';
@@ -13,19 +16,18 @@ function textChange() {
   uiuxText[1].style.fontSize = '1.7vw';
   uiuxText[2].style.fontSize = '1.7vw';
   uiuxText[3].style.fontSize = '1.7vw';
+  UIUXdesign.style.width = '0%';
+  wordpressDevelopment.style.width = '0%';
+  seoMarketing.style.width = '0%';
+  ecommerceSolutions.style.width = '0%';
 }
 
 function selectService(e) {
-  UIUXdesign.style.width = '2.5%';
-  wordpressDevelopment.style.width = '2.5%';
-  seoMarketing.style.width = '2.5%';
-  ecommerceSolutions.style.width = '2.5%';
+  textChange();
   e.target.style.width = '100%';
   console.log(e.target.dataset.number);
-  textChange();
   uiuxText[e.target.dataset.number].style.transform = 'rotate(0deg)';
   uiuxText[e.target.dataset.number].style.fontSize = '3vw';
-
 }
 
 UIUXdesign.addEventListener('click',(e)=>{
@@ -39,4 +41,25 @@ seoMarketing.addEventListener('click',(e)=>{
 })
 ecommerceSolutions.addEventListener('click',(e)=>{
     selectService(e);
+})
+// new
+function selectNew(e) {
+  textChange();
+  banDiv[e.target.dataset.num].style.width = '100%';
+  uiuxText[e.target.dataset.num].style.transform = 'rotate(0deg)';
+  uiuxText[e.target.dataset.num].style.fontSize = '3vw';
+  console.log(e.target.dataset.num);
+}
+
+clickable[0].addEventListener('click',(e)=>{
+    selectNew(e);
+})
+clickable[1].addEventListener('click',(e)=>{
+    selectNew(e);
+})
+clickable[2].addEventListener('click',(e)=>{
+    selectNew(e);
+})
+clickable[3].addEventListener('click',(e)=>{
+    selectNew(e);
 })

@@ -226,21 +226,21 @@ main{
   position: relative;
   transition: 0.5s;
   background-color: red;
-  width: 2.5%;
+  width: 0%;
 }
 .seoMarketing{
   overflow: hidden;
   position: relative;
   transition: 0.5s;
   background-color: yellow;
-  width: 2.5%;
+  width: 0%;
 }
 .ecommerceSolutions{
   overflow: hidden;
   position: relative;
   transition: 0.5s;
   background-color: purple;
-  width: 2.5%;
+  width: 0%;
 }
 .UIUXdesign:hover,
 .wordpressDevelopment:hover,
@@ -340,6 +340,44 @@ main{
   font-size: 3vw;
 }
 
+.clickableContainer{
+  position: absolute;
+  height: 25.648vw;
+  width: 25.648vw;
+  right: 0;
+  /* border:2px solid; */
+  transform: rotate(90deg);
+  overflow: hidden;
+}
+.clickable{
+  border: 1px solid rgb(233,233,233);
+  width: 40vw;
+  margin: 0;
+  padding-top: 0.25vw;
+  padding-bottom: 0.25vw;
+  padding-left:  1vw;
+  transition: 0.3s;
+  position: relative;
+  font-size: 1.7vw;
+  background: rgba(255,255,255,0.3);
+  opacity: 0.5;
+}
+.clickable:hover{
+  background: rgba(255,255,255,0.7);
+  cursor: pointer;
+  opacity: 1;
+}
+
+.clickable span:nth-child(1){
+  font-family: 'Roboto-Thin';
+  font-weight: 100;
+  pointer-events: none;
+}
+
+.clickable span:nth-child(2){
+  pointer-events: none;
+  font-family: 'Roboto-Black';
+}
 
 .uiuxText span:nth-child(1){
   font-family: 'Roboto-Thin';
