@@ -52,3 +52,17 @@ clickable[2].addEventListener('click',(e)=>{
 clickable[3].addEventListener('click',(e)=>{
     selectNew(e);
 })
+  // loadSelection
+function loadSelection() {
+  textChange();
+  banDiv[window.sessionStorage.selection].style.width = '100%';
+  uiuxText[window.sessionStorage.selection].style.transform = 'rotate(0deg)';
+  uiuxText[window.sessionStorage.selection].style.fontSize = '3vw';
+}
+
+// windows events
+// windows events
+// windows events
+window.addEventListener('load',()=>{
+
+})
