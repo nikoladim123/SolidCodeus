@@ -30,18 +30,7 @@ function selectService(e) {
   uiuxText[e.target.dataset.number].style.fontSize = '3vw';
 }
 
-UIUXdesign.addEventListener('click',(e)=>{
-    selectService(e);
-})
-wordpressDevelopment.addEventListener('click',(e)=>{
-    selectService(e);
-})
-seoMarketing.addEventListener('click',(e)=>{
-    selectService(e);
-})
-ecommerceSolutions.addEventListener('click',(e)=>{
-    selectService(e);
-})
+
 // new
 function selectNew(e) {
   textChange();
