@@ -1,0 +1,236 @@
+header{
+  padding-top: 0.1px;
+  /* background: linear-gradient(135deg, #e6b929 0%, #e0c366 100%); */
+  background-size: 100% 100%;
+  position: relative;
+  height: calc(100vh + 6vw);
+}
+
+
+
+.bigConnectionsBox{
+  position: absolute;
+  width: 44.1%;
+  height: 69.423%;
+  top: 1.2vw;
+  left: 27.2vw;
+  filter: hue-rotate(0deg);
+  animation-name: bigConnectionsBox;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  opacity: 0.5;
+}
+
+.lefMonitorTriangle{
+  animation-name: bigConnectionsBox;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  /* opacity: 0.5; */
+  position: absolute;
+  /* border: 1px solid red; */
+  top: 10.7vw;
+  left: 19.3vw;
+  width: 9.774%;
+  height: 28.269%;
+  background-size: 100% 100%;
+  background-image: url("../images/desktop/meetTheTeam/leftMonitorTriangle.png");
+}
+
+@keyframes bigConnectionsBox {
+  0%{
+    filter: hue-rotate(0deg);
+  }
+  100%{
+    filter: hue-rotate(360deg);
+  }
+}
+
+
+
+.graphBox {
+    top: 4vw;
+    left: 49vw;
+    position: absolute;
+    /* border: 1px solid red; */
+    height: 11.7369vw;
+    width: 20.1421vw;
+    transform: rotateY(-70deg);
+    perspective-origin: 30vw;
+}
+
+.graphWraper{
+  background-image: url("../images/desktop/meetTheTeam/graphBox.png");
+  background-size: 100% 100%;
+  transform: scale(0.8);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.graphWraperFather{
+  transform: rotate(20deg);
+  width: 100%;
+  height: 100%;
+}
+
+.graphLine{
+  bottom: -2vw;
+  left: 0.5vw;
+  transition: 5s;
+  background-image: url("../images/desktop/meetTheTeam/graphLine.png");
+  position: relative;
+  background-size: 100% 100%;
+  width: 2vw;
+  height: 1vw;
+  align-self: flex-end;
+}
+
+.diagram{
+  position: absolute;
+  background-size: 100% 100%;
+  background-image: url("../images/desktop/meetTheTeam/diagram.png");
+  width: 9vw;
+  height: 9vw;
+  top: -1.5vw;
+  left: 0;
+}
+.PCguy{
+  position: absolute;
+  background-size: 100% 100%;
+  background-image: url("../images/desktop/meetTheTeam/PCguy.png");
+  top: 11vw;
+  left: 16vw;
+  width: 11.492%;
+  height: 29.038%;
+  animation-name: PCguy;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+@keyframes PCguy {
+  0%{
+    top: 11vw;
+  }
+  50%{
+    top: 10vw;
+  }
+  100%{
+    top: 11vw;
+  }
+}
+
+.bigConnectionsBox img{
+  width: 100%;
+  height: 100%;
+}
+
+.solidCodeUsBlog{
+  margin-left: 5.5vw;
+  position: absolute;
+  bottom: 6.5vw;
+}
+.solidCodeUsBlog p{
+  font-size: 4.444vw;
+  margin: 0;
+  color: white;
+}
+.solidCodeUsBlog p:nth-child(1){
+  margin-bottom: -1.2vw;
+  /* font-family: 'Montserrat-ExtraLight',serif; */
+  font-family: 'Roboto-Thin';
+  font-weight: 100;
+}
+.solidCodeUsBlog p:nth-child(2){
+  /* font-family: 'Montserrat-Black',serif; */
+  font-family: 'Roboto-Black';
+}
+
+main{
+  min-height: 5vw;
+  position: relative;
+  padding-top: 0.1px;
+  padding-bottom: 0.1px;
+  background-color: #e0ddeb;
+}
+.narrowWrapper{
+  position: absolute;
+  top: -6vw;
+  left:0;
+  width: 100%;
+  overflow:hidden;
+  height: 6vw;
+}
+.narrowBG{
+  box-shadow: 1.7vw 7px 50px -30px rgba(0,0,0,0.75);
+  height: 200vw;
+  width: 56vw;
+  position: absolute;
+  background-color: #e0ddeb;
+  transform: rotate(18deg);
+  top: -15vw;
+  left: -36vw;
+}
+.homeDesign{
+  position: relative;
+  left: 4vw;
+  top: 4vw;
+}
+.homeDesign a,.homeDesign span{
+  font-family: 'Montserrat-Bold',serif;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2vw;
+}
+.homeDesign a:hover{
+  text-decoration: underline;
+}
+.content{
+  /* border: 1px solid black; */
+  padding-top: 0.1px;
+  padding-bottom: 4vw;
+  position: relative;
+  left: 5%;
+  top: -0vw;
+  background-color: rgb(244,244,244);
+  width: 95%;
+  min-height: 10vw;
+  /* height: 100%; */
+  box-shadow: 0px 0px 152px -45px rgba(0,0,0,0.75);
+}
+
+
+/* 4 services */
+.videoDiv{
+  padding-top: 0.1px;
+  top: 0.9vw;
+  margin-left: 6.11vw;
+  position: relative;
+  height: 25.648vw;
+  width: 86.357vw;
+  perspective: 100vw;
+  box-shadow: 0px 9.44vw 5vw -5.59vw rgba(0,0,0,0.55);
+  display: flex;
+}
+
+.UIUXdesign{
+  transition: 0.5s;
+  background-color: blue;
+  width: 35%;
+}
+.wordpressDevelopment{
+  transition: 0.5s;
+  background-color: red;
+  width: 35%;
+}
+.seoMarketing{
+  transition: 0.5s;
+  background-color: yellow;
+  width: 35%;
+}
+.ecommerceSolutions{
+  transition: 0.5s;
+  background-color: purple;
+  width: 35%;
+}
