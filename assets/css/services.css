@@ -258,20 +258,23 @@ main{
   width: 86.357vw;
   /* border: 3px solid green; */
 }
+.container img{
+  width: 100%;
+}
 
-.wordpressDevelopment .container{
+/* .wordpressDevelopment .container{
   left: -3vw;
 }
 
 .ecommerceSolutions .container{
   left: -8vw;
-}
+} */
 
 /* seo */
 .gearOne {
   position: absolute;
-  top: 5vw;
-  left: 42.5vw;
+  top: 4vw;
+  left: 39vw;
   background-size: 100% 100%;
   width: 5vw;
   height: 5vw;
@@ -293,8 +296,8 @@ main{
 
 .gearTwo {
   position: absolute;
-  top: 10.8vw;
-  left: 41.7vw;;
+  top: 9.5vw;
+  left: 38.7vw;
   background-size: 100% 100%;
   width: 4vw;
   height: 4vw;
@@ -324,7 +327,7 @@ main{
   transform-origin: left;
   transition: 0.3s;
   position: relative;
-  font-size: 2vw;
+  font-size: 1.7vw;
   pointer-events: none;
   transform: rotate(90deg);
   /* writing-mode: rl; */
