@@ -332,6 +332,7 @@ main{
   margin: 0;
   margin-top: 0.5vw;
   color: white;
+  pointer-events: none;
 }
 .readMoreAnimDiv{
   transition: 0.4s;

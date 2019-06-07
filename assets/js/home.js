@@ -329,8 +329,23 @@ function blackTestlayerMouseOfFunFour(){
   // blackLayerInside click for next page
   var selection = document.getElementsByClassName('selection');
 selection[0].addEventListener('click',(e)=>{
-  window.sessionStorage.selection = e.target.dataset.selection;
-  console.log(e.target.dataset.selection);
+  window.sessionStorage.selection = e.target.dataset.num;
+  console.log(e.target.dataset.num);
+});
+
+selection[1].addEventListener('click',(e)=>{
+  window.sessionStorage.selection = e.target.dataset.num;
+  console.log(e.target.dataset.num);
+});
+
+selection[2].addEventListener('click',(e)=>{
+  window.sessionStorage.selection = e.target.dataset.num;
+  console.log(e.target.dataset.num);
+});
+
+selection[3].addEventListener('click',(e)=>{
+  window.sessionStorage.selection = e.target.dataset.num;
+  console.log(e.target.dataset.num);
 });
 
 // read more line anim
