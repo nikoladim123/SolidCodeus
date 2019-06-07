@@ -326,6 +326,11 @@ function blackTestlayerMouseOfFunFour(){
 	blackTextLayer[3].style.backgroundColor = 'rgb(0,0,0,0)';
 	blackLayerInside[3].style.opacity = '0';
 }
+  // blackLayerInside click for next page
+blackLayerInside[0].addEventListener('click',(e)=>{
+  window.sessionStorage.selection = e.target.dataset.selection;
+  console.log(e.target.dataset.selection);
+});
 
 // read more line anim
 // read more line anim
