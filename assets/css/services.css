@@ -336,6 +336,9 @@ main{
 .UIUXdesign .uiuxText{
   transform: rotate(0deg);
 }
+.UIUXdesign .uiuxText{
+  font-size: 3vw;
+}
 
 
 .uiuxText span:nth-child(1){
