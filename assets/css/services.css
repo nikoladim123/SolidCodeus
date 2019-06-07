@@ -351,6 +351,7 @@ main{
 }
 .clickable{
   border: 1px solid rgb(233,233,233);
+  border-top: none;
   width: 40vw;
   margin: 0;
   padding-top: 0.25vw;
