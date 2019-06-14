@@ -70,19 +70,19 @@ clickable[3].addEventListener('click',(e)=>{
 
   // Load headings top/bot
 function loadHeadings(ses) {
-  if(ses === 3){
+  if(ses === 0){
     headingTop[0].innerText = 'UI/UX';
     headingBot[0].innerText = 'DESIGN';
   }
-  if(ses === 2){
+  if(ses === 1){
     headingTop[0].innerText = 'WORDPRESS';
     headingBot[0].innerText = 'DEVELOPMENT';
   }
-  if(ses === 1){
+  if(ses === 2){
     headingTop[0].innerText = 'SEO &';
     headingBot[0].innerText = 'MARKETING';
   }
-  if(ses === 0){
+  if(ses === 3){
     headingTop[0].innerText = 'ECOMMERCE';
     headingBot[0].innerText = 'SOLUTIONS';
   }
