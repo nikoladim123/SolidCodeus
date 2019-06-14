@@ -95,7 +95,7 @@ function loadSelection() {
     banDiv[window.sessionStorage.selection].style.width = '100%';
     uiuxText[window.sessionStorage.selection].style.transform = 'rotate(0deg)';
     uiuxText[window.sessionStorage.selection].style.fontSize = '3vw';
-    clickable[window.sessionStorage.selection].style = 'rgba(255,255,255,1)';
+    clickable[window.sessionStorage.selection].style.background = 'rgba(255,255,255,1)';
     loadHeadings(parseInt(window.sessionStorage.selection));
   }
 }
