@@ -189,15 +189,14 @@ main{
 .content{
   /* border: 1px solid black; */
   padding-top: 0.1px;
-  padding-bottom: 4vw;
   position: relative;
-  left: 5%;
   top: -0vw;
   background-color: rgb(244,244,244);
-  width: 95%;
+  width: 100%;
   min-height: 10vw;
   /* height: 100%; */
   box-shadow: 0px 0px 152px -45px rgba(0,0,0,0.75);
+  display: none;
 }
 
 
@@ -389,4 +388,764 @@ main{
 .uiuxText span:nth-child(2){
   font-family: 'Roboto-Black';
   color: white;
+}
+
+
+/* web dev content */
+.webHeader{
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.webHeader h2{
+  margin: 0;
+  font-family: 'Roboto-Bold';
+  font-size: 2.9027vw;
+  margin-top: 10.3vw;
+}
+
+.webHeader h2 span{
+  font-size: 4.8379vw;
+}
+
+.webHeader h3{
+  margin: 0;
+  font-size: 1.935vw;
+  font-family: 'Roboto-Light';
+  font-weight: 100;
+  margin-top: 0.3vw;
+  margin-bottom: 1.4vw;
+}
+
+.webHeaderYellowLine{
+  width: 36.526vw;
+  height: 1px;
+  background: #e09c1b;
+}
+
+.contentWebDevdesign{
+  overflow: hidden;
+}
+
+.banerScreen{
+  width: 100%;
+}
+
+.shadowLeftBanerContainer{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  animation-name: shadowLeftBanerContainer;
+  animation-duration: 2.8s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transform-origin: right;
+  transform: rotate(0);
+}
+@keyframes shadowLeftBanerContainer {
+  0%{
+    transform: rotate(2);
+  }
+  100%{
+    transform: rotate(-2);
+  }
+}
+
+.shadowLeftBaner{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transform: skewy(0deg);
+  animation-name: shadowLeftBaner;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transform-origin: left;
+}
+
+@keyframes shadowLeftBaner {
+  0%{
+    transform: skewy(-2deg);
+  }
+  100%{
+    transform: skewy(2deg);
+  }
+}
+
+
+
+.shadowRightBanerContainer{
+  position: absolute;
+  top: 0;
+  right: -2vw;
+  width: 100%;
+  animation-name: shadowRightBanerContainer;
+  animation-duration: 3.2s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transform-origin: right center;
+  height: 55vw;
+}
+@keyframes shadowRightBanerContainer {
+  0%{
+    transform: rotateZ(4deg);
+  }
+  100%{
+    transform: rotateZ(-4deg);
+  }
+}
+
+
+.shadowRightBaner{
+  position: absolute;
+  width: 61vw;
+  top: 0;
+  right: 0;
+  animation-name: shadowRightBaner;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transform-origin: right;
+}
+
+@keyframes shadowRightBaner {
+  0%{
+    transform: scale(0.9);
+  }
+  100%{
+    transform: scale(1.1);
+  }
+}
+
+
+.weProvideContainer{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  top: -2vw;
+}
+.weProvideContainer h2{
+  margin: 0;
+  margin-bottom: 1vw;
+  font-family: 'Roboto-Bold';
+  font-size: 2.9vw;
+}
+.weProvideContainer h3{
+  font-size: 1.74165vw;
+  margin: 0;
+  margin-bottom: 1vw;
+  font-family: 'Roboto-Light';
+}
+
+.weProvideYellowLine{
+  width: 25vw;
+  height: 1px;
+  background: #e09c1b;
+}
+
+
+.developmentContainer{
+  padding: 0.1px;
+  background: #d8d8d8;
+  position: relative;
+  height: 73vw;
+  overflow: hidden;
+}
+.devDescription{
+  margin-left: 6.5312vw;
+  margin-top: 5.999vw;
+  width: 43vw;
+  font-size: 1.354vw;
+  font-family: 'Roboto-Regular';
+}
+
+.blueTriangle{
+  width: 100%;
+  position: absolute;
+  height: 115vw;
+  bottom: 0;
+  transform-origin: bottom left;
+  transform: rotate(60deg);
+  background: #364278;
+}
+
+
+.bigOrangeCircle{
+  position: absolute;
+  bottom: -8.224vw;
+  right: -13vw;
+  border-radius: 50%;
+  width: 75vw;
+  height: 75vw;
+  background: linear-gradient(to bottom, rgba(240,177,60,1) 0%, rgba(253,156,123,1) 85%, rgba(253,156,123,1) 100%);
+}
+
+.innerOrangeCircle{
+  position: absolute;
+  bottom: -8.224vw;
+  right: -13vw;
+  border-radius: 50%;
+  width: 67.247vw;
+  height: 67.247vw;
+  background: #fd9c7b;
+}
+
+.webDevAnimContainer{
+  background: radial-gradient(ellipse at 20% 64%, rgba(3,102,247,1) 5%, rgba(2,30,153,1) 100%);
+  background-repeat: no-repeat;
+  background-position: -20% -50%;
+  width: 42vw;
+  height: 58vw;
+  position: absolute;
+  right: 4.2vw;
+  bottom: 10.49vw;
+  overflow: hidden;
+}
+
+.webDevLaptop{
+  position: relative;
+  width: 100%;
+  top: 5.11vw;
+}
+.webDevScreenOverlay{
+  width: 24.9vw;
+  position: absolute;
+  top: 8.4vw;
+  left: 8.1vw;
+}
+
+.webDevTextContainer{
+  position: absolute;
+  top: 1.9vw;
+  left: 6vw;
+  /* border: 1px solid red; */
+  width: 33vw;
+  height: 25vw;
+  transform: skewY(30deg);
+  overflow: hidden;
+}
+.webDevText{
+  transition: all 12s ease;
+  width: 19vw;
+  position: absolute;
+  transform: skewY(-31deg);
+  left: 11vw;
+  top: 21vw;
+}
+
+
+/* ourPromis */
+.ourPromis{
+  display: flex;
+  flex-direction: column;
+  background: #fd9c7b;
+  align-items: center;
+  height: 50vw;
+}
+.ourPromis h2{
+  font-size: 2.8087vw;
+  font-family: 'Roboto-Bold';
+  margin: 0;
+  margin-top: 7vw;
+  margin-bottom: 1.2vw;
+  color: white;
+}
+.promiseContainer{
+  width: 73.099vw;
+  height: 51.072vw;
+  /* border: 1px solid black; */
+  background-size: 100% 100%;
+  margin-bottom: 9.113vw;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: #364278;
+}
+
+.promiseGrid{
+  width: 100%;
+  height: 34.3vw;
+  /* border: 1px solid red; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.promiseGridBox{
+  transition: 0.4s;
+  /* border: 1px solid green; */
+  display: flex;
+  color: white;
+}
+.promiseGridBox:hover{
+  cursor: pointer;
+  box-shadow: 0px 0px 61px -26px rgba(255,255,255,1);
+}
+
+.promiseImageBox{
+  width: 13.742vw;
+  /* border: 1px solid; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.promiseBoxText{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 0.7vw;
+  padding-right: 0.7vw;
+}
+.promiseBoxText h2{
+  color: white;
+  font-size: 1.834vw;
+  margin: 0;
+  font-family: 'Arvo-Bold';
+}
+
+.promiseBoxText p{
+  font-size: 1.1695vw;
+  font-family: 'Roboto-Regular';
+}
+
+.guaranteeContainer{
+  height: 15.594vw;
+  background-color: #ff6566;
+  box-shadow: 0px 0px 102px -10px rgba(255,255,255,0.4);
+  display: flex;
+}
+
+.guaranteeImgContainer{
+  width:14.1325vw;
+  position: relative;
+}
+.guaranteeImgContainer img{
+  width: 7.699vw;
+  position: absolute;
+  top: 1.5vw;
+  right: 1vw;
+}
+.guaranteeTextConatainer h2{
+  font-family: 'Roboto-Bold';
+  font-size: 2.339vw;
+  margin: 0;
+  color: white;
+  margin-top: 3.5vw;
+}
+
+.guaranteeTextConatainer p:nth-child(2){
+  margin-top: 0.8vw;
+  margin-bottom: 1vw;
+  color: white;
+  font-size: 1.3645vw;
+  font-family: 'Roboto-Regular';
+}
+.guaranteeTextConatainer p:nth-child(3){
+  font-family: 'Roboto-Regular';
+  color: white;
+  font-size: 0.68226vw;
+  opacity: 0.7;
+}
+
+/* support and maintance start */
+.supportAndMaintance{
+  overflow: hidden;
+  margin-top: 27.25vw;
+  position: relative;
+  min-height: 60.41vw;
+  background: radial-gradient(ellipse at center, rgba(228,229,227,1) 0%, rgba(160,201,150,1) 91%, rgba(160,201,150,1) 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 250%;
+}
+
+.purpScreenDiv{
+  position: relative;
+  transition: 1s;
+  transform-origin: 30vw center 0px;
+  transform: matrix3d(0.87,0,0.50,0.0001,0.00,1,0.00,0,-0.5,0,0.87,0,0,0,0,1);
+}
+.purpScreen{
+  transition: 1s;
+  position: absolute;
+  width: 37.353vw;
+  height: 39.5vw;
+  top: 1.6vw;
+  left: 5vw;
+}
+.purpScreen:hover{
+  filter: brightness(115%);
+}
+.purpleScreenGear{
+  position: absolute;
+  background-image: url("../images/desktop/maintenance/gear.png");
+  width: 16vw;
+  left: 18vw;
+  height: 16vw;
+  background-size: 100% 100%;
+  top: 4vw;
+  animation-name: purpleTabletGear;
+  animation-duration: 160s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.purpleScreenGearRotate{
+  transform: matrix3d(0.87,0,0.50,0.0001,0.00,1,0.00,0,-0.5,0,0.87,0,0,0,0,1);
+}
+
+.purpTabletDiv{
+  position: relative;
+  transform-origin: 20vw 0vw 0px;
+  transform: matrix3d(0.87,0,0.50,-0.0001,0.00,1,0.00,0,-0.5,0,0.87,0,0,0,0,1);
+  transition: 1s;
+}
+.purpTabletDiv:hover{
+  filter: brightness(115%);
+}
+.purpTablet{
+  position: absolute;
+  width: 23vw;
+  height: 34.86vw;
+  top: 10.37vw;
+  left: 2.6vw;
+}
+.purpleTabletGear{
+  position: absolute;
+  top: 17vw;
+  left:6vw;
+  background-image: url("../images/desktop/maintenance/gear.png");
+  width: 16vw;
+  height: 16vw;
+  background-size: 100% 100%;
+  animation-name: purpleTabletGear;
+  animation-duration: 180s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: reverse;
+}
+@keyframes purpleTabletGear {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+
+.supMain{
+  position: absolute;
+  right: 14.7vw;
+  top: 4.2vw;
+  height: auto;
+}
+.supMain h2{
+  margin: 0;
+  margin-top: 1vw;
+  font-size: 5.925vw;
+  font-family: 'Roboto-Thin';
+  font-weight: 100;
+}
+.supMain h2 span{
+  font-family: 'Roboto-Black';
+  position: relative;
+  top: -1vw;
+}
+
+.supMainText{
+  font-family: 'Roboto-Regular';
+  font-size: 1.4814vw;
+  position: absolute;
+  margin: 0;
+  top: 18.9vw;
+  right: 13.3vw;
+}
+.feedBackSingle{
+  border: 1px solid rgb(162,202,152);
+  background-color: rgba(162,202,152,0.3);
+  position: absolute;
+  bottom: 17.5vw;
+  right: 9vw;
+  padding-top: 1.186vw;
+  padding-left: 1.11vw;
+  padding-right: 1.111vw;
+}
+
+.imgNameFeedback{
+  display: flex;
+  align-items: center;
+  font-family: 'Montserrat-Bold';
+}
+.imgNameFeedback img{
+  margin-right: 0.8154vw;
+  width: 4.077vw;
+  height: 3.9288vw;
+}
+.imgNameFeedback p{
+  font-size: 1vw;
+  margin: 0;
+}
+.imgNameFeedback a{
+  text-decoration: none;
+}
+
+.feedBackText{
+  text-align: justify;
+}
+.feedBackText p{
+  margin-left: 4.8924vw;
+  font-size: 1.05vw;
+  font-family: 'Roboto-Regular';
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+.contactUsMaintenance{
+  position: absolute;
+  height: 4vw;
+  right: 12.45vw;
+  bottom: 10.5vw;
+}
+.contactUsMaintenance:hover{
+  cursor: pointer;
+}
+.maintenanceLineAnim{
+  transition: 1s;
+  height: 0.27vw;
+  width: 40%;
+  background-color: rgb(244,173,14);
+  border-radius: 2px;
+}
+.contactUsButtonText{
+  display: flex;
+  align-items: center;
+  height: 3vw;
+}
+.contactUsButtonText h3{
+  color: white;
+  font-size: 1.879vw;
+  font-family: 'Roboto-Bold';
+  margin:0;
+}
+.svgArrow{
+  width: 5vw;
+  height: 5vw;
+  transition: 1s;
+  margin-top: 0.7vw;
+  filter: brightness(100%);
+}
+/* support and maintance end */
+
+.unknownSection{
+  height: 79vw;
+  background: #364177;
+  position: relative;
+  z-index: 1;
+  border-bottom: 20vw solid black;
+}
+
+.unknownSectionCircle{
+  position: absolute;
+  left: 0;
+  top: -13.2vw;
+  width: 52.1528vw;
+}
+
+.unknownmobiles{
+  width: 69.2vw;
+  position: absolute;
+  bottom: -0.6vw;
+  right: 0;
+}
+
+/* .footer */
+/* .footer */
+.footer{
+  padding: 0.1px;
+  position: relative;
+  display: block;
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../images/desktop/footerBG.jpg");
+}
+.footerBG{
+  width: 100%;
+  height: 100%;
+}
+
+.AboutUs{
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 4vh;
+}
+
+.AboutUs h2{
+  font-family: 'Roboto-Black';
+  color:hsla(0,0%,100%,.5);
+  font-size:2.48vw;
+}
+.AboutUs hr{
+  height: 1vw;
+  margin-top: 1vh;
+  background: hsla(0,0%,100%,.5);
+  border: none;
+}
+.AboutUs p{
+  font-family: 'Roboto-Light';
+  font-size: 1.317vw;
+  color: white;
+  text-align: justify;
+}
+
+.meetTheTeam{
+  transition: 0.4s;
+  font-family: 'Roboto-Light';
+  font-size: 1.564vw;
+  color: white;
+  width: 17.3vw;
+  height: 4.392vw;
+  background-color: hsla(360,100%,49%,.5);
+  border: 2px solid white;
+  border-radius:4vw;
+  position: relative;
+  margin-left: 50%;
+  left: -8.65vw;
+  font-weight: 700;
+  margin-top: 1vh;
+}
+
+.meetTheTeam:hover{
+  background-color: #f5cc18;
+}
+
+.contactUs{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10vh
+}
+.contactUs h2{
+  font-size: 6vh;
+  font-family: 'Roboto-Black';
+  margin: 0;
+  color: white;
+}
+.contactUs h4{
+  font-family: 'Roboto-Light';
+  font-size: 2vh;
+  font-weight: 400;
+  color: white;
+  margin-top: 0;
+}
+
+.contactUs .fa-skype{
+  color: #00afef;
+}
+
+.fa-phone{
+  color: red;
+}
+
+.contactUs i{
+  margin-bottom: 20px;
+  font-size: 1.8vh;
+}
+
+.contactUs i span{
+  font-family: 'Montserrat-Light';
+  color:white;
+  margin-left: 1vw;
+  font-size: 1.317vh;
+}
+.footDiv{
+  background-color: #000;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 2vh 0;
+  border-top: .5px solid #616161;
+}
+
+.foterSocialMedia{
+  color: white;
+  display: flex;
+}
+
+.foterSocialMedia .fab{
+  border: 2px solid white;
+  border-radius: 50%;
+  font-size: 1.3vh;
+  width: 3vh;
+  height: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5vw;
+}
+.foterSocialMedia a{
+  text-decoration: none;
+  color: white;
+}
+
+.footDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footDiv img{
+  width: 17.22vw;
+  height: 2.537vw
+}
+
+.footDiv p{
+  font-family: 'Roboto-Light';
+  font-size: 0.8vw;
+  font-weight: 400;
+  color: white;
+}
+
+/* fixed contact us */
+
+.fixedSideContactUs{
+  z-index: 4;
+  position: absolute;
+  left: -10.7vw;
+  /* top: 1vw; */
+  /* top: 42%; */
+  top: 139vw;
+  height: 1vw;
+  display: flex;
+  align-items: center;
+  transform: rotate(90deg);
+}
+.fixedSideContactUs:hover{
+  cursor: pointer;
+}
+.horisontalLine{
+  width: 15.55vw;
+  height: 1px;
+  background-color: rgb(233,136,45);
+}
+.fixedSideContactUs p{
+  color:rgb(233,136,45);
+  font-family: 'Roboto-Bold';
+  font-size: 1.333vw;
+  margin-left: 0.888vw;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }

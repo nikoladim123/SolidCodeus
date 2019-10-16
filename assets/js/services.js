@@ -7,6 +7,8 @@ var clickable = document.getElementsByClassName('clickable');
 var banDiv = document.getElementsByClassName('banDiv');
 var headingTop = document.getElementsByClassName('headingTop');
 var headingBot = document.getElementsByClassName('headingBot');
+var content = document.getElementsByClassName('content');
+
 
 
 function textChange() {
@@ -32,6 +34,18 @@ function highLight(e) {
   e.target.style.background = 'rgba(255,255,255,1)';
 }
 
+function hightLightOnLoad(e) {
+  clickable[0].style.background = 'rgba(255,255,255,0.3)';
+  clickable[1].style.background = 'rgba(255,255,255,0.3)';
+  clickable[2].style.background = 'rgba(255,255,255,0.3)';
+  clickable[3].style.background = 'rgba(255,255,255,0.3)';
+  for (var i = 0; i < clickable.length; i++) {
+    if(clickable[i].dataset.num == e){
+      clickable[i].style.background = 'rgba(255,255,255,1)';
+    }
+  }
+}
+
 
 
 
@@ -43,29 +57,50 @@ function selectNew(e) {
   console.log(e.target.dataset.num);
 }
 
+function controlContent(param) {
+  for (var i = 0; i < content.length; i++) {
+    content[i].style.display = 'none';
+  };
+  content[param].style.display = 'block';
+}
+
+function scrollintoViewMain() {
+  setTimeout(function () {
+    document.getElementsByClassName('main')[0].scrollIntoView()
+  }, 900);
+}
+
 clickable[0].addEventListener('click',(e)=>{
     selectNew(e);
     highLight(e);
     headingTop[0].innerText = 'ECOMMERCE';
     headingBot[0].innerText = 'SOLUTIONS';
+    controlContent(3);
+    scrollintoViewMain();
 })
 clickable[1].addEventListener('click',(e)=>{
     selectNew(e);
     highLight(e);
     headingTop[0].innerText = 'SEO &';
     headingBot[0].innerText = 'MARKETING';
+    controlContent(2);
+    scrollintoViewMain();
 })
 clickable[2].addEventListener('click',(e)=>{
     selectNew(e);
     highLight(e);
-    headingTop[0].innerText = 'WORDPRESS';
+    headingTop[0].innerText = 'WEB';
     headingBot[0].innerText = 'DEVELOPMENT';
+    controlContent(1);
+    scrollintoViewMain();
 })
 clickable[3].addEventListener('click',(e)=>{
     selectNew(e);
     highLight(e);
     headingTop[0].innerText = 'UI/UX';
     headingBot[0].innerText = 'DESIGN';
+    controlContent(0);
+    scrollintoViewMain();
 })
 
   // Load headings top/bot
@@ -75,7 +110,7 @@ function loadHeadings(ses) {
     headingBot[0].innerText = 'DESIGN';
   }
   if(ses === 1){
-    headingTop[0].innerText = 'WORDPRESS';
+    headingTop[0].innerText = 'WEB';
     headingBot[0].innerText = 'DEVELOPMENT';
   }
   if(ses === 2){
@@ -88,6 +123,11 @@ function loadHeadings(ses) {
   }
 }
 
+  // load content
+function loadContentFun() {
+  content[parseInt(window.sessionStorage.selection)].style.display = 'block';
+}
+
   // loadSelection
 function loadSelection() {
   if(typeof window.sessionStorage.selection !== 'undefined'){
@@ -97,6 +137,20 @@ function loadSelection() {
     uiuxText[window.sessionStorage.selection].style.fontSize = '3vw';
     clickable[window.sessionStorage.selection].style.background = 'rgba(255,255,255,1)';
     loadHeadings(parseInt(window.sessionStorage.selection));
+    hightLightOnLoad(parseInt(window.sessionStorage.selection));
+    loadContentFun();
+  }
+}
+
+
+// web dev JS
+// web dev JS
+var webDevText = document.getElementsByClassName('webDevText');
+
+function webDevTextFun() {
+  if (webDevText[0].getClientRects()[0].top < window.innerHeight / 1.5) {
+    webDevText[0].style.top = '-4vw';
+    console.log(123);
   }
 }
 
@@ -105,4 +159,8 @@ function loadSelection() {
 // windows events
 window.addEventListener('load',()=>{
   loadSelection();
+})
+
+window.addEventListener('scroll',()=>{
+  webDevTextFun();
 })
