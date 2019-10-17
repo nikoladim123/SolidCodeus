@@ -443,6 +443,7 @@ main{
   animation-duration: 2.8s;
   animation-timing-function: ease;
   animation-iteration-count: infinite;
+  pointer-events: none;
   animation-direction: alternate;
   transform-origin: right;
   transform: rotate(0);
@@ -493,6 +494,7 @@ main{
   animation-direction: alternate;
   transform-origin: right center;
   height: 55vw;
+  pointer-events: none;
 }
 @keyframes shadowRightBanerContainer {
   0%{
@@ -515,6 +517,7 @@ main{
   animation-iteration-count: infinite;
   animation-direction: alternate;
   transform-origin: right;
+  filter: drop-shadow(1px 0px 0px black);
 }
 
 @keyframes shadowRightBaner {
@@ -627,11 +630,11 @@ main{
 
 .webDevTextContainer{
   position: absolute;
-  top: 1.9vw;
+  top: 10.9vw;
   left: 6vw;
   /* border: 1px solid red; */
   width: 33vw;
-  height: 25vw;
+  height: 16vw;
   transform: skewY(30deg);
   overflow: hidden;
 }
@@ -639,9 +642,21 @@ main{
   transition: all 12s ease;
   width: 19vw;
   position: absolute;
-  transform: skewY(-31deg);
+  transform: skewY(-29deg);
   left: 11vw;
   top: 21vw;
+  animation-name: webDevText;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes webDevText {
+  0%{
+    top: 21vw;
+  }
+  100%{
+    top:-35vw;
+  }
 }
 
 
@@ -1148,4 +1163,56 @@ main{
   margin-left: 0.888vw;
   margin-top: 0 !important;
   margin-bottom: 0 !important;
+}
+
+
+
+/* Ecommerce section */
+.eComMain{
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  min-height: 136vw;
+}
+
+.mobileOneLeft{
+  position: absolute;
+  left: 14vw;
+  top: 0;
+  transform: rotate(30deg);
+}
+
+.mobileOneRight{
+  transform: rotate(30deg);
+  position: absolute;
+  left: 47vw;
+  top: 13vw;
+}
+.mobLeft{
+  width: 38.426vw;
+}
+
+.iFramesContainer{
+
+position: relative;
+
+top: 22vw;
+}
+.iFrameInside{
+  position: absolute;
+  top: 3.3vw;
+  left: 3.7vw;
+  width: 31vw;
+  border: 1px solid rgba(0,0,0,0.2);
+  height: 73vw;
+  z-index: 1;
+  border-radius: 2.4vw;
+  overflow: hidden;
+}
+
+.iFrameInside iframe{
+  width: 101.99%;
+  height: 100%;
+  border: none;
+  position: relative;
 }

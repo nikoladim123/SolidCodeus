@@ -162,5 +162,5 @@ window.addEventListener('load',()=>{
 })
 
 window.addEventListener('scroll',()=>{
-  webDevTextFun();
+  // webDevTextFun();
 })
