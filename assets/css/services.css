@@ -437,23 +437,24 @@ main{
 .shadowLeftBanerContainer{
   position: absolute;
   top: 0;
-  left: 0;
+  left: -2vw;
   width: 100%;
   animation-name: shadowLeftBanerContainer;
-  animation-duration: 2.8s;
+  animation-duration: 2.5s;
   animation-timing-function: ease;
   animation-iteration-count: infinite;
   pointer-events: none;
   animation-direction: alternate;
-  transform-origin: right;
+  transform-origin: left center;
   transform: rotate(0);
+  height: -webkit-fill-available;
 }
 @keyframes shadowLeftBanerContainer {
   0%{
-    transform: rotate(2);
+    transform: rotate(2.5deg);
   }
   100%{
-    transform: rotate(-2);
+    transform: rotate(-2.5deg);
   }
 }
 
@@ -1193,10 +1194,8 @@ main{
 }
 
 .iFramesContainer{
-
-position: relative;
-
-top: 22vw;
+  position: relative;
+  top: 22vw;
 }
 .iFrameInside{
   position: absolute;
@@ -1215,4 +1214,65 @@ top: 22vw;
   height: 100%;
   border: none;
   position: relative;
+}
+
+
+/* UI/UX content */
+
+.uiUXheader h2{
+  font-family: 'Roboto-Bold';
+  font-size: 2.5vw;
+  text-align: center;
+  margin-top: 5vw;
+  margin-bottom: 3vw;
+}
+.headerbg{
+  width: 100%;
+}
+
+.uiUXsectionOne{
+
+}
+.purpleDiv{
+  position: relative;
+  background: #7e30d9;
+  width: 78vw;
+  height: 50vw;
+  margin-left: 6.5vw;
+  padding: 0.1px;
+}
+.leftnum{
+  width: 18.159vw;
+  position: absolute;
+  left: -3vw;
+  top: -6.8vw;
+}
+.purpleDivImg{
+  width: 67.3vw;
+  left: 24vw;
+  position: absolute;
+  top: 1vw;
+}
+
+.imgRig{
+  width: 100%;
+}
+
+.rightnum{
+  width: 18.159vw;
+  position: absolute;
+  top: -6.8vw;
+  right: -3vw;
+}
+
+.purpleDivRight{
+  margin-left: 16.5vw;
+  background: #dc3f2e;
+  padding: 0.1px;
+}
+.purpleDivImgRight{
+  width: 67.3vw;
+  left: -14vw;
+  position: absolute;
+  top: 1vw;
 }
