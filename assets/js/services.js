@@ -154,6 +154,19 @@ function webDevTextFun() {
   }
 }
 
+// ecoom cont js
+// ecoom cont js
+var ppheaderLeftContent = document.getElementsByClassName('ppheaderLeftContent');
+function ppheaderLeftContentFun() {
+  if(ppheaderLeftContent[0].getClientRects()[0].top < window.innerHeight /2){
+    ppheaderLeftContent[0].style.left = '-11vw';
+  }else{
+    ppheaderLeftContent[0].style.left = '-60vw';
+  }
+}
+
+
+
 // windows events
 // windows events
 // windows events
@@ -162,5 +175,6 @@ window.addEventListener('load',()=>{
 })
 
 window.addEventListener('scroll',()=>{
+  ppheaderLeftContentFun();
   // webDevTextFun();
 })
