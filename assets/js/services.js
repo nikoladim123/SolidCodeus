@@ -165,6 +165,14 @@ function ppheaderLeftContentFun() {
   }
 }
 
+var eComMain = document.getElementsByClassName('eComMain');
+function eComMainFun() {
+  if(eComMain[0].getClientRects()[0].top < window.innerHeight /2){
+    eComMain[0].style.background = 'white';
+  }else{
+    eComMain[0].style.background = '#e49b13';  
+  }
+}
 
 
 // windows events
@@ -176,5 +184,6 @@ window.addEventListener('load',()=>{
 
 window.addEventListener('scroll',()=>{
   ppheaderLeftContentFun();
+  eComMainFun();
   // webDevTextFun();
 })
