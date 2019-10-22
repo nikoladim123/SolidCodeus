@@ -170,8 +170,46 @@ function eComMainFun() {
   if(eComMain[0].getClientRects()[0].top < window.innerHeight /2){
     eComMain[0].style.background = 'white';
   }else{
-    eComMain[0].style.background = '#e49b13';  
+    eComMain[0].style.background = '#e49b13';
   }
+}
+
+var dust = document.getElementsByClassName('dust');
+var bigProductImg = document.getElementsByClassName('bigProductImg');
+var prodMiniBox = document.getElementsByClassName('prodMiniBox');
+var leftCarArrowBox = document.getElementsByClassName('leftCarArrowBox');
+
+var ecomProdImages = 3;
+// assets/images/desktop/eCommerce/1.png
+setInterval(function () {
+  leftCarArrowBoxFunAnim();
+  bigProductImg[0].style.opacity = '0';
+  dust[0].style.transform = 'rotate(360deg)';
+  dust[0].style.opacity = '0';
+  setTimeout(function () {
+    ecomProdImages++;
+    bigProductImg[0].src = 'assets/images/desktop/eCommerce/' + (1 + ecomProdImages%3) + '.png';
+    prodMiniBoxFun();
+  }, 1000);
+  setTimeout(function () {
+    bigProductImg[0].style.opacity = '1';
+    dust[0].style.opacity = '1';
+    dust[0].style.transform = 'rotate(0deg)';
+  }, 1200);
+}, 4000);
+
+function prodMiniBoxFun() {
+  for (var i = 0; i < prodMiniBox.length; i++) {
+    prodMiniBox[i].style.transform = 'scale(1)';
+  }
+  prodMiniBox[ecomProdImages%3].style.transform = 'scale(1.2)';
+}
+
+function leftCarArrowBoxFunAnim() {
+  leftCarArrowBox[0].style.background = 'rgb(230,230,230,0.65)';
+  setTimeout(function () {
+    leftCarArrowBox[0].style.background = 'rgb(230,230,230,0.25)';
+  }, 500);
 }
 
 
