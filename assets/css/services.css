@@ -193,7 +193,7 @@ main{
   padding-top: 0.1px;
   position: relative;
   top: -0vw;
-  background-color: rgb(244,244,244);
+  background-color: white;
   width: 100%;
   min-height: 10vw;
   /* height: 100%; */
@@ -439,7 +439,7 @@ main{
 .shadowLeftBanerContainer{
   position: absolute;
   top: 0;
-  left: -2vw;
+  left: -8vw;
   width: 100%;
   animation-name: shadowLeftBanerContainer;
   animation-duration: 2.5s;
@@ -453,10 +453,10 @@ main{
 }
 @keyframes shadowLeftBanerContainer {
   0%{
-    transform: rotate(2.5deg);
+    transform: rotate(2deg);
   }
   100%{
-    transform: rotate(-2.5deg);
+    transform: rotate(-2deg);
   }
 }
 
@@ -1778,37 +1778,80 @@ h1 span{
 
 /* UI/UX content */
 
-.uiUXheader h2{
+.uiUxHeaderOne{
+  font-family: 'Roboto-Bold';
+  font-size: 2.90556vw;
+  text-align: center;
+  margin-top: 8vw;
+}
+
+.uiUxParagraph{
+  font-size: 1.4527vw;
+  font-family: 'Roboto-Regular';
+  width: 50vw;
+  text-align: center;
+  margin-left: 24vw;
+}
+
+.uiUxHealerTwo{
   font-family: 'Roboto-Bold';
   font-size: 2.5vw;
   text-align: center;
-  margin-top: 5vw;
+  margin-top: 3vw;
   margin-bottom: 3vw;
 }
 .headerbg{
   width: 100%;
 }
 
-.uiUXsectionOne{
+.sCodeDesignProc{
+  text-align: center;
+  font-size: 2.9055vw;
+  font-family: 'Roboto-Bold';
+  margin-top: 4vw;
+  margin-bottom: 0.2vw;
+}
+.solidCodeUsDesignProecesYellowUnderline{
+  width: 25vw;
+  margin-left: 37.5vw;
+  height: 1px;
+  background: #f0b13b;
+  margin-bottom: 2.4vw;
+}
+.asPartOfyourProject{
+  font-family: 'Roboto-Regular';
+  font-size: 1.7433vw;
+  text-align: center;
+  text-align: center;
+  width: 75vw;
+  margin-left: 12.5vw;
+}
 
+.uiUXsectionOne{
+  padding: 0.1px;
 }
 .purpleDiv{
+  transition: 1s ease;
   position: relative;
-  background: #7e30d9;
+  margin-bottom: 11vw;
+  background: #9a89ec;
   width: 78vw;
   height: 50vw;
-  margin-left: 6.5vw;
+  /* margin-left: 6.5vw; */
+  margin-left: 11vw;
   padding: 0.1px;
 }
 .leftnum{
   width: 18.159vw;
   position: absolute;
   left: -3vw;
-  top: -6.8vw;
+  top: -2.8vw;
 }
 .purpleDivImg{
+  transition: 1s ease;
   width: 67.3vw;
-  left: 24vw;
+  /* left: 26vw; */
+  left: 5.5vw;
   position: absolute;
   top: 1vw;
 }
@@ -1820,18 +1863,59 @@ h1 span{
 .rightnum{
   width: 18.159vw;
   position: absolute;
-  top: -6.8vw;
+  top: -1.8vw;
   right: -3vw;
 }
 
 .purpleDivRight{
-  margin-left: 16.5vw;
-  background: #dc3f2e;
+  /* margin-left: 16.5vw; */
+  margin-left: 10.5vw;
+  background: #cf5755;
   padding: 0.1px;
 }
 .purpleDivImgRight{
+  transition: 1s ease;
   width: 67.3vw;
-  left: -14vw;
+  /* left: -14vw; */
+  left: 5vw;
   position: absolute;
   top: 1vw;
+}
+
+.orangeDiv{
+  background: #f6b467;
+}
+.greenDiv{
+  background: #85be90;
+}
+
+.leftPurpInsideTextContainer{
+  transition: 1s ease;
+  /* border: 1px solid black; */
+  position: absolute;
+  /* left: 3vw; */
+  left: 29vw;
+  top: 12vw;
+  width: 23vw;
+}
+
+.rightPurpInsideTextContainer{
+  /* right: 3vw; */
+  right: 13vw;
+  left: auto;
+}
+
+.leftPurpInsideTextContainer h2{
+  font-size: 2.33vw;
+  font-family: 'Roboto-Bold';
+}
+.leftPurpInsideTextContainer p{
+  color: white;
+  font-family: 'Roboto-Regular';
+  font-size: 1.4527vw;
+  line-height: 1.5;
+}
+.codeImg{
+  width: 100%;
+  margin-bottom: 5vw;
 }

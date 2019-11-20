@@ -136,7 +136,7 @@ header{
   left: 0;
   width: 100%;
   height: 14.97vw;
-  background-color: #e0ddeb;
+  background-color: #f2f2f2;
   border-bottom: 0.37vw solid #e6e6e6;
 }
 
@@ -221,7 +221,7 @@ video{
   position: absolute;
 }
 .videoDiv{
-  outline: 1.111vw solid #e0ddeb;
+  outline: 1.111vw solid #f2f2f2;
   box-shadow: 0px 9.44vw 10vw -4.59vw rgba(0,0,0,0.55);
 }
 /* video end */

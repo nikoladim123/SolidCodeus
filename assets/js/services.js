@@ -158,19 +158,23 @@ function webDevTextFun() {
 // ecoom cont js
 var ppheaderLeftContent = document.getElementsByClassName('ppheaderLeftContent');
 function ppheaderLeftContentFun() {
-  if(ppheaderLeftContent[0].getClientRects()[0].top < window.innerHeight /2){
-    ppheaderLeftContent[0].style.left = '-11vw';
-  }else{
-    ppheaderLeftContent[0].style.left = '-60vw';
+  if (typeof ppheaderLeftContent[0].getClientRects()[0] != 'undefined') {
+    if(ppheaderLeftContent[0].getClientRects()[0].top < window.innerHeight /2){
+      ppheaderLeftContent[0].style.left = '-11vw';
+    }else{
+      ppheaderLeftContent[0].style.left = '-60vw';
+    }
   }
 }
 
 var eComMain = document.getElementsByClassName('eComMain');
 function eComMainFun() {
-  if(eComMain[0].getClientRects()[0].top < window.innerHeight /2){
-    eComMain[0].style.background = 'white';
-  }else{
-    eComMain[0].style.background = '#e49b13';
+  if (typeof eComMain[0].getClientRects()[0] != 'undefined'){
+    if(eComMain[0].getClientRects()[0].top < window.innerHeight /2){
+      eComMain[0].style.background = 'white';
+    }else{
+      eComMain[0].style.background = '#e49b13';
+    }
   }
 }
 
@@ -213,6 +217,60 @@ function leftCarArrowBoxFunAnim() {
 }
 
 
+// UI/UX design
+// UI/UX design
+var purpleDiv = document.getElementsByClassName('purpleDiv');
+var purpleDivImg = document.getElementsByClassName('purpleDivImg');
+var leftPurpInsideTextContainer = document.getElementsByClassName('leftPurpInsideTextContainer');
+
+var purpleDivRight = document.getElementsByClassName('purpleDivRight');
+var purpleDivImgRight = document.getElementsByClassName('purpleDivImgRight');
+var rightPurpInsideTextContainer = document.getElementsByClassName('rightPurpInsideTextContainer');
+
+
+function purpDivAnimOne() {
+  if (typeof purpleDiv[0].getClientRects()[0] != 'undefined') {
+    if (purpleDiv[0].getClientRects()[0].top < 200) {
+      purpleDiv[0].style.marginLeft = '6.5vw';
+      purpleDivImg[0].style.left = '26vw';
+      leftPurpInsideTextContainer[0].style.left = '3vw';
+    }
+  }
+}
+
+function purpDivAnimTwo() {
+  if (typeof purpleDiv[1].getClientRects()[0] != 'undefined') {
+    if (purpleDiv[1].getClientRects()[0].top < 200) {
+      purpleDivRight[0].style.marginLeft = '16.5vw';
+      purpleDivImgRight[0].style.left = '-18vw';
+      rightPurpInsideTextContainer[0].style.right = '3vw';
+    }
+  }
+}
+
+function purpDivAnimThree() {
+  if (typeof purpleDiv[2].getClientRects()[0] != 'undefined') {
+    if (purpleDiv[2].getClientRects()[0].top < 200) {
+      purpleDiv[2].style.marginLeft = '6.5vw';
+      purpleDivImg[1].style.left = '26vw';
+      leftPurpInsideTextContainer[2].style.left = '3vw';
+    }
+  }
+}
+
+function purpDivAnimFour() {
+  if (typeof purpleDiv[3].getClientRects()[0] != 'undefined') {
+    if (purpleDiv[3].getClientRects()[0].top < 200) {
+      purpleDivRight[1].style.marginLeft = '16.5vw';
+      purpleDivImgRight[1].style.left = '-18vw';
+      rightPurpInsideTextContainer[1].style.right = '3vw';
+    }
+  }
+}
+
+
+
+
 // windows events
 // windows events
 // windows events
@@ -223,5 +281,9 @@ window.addEventListener('load',()=>{
 window.addEventListener('scroll',()=>{
   ppheaderLeftContentFun();
   eComMainFun();
+  purpDivAnimOne();
+  purpDivAnimTwo();
+  purpDivAnimThree();
+  purpDivAnimFour();
   // webDevTextFun();
 })
