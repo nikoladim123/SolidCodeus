@@ -453,10 +453,10 @@ main{
 }
 @keyframes shadowLeftBanerContainer {
   0%{
-    transform: rotate(2deg);
+    transform: rotate(1deg);
   }
   100%{
-    transform: rotate(-2deg);
+    transform: rotate(-1deg);
   }
 }
 
@@ -1799,6 +1799,11 @@ h1 span{
   text-align: center;
   margin-top: 3vw;
   margin-bottom: 3vw;
+}
+
+.headerbgContainer{
+  /* border: 1px solid red; */
+  /* overflow: hidden; */
 }
 .headerbg{
   width: 100%;
