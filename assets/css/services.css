@@ -1802,11 +1802,16 @@ h1 span{
 }
 
 .headerbgContainer{
+  position: relative;
   /* border: 1px solid red; */
   /* overflow: hidden; */
 }
 .headerbg{
   width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.375s ease;
 }
 
 .sCodeDesignProc{

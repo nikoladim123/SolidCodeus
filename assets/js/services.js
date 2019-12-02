@@ -130,6 +130,9 @@ function loadContentFun() {
 
   // loadSelection
 function loadSelection() {
+  if(typeof window.sessionStorage.selection == 'undefined'){
+    content[0].style.display = 'block';
+  }
   if(typeof window.sessionStorage.selection !== 'undefined'){
     textChange();
     banDiv[window.sessionStorage.selection].style.width = '100%';
@@ -268,6 +271,34 @@ function purpDivAnimFour() {
   }
 }
 
+// shoter
+var headerbg = document.getElementsByClassName('headerbg');
+var shoterAray = Array.from(headerbg).reverse();
+var shooter = document.getElementsByClassName('shooter');
+
+function shooterFireFun() {
+  if (typeof shooter[0].getClientRects()[0] != 'undefined') {
+    if (shooter[0].getClientRects()[0].top < 100) {
+      shooterLoopFun();
+    }
+  }
+}
+
+
+var timer = 400;
+function shooterLoopFun() {
+  for (var i = 0; i < shoterAray.length-1; i++) {
+    shoterFun(shoterAray[i]);
+    timer+= 400;
+  }
+}
+
+function shoterFun(sht) {
+  setTimeout(function () {
+    sht.style.left = '-100%';
+  }, timer);
+}
+
 
 
 
@@ -285,5 +316,6 @@ window.addEventListener('scroll',()=>{
   purpDivAnimTwo();
   purpDivAnimThree();
   purpDivAnimFour();
+  shooterFireFun();
   // webDevTextFun();
 })
