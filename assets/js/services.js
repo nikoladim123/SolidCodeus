@@ -285,17 +285,18 @@ function shooterFireFun() {
 }
 
 
-var timer = 400;
+var timer = 1000;
 function shooterLoopFun() {
   for (var i = 0; i < shoterAray.length-1; i++) {
     shoterFun(shoterAray[i]);
-    timer+= 400;
+    timer+= 1000;
   }
 }
 
 function shoterFun(sht) {
   setTimeout(function () {
-    sht.style.left = '-100%';
+    sht.style.filter = 'brightness(10)';
+    sht.style.opacity = '0';
   }, timer);
 }
 

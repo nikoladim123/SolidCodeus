@@ -1811,7 +1811,7 @@ h1 span{
   position: absolute;
   top: 0;
   left: 0;
-  transition: 0.375s ease;
+  transition: 1s ease;
 }
 
 .sCodeDesignProc{
