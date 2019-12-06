@@ -20,7 +20,7 @@ function stickyMenuFunc(){
 // burger overlay logic
 // burger overlay logic
 //burgerMenu
-// var burgerDiv = document.getElementsByClassName('burgerMenu');
+var burgerDiv = document.getElementsByClassName('burgerMenu');
 var burgerMenuOverlayWhite = document.getElementsByClassName('burgerMenuOverlayWhite')[0];
 var burgerOverlayBlackBox = document.getElementsByClassName('burgerOverlayBlackBox')[0];
 var wholePageOverlay = document.getElementsByClassName('wholePageOverlay')[0];
@@ -29,55 +29,55 @@ var moreSticky = document.getElementById('moreSticky');
 var more = document.getElementById('more');
 
 
-// var stickySwitch = 0;
+var stickySwitch = 0;
 
-// more.addEventListener('click',function(){
-//   openMenu();
-// })
-//
-// moreSticky.addEventListener('click',function(){
-//   openMenu();
-// })
+more.addEventListener('click',function(){
+  openMenu();
+})
 
-// burgerDiv[0].addEventListener('click',function(){
-//   openMenu();
-// })
-// burgerDiv[1].addEventListener('click',function(){
-//   openMenu();
-// })
+moreSticky.addEventListener('click',function(){
+  openMenu();
+})
 
-// function openMenu(){
-//   stickySwitch =1;
-//   burgerMenuOverlayWhite.style.width = "102%";
-//   stickyMenu.style.height = '0vw';
-//   setTimeout(function(){
-//     if(window.innerWidth > window.innerHeight){
-//     burgerOverlayBlackBox.style.width = '30vw';
-//   }else{
-//     burgerOverlayBlackBox.style.width = '75vw';
-//   }
-//     wholePageOverlay.style.filter = 'blur(10px)';
-//   },1000)
-// }
+burgerDiv[0].addEventListener('click',function(){
+  openMenu();
+})
+burgerDiv[1].addEventListener('click',function(){
+  openMenu();
+})
 
-// closeBox.addEventListener('click',function(){
-//   closeBoxFun();
-// });
-// function closeBoxFun(){
-//   stickySwitch = 0;
-//   wholePageOverlay.style.filter = 'blur(0px)';
-//   setTimeout(function(){
-//     burgerMenuOverlayWhite.style.width = "0%";
-//     burgerOverlayBlackBox.style.width = '0vw';
-//   },700)
-// }
-//<a> slider close on click
-// var closeMeClass = document.getElementsByClassName('closeMeClass');
-// for(var i=0;i<closeMeClass.length;i++){
-//   closeMeClass[i].addEventListener('click',function(){
-//     closeBoxFun();
-//   });
-// }
+function openMenu(){
+  stickySwitch =1;
+  burgerMenuOverlayWhite.style.width = "102%";
+  stickyMenu.style.height = '0vw';
+  setTimeout(function(){
+    if(window.innerWidth > window.innerHeight){
+    burgerOverlayBlackBox.style.width = '30vw';
+  }else{
+    burgerOverlayBlackBox.style.width = '75vw';
+  }
+    // wholePageOverlay.style.filter = 'blur(10px)';
+  },1000)
+}
+
+closeBox.addEventListener('click',function(){
+  closeBoxFun();
+});
+function closeBoxFun(){
+  stickySwitch = 0;
+  // wholePageOverlay.style.filter = 'blur(0px)';
+  setTimeout(function(){
+    burgerMenuOverlayWhite.style.width = "0%";
+    burgerOverlayBlackBox.style.width = '0vw';
+  },700)
+}
+// <a> slider close on click
+var closeMeClass = document.getElementsByClassName('closeMeClass');
+for(var i=0;i<closeMeClass.length;i++){
+  closeMeClass[i].addEventListener('click',function(){
+    closeBoxFun();
+  });
+}
 
 // global window on scroll
 // global window on scroll
