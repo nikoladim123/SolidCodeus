@@ -52,6 +52,11 @@
   src: url('../fonts/Poppins-SemiBold.otf') format('truetype');
 }
 @font-face {
+  font-family: 'Poppins-Regular';
+  font-display: auto;
+  src: url('../fonts/Poppins-Regular.otf') format('truetype');
+}
+@font-face {
   font-family: 'Poppins-Thin';
   font-display: auto;
   src: url('../fonts/Poppins-Thin.otf') format('truetype');
