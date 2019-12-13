@@ -1860,6 +1860,9 @@ h1 span{
   left: 0.4vw;
   top: -2.82vw;
 }
+.leftnumThree{
+  width: 7.5159vw;
+}
 .purpleDivImg{
   transition: 1s ease;
   width: 55.060vw;
@@ -1870,8 +1873,8 @@ h1 span{
 }
 
 .purpleDivImgThree{
-  width: 59.612vw;
-  top: -4.5vw;
+  width: 50.2vw;
+  top: 4.5vw;
 }
 
 .purpleDivImgFour{
@@ -1966,7 +1969,6 @@ h1 span{
 
 .researchContainer{
   position: relative;
-  cursor: pointer;
   /* border: 1px solid red; */
 }
 .researchCircle{
@@ -2004,6 +2006,7 @@ h1 span{
   /* transform: rotate(485deg); */
   animation-name: threeAnimPic;
   animation-duration: 12s;
+  opacity: 0.5;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }

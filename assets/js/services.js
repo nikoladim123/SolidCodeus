@@ -255,7 +255,7 @@ function purpDivAnimThree() {
   if (typeof purpleDiv[2].getClientRects()[0] != 'undefined') {
     if (purpleDiv[2].getClientRects()[0].top < 200) {
       purpleDiv[2].style.marginLeft = '6.5vw';
-      purpleDivImg[1].style.left = '33vw';
+      purpleDivImg[1].style.left = '42.5vw';
       leftPurpInsideTextContainer[2].style.left = '5vw';
     }
   }
