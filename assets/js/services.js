@@ -236,7 +236,7 @@ function purpDivAnimOne() {
     if (purpleDiv[0].getClientRects()[0].top < 200) {
       purpleDiv[0].style.marginLeft = '6.5vw';
       purpleDivImg[0].style.left = '37.5vw';
-      leftPurpInsideTextContainer[0].style.left = '3vw';
+      leftPurpInsideTextContainer[0].style.left = '5.4vw';
     }
   }
 }
@@ -246,7 +246,7 @@ function purpDivAnimTwo() {
     if (purpleDiv[1].getClientRects()[0].top < 200) {
       purpleDivRight[0].style.marginLeft = '16.5vw';
       purpleDivImgRight[0].style.left = '-18vw';
-      rightPurpInsideTextContainer[0].style.right = '5vw';
+      rightPurpInsideTextContainer[0].style.right = '5.4vw';
     }
   }
 }
@@ -256,7 +256,7 @@ function purpDivAnimThree() {
     if (purpleDiv[2].getClientRects()[0].top < 200) {
       purpleDiv[2].style.marginLeft = '6.5vw';
       purpleDivImg[1].style.left = '33vw';
-      leftPurpInsideTextContainer[2].style.left = '3vw';
+      leftPurpInsideTextContainer[2].style.left = '5.4vw';
     }
   }
 }
@@ -266,7 +266,7 @@ function purpDivAnimFour() {
     if (purpleDiv[3].getClientRects()[0].top < 200) {
       purpleDivRight[1].style.marginLeft = '16.5vw';
       purpleDivImgRight[1].style.left = '-17vw';
-      rightPurpInsideTextContainer[1].style.right = '3vw';
+      rightPurpInsideTextContainer[1].style.right = '5.4vw';
     }
   }
 }

@@ -1818,8 +1818,9 @@ h1 span{
   text-align: center;
   font-size: 2.9055vw;
   font-family: 'Roboto-Bold';
-  margin-top: 4vw;
+  margin-top: 13vw;
   margin-bottom: 0.2vw;
+  color: #f0b13b;
 }
 .solidCodeUsDesignProecesYellowUnderline{
   width: 25vw;
@@ -1835,6 +1836,8 @@ h1 span{
   text-align: center;
   width: 75vw;
   margin-left: 12.5vw;
+  color: #555555;
+  margin-bottom: 3.65vw;
 }
 
 .uiUXsectionOne{
@@ -1845,7 +1848,7 @@ h1 span{
   position: relative;
   margin-bottom: 11vw;
   background: #7b74ff;
-  width: 78vw;
+  width: 79vw;
   height: 56.3680vw;
   /* margin-left: 6.5vw; */
   margin-left: 11vw;
@@ -1854,8 +1857,8 @@ h1 span{
 .leftnum{
   width: 6.5159vw;
   position: absolute;
-  left: 1vw;
-  top: -2.2vw;
+  left: 0.4vw;
+  top: -2.82vw;
 }
 .purpleDivImg{
   transition: 1s ease;
@@ -1931,14 +1934,20 @@ h1 span{
   color: white;
   font-weight: 800;
   font-size: 0.8716vw;
-  font-family: 'Poppins-SemiBold';
+  font-family: 'Poppins-Regular';
   margin: 0;
   margin-top: 2vw;
+  font-weight: 100;
   margin-bottom: 1vw;
+  display: flex;
+  align-items: center;
+  white-space: pre;
 }
 
 .leftPurpInsideTextContainer h3 span{
   color: #ffc9b0;
+  font-size: 2vw;
+  margin: 0;
 }
 
 .rightPurpInsideTextContainer{
@@ -1978,17 +1987,18 @@ h1 span{
   font-family: 'Roboto-Bold';
   margin: 0;
   font-family: 'Morganite-Bold';
-  transform: rotate(-29deg);
+  transform: rotate(-26deg);
   transform-origin: center left;
   left: 3vw;
 }
 .leftPurpInsideTextContainer p{
   color: white;
-  font-family: 'Poppins-Regular';
+  font-family: 'Poppins-Thin';
   font-size: 1.3075vw;
-  line-height: 1.5;
+  line-height: 1.75;
   text-align: justify;
   margin-top: 0;
+  font-weight: 800;
 }
 
 .anyQuestionsContainer{
@@ -1996,11 +2006,18 @@ h1 span{
   width: 24.7941vw;
   height: 6.9273vw;
   margin-top: 5vw;
-  position: relative;
+  position: absolute;
   padding-top: 3vw;
   box-shadow: 0px 0px 61px -26px rgba(255,255,255,1);
   text-align: center;
   cursor: pointer;
+  bottom: 1.5vw;
+  left: 5.4vw;
+}
+
+.anyQuestionsContainerRight{
+  left: auto;
+  right: 5.4vw;
 }
 .anyQuestionsContainer:hover{
   box-shadow: 0px 0px 61px -11px rgba(255,255,255,1);
