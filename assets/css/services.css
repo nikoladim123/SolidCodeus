@@ -1848,7 +1848,7 @@ h1 span{
   position: relative;
   margin-bottom: 11vw;
   background: #7b74ff;
-  width: 79vw;
+  width: 81vw;
   height: 56.3680vw;
   /* margin-left: 6.5vw; */
   margin-left: 11vw;
@@ -1866,11 +1866,12 @@ h1 span{
   /* left: 26vw; */
   left: 5.5vw;
   position: absolute;
-  top: 1vw;
+  top: 0vw;
 }
 
 .purpleDivImgThree{
   width: 59.612vw;
+  top: -4.5vw;
 }
 
 .purpleDivImgFour{
@@ -1885,39 +1886,45 @@ h1 span{
   width: 12.348vw;
   position: absolute;
   top: -3.8vw;
-  right: -1vw;
+  right: -2vw;
 }
 
 .rightnumFour{
   top: -3vw;
   width: 8.08716vw;
-  right: 0vw;
+  right: 0.5vw;
 }
 
 .purpleDivRight{
   /* margin-left: 16.5vw; */
   margin-left: 10.5vw;
-  background: #feeb5a;
+  background: #ebb035;
   padding: 0.1px;
 }
 .purpleDivImgRight{
   transition: 1s ease;
-  width: 53.26vw;
+  width: 48.26vw;
   /* left: -14vw; */
   left: 5vw;
   position: absolute;
   top: 5vw;
 }
+.purpleDivImgRightTwo{
+  width: 54vw;
+  top: 3vw;
+}
 
 .orangeDiv{
   background: #f48069;
   margin-top: 20vw;
+  width: 93vw;
 }
 .greenDiv{
   background: #7cefc8;
   margin-top: 28vw;
   margin-bottom: 16vw;
   background: linear-gradient(135deg, rgba(124,239,200,1) 0%, rgba(52,220,208,1) 100%);
+  width: 83vw;
 }
 
 .leftPurpInsideTextContainer{
@@ -1927,7 +1934,7 @@ h1 span{
   /* left: 3vw; */
   left: 29vw;
   top: 12vw;
-  width: 33vw;
+  width: 32vw;
 }
 
 .leftPurpInsideTextContainer h3{
@@ -1938,10 +1945,11 @@ h1 span{
   margin: 0;
   margin-top: 2vw;
   font-weight: 100;
-  margin-bottom: 1vw;
+  /* margin-bottom: 1vw; */
   display: flex;
   align-items: center;
   white-space: pre;
+  height: 2vw;
 }
 
 .leftPurpInsideTextContainer h3 span{
@@ -1965,19 +1973,48 @@ h1 span{
   transition: 0.5s ease;
   position: absolute;
   /* border: 1px solid red; */
-  height: 7.6513vw;
-  width: 7.6513vw;
+  height: 9.13vw;
+  width: 9.13vw;
   border-radius: 50%;
   background: #bc98d6;
+  top: -1.5vw;
   box-shadow: 0px 0px 65px 29px rgba(228,182,244,0.5);
+  left: -1vw;
 }
-.researchContainer:hover .researchCircle{
-  box-shadow: 0px 0px 65px 29px rgba(228,182,244,1);
-}
+
 
 .researchCircleTwo{
   background: #fbdf6f;
   box-shadow: 0px 0px 65px 29px rgba(255,255,255,0.5);
+}
+
+.twoAnimPic{
+  width: 41.5vw;
+  position: absolute;
+  left: 17vw;
+  top: 7vw;
+}
+
+.threeAnimPic{
+  width: 37.723vw;
+  position: absolute;
+  left: 10vw;
+  top: 7vw;
+  transform-origin: center center;
+  /* transform: rotate(485deg); */
+  animation-name: threeAnimPic;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes threeAnimPic {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
 }
 
 .leftPurpInsideTextContainer h2{
@@ -1987,7 +2024,7 @@ h1 span{
   font-family: 'Roboto-Bold';
   margin: 0;
   font-family: 'Morganite-Bold';
-  transform: rotate(-26deg);
+  transform: rotate(-20deg);
   transform-origin: center left;
   left: 3vw;
 }
@@ -2007,12 +2044,13 @@ h1 span{
   height: 6.9273vw;
   margin-top: 5vw;
   position: absolute;
-  padding-top: 3vw;
-  box-shadow: 0px 0px 61px -26px rgba(255,255,255,1);
+  padding-top: 2vw;
+  padding-bottom: 0.51vw;
+  box-shadow: 0px 0px 6vw 1vw rgba(255,255,255,0.5);
   text-align: center;
   cursor: pointer;
   bottom: 1.5vw;
-  left: 5.4vw;
+  left: 5vw;
 }
 
 .anyQuestionsContainerRight{
@@ -2028,7 +2066,7 @@ h1 span{
   font-size: 1.4527vw;
   font-family: 'Poppins-Regular';
   margin: 0;
-  line-height: 1;
+  line-height: 1.2;
   text-align: center;
 }
 
