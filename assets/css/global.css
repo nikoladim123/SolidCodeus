@@ -5,9 +5,21 @@
 }
 
 @font-face {
+  font-family: 'Morganite-Thin';
+  font-display: auto;
+  src: url('../fonts/Morganite/Morganite-Thin.ttf') format('truetype');
+}
+
+@font-face {
   font-family: 'Morganite-Bold';
   font-display: auto;
   src: url('../fonts/Morganite/Morganite-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Morganite-Black';
+  font-display: auto;
+  src: url('../fonts/Morganite/Morganite-Black.ttf') format('truetype');
 }
 
 @font-face {
@@ -60,6 +72,11 @@
   font-family: 'Poppins-Thin';
   font-display: auto;
   src: url('../fonts/Poppins-Thin.otf') format('truetype');
+}
+@font-face {
+  font-family: 'Poppins-Light';
+  font-display: auto;
+  src: url('../fonts/Poppins-Light.otf') format('truetype');
 }
 @font-face {
   font-family: 'Poppins-ExtraLight';
@@ -313,7 +330,7 @@ video{
   color: white;
   font-size: 4.81vw;
   font-family: 'Roboto-Black';
-  font-family: 'Morganite-Bold';
+  font-family: 'Morganite-Black';
   font-weight: 100;
   font-size: 12.106vw;
 }
