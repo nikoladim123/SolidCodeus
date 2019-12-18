@@ -234,8 +234,8 @@ var rightPurpInsideTextContainer = document.getElementsByClassName('rightPurpIns
 function purpDivAnimOne() {
   if (typeof purpleDiv[0].getClientRects()[0] != 'undefined') {
     if (purpleDiv[0].getClientRects()[0].top < 200) {
-      purpleDiv[0].style.marginLeft = '6.5vw';
-      purpleDivImg[0].style.left = '37.5vw';
+      purpleDiv[0].style.marginLeft = '6.75vw';
+      purpleDivImg[0].style.left = '37vw';
       leftPurpInsideTextContainer[0].style.left = '5vw';
     }
   }
@@ -244,9 +244,9 @@ function purpDivAnimOne() {
 function purpDivAnimTwo() {
   if (typeof purpleDiv[1].getClientRects()[0] != 'undefined') {
     if (purpleDiv[1].getClientRects()[0].top < 200) {
-      purpleDivRight[0].style.marginLeft = '16.5vw';
-      purpleDivImgRight[0].style.left = '-17vw';
-      rightPurpInsideTextContainer[0].style.right = '9vw';
+      purpleDivRight[0].style.marginLeft = '0vw';
+      purpleDivImgRight[0].style.left = '0vw';
+      rightPurpInsideTextContainer[0].style.right = '6vw';
     }
   }
 }
@@ -264,9 +264,9 @@ function purpDivAnimThree() {
 function purpDivAnimFour() {
   if (typeof purpleDiv[3].getClientRects()[0] != 'undefined') {
     if (purpleDiv[3].getClientRects()[0].top < 200) {
-      purpleDivRight[1].style.marginLeft = '11.5vw';
-      purpleDivImgRight[1].style.left = '-12vw';
-      rightPurpInsideTextContainer[1].style.right = '7vw';
+      purpleDivRight[1].style.marginLeft = '0vw';
+      purpleDivImgRight[1].style.left = '-0vw';
+      rightPurpInsideTextContainer[1].style.right = '6.5vw';
     }
   }
 }
