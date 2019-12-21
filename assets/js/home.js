@@ -106,6 +106,16 @@ arrow.addEventListener('click',function(){
   vidModulo++;
 });
 
+var arrowOne = document.getElementsByClassName('arrow')[1];
+arrowOne.addEventListener('click',function(){
+  if(vidModulo % 2 === 0){
+    videoSlider.style.width = '0';
+  }
+  if(vidModulo % 2 === 1){
+    videoSlider.style.width = '56vw';
+  }
+  vidModulo++;
+});
 // mobile paralax anim
 // mobile paralax anim
 // mobile paralax anim

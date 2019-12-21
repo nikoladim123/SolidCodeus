@@ -378,6 +378,7 @@ video{
   height: 100%;
   top: 0;
   right: 0;
+  overflow: hidden;
 }
 .bodyHome .arrowHolder{
   position: absolute;
@@ -385,7 +386,8 @@ video{
   width: 5vw;
   height: 4vw;
   top: 14.165vw;
-  left: -5vw;
+  /* left: -5vw; */
+  right: 0;
 }
 .bodyHome .arrow{
   transition: 0.4s;
@@ -679,6 +681,8 @@ video{
     right: -5vw;
     top: 5vw;
   }
+
+
 
   .bodyHome .getInTouchBtn {
     width: 58.461vw;
