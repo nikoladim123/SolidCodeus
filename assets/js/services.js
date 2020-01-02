@@ -40,7 +40,7 @@ function hightLightOnLoad(e) {
   clickable[2].style.background = 'rgba(255,255,255,0.3)';
   clickable[3].style.background = 'rgba(255,255,255,0.3)';
   for (var i = 0; i < clickable.length; i++) {
-    if(clickable[i].dataset.num == e){
+    if (clickable[i].dataset.num == e) {
       clickable[i].style.background = 'rgba(255,255,255,1)';
     }
   }
@@ -65,75 +65,75 @@ function controlContent(param) {
 }
 
 function scrollintoViewMain() {
-  setTimeout(function () {
+  setTimeout(function() {
     document.getElementsByClassName('main')[0].scrollIntoView()
   }, 900);
 }
 
-clickable[0].addEventListener('click',(e)=>{
-    selectNew(e);
-    highLight(e);
-    headingTop[0].innerText = 'ECOMMERCE';
-    headingBot[0].innerText = 'SOLUTIONS';
-    controlContent(3);
-    scrollintoViewMain();
+clickable[0].addEventListener('click', (e) => {
+  selectNew(e);
+  highLight(e);
+  headingTop[0].innerText = 'ECOMMERCE';
+  headingBot[0].innerText = 'SOLUTIONS';
+  controlContent(3);
+  scrollintoViewMain();
 })
-clickable[1].addEventListener('click',(e)=>{
-    selectNew(e);
-    highLight(e);
-    headingTop[0].innerText = 'SEO &';
-    headingBot[0].innerText = 'MARKETING';
-    controlContent(2);
-    scrollintoViewMain();
+clickable[1].addEventListener('click', (e) => {
+  selectNew(e);
+  highLight(e);
+  headingTop[0].innerText = 'SEO &';
+  headingBot[0].innerText = 'MARKETING';
+  controlContent(2);
+  scrollintoViewMain();
 })
-clickable[2].addEventListener('click',(e)=>{
-    selectNew(e);
-    highLight(e);
-    headingTop[0].innerText = 'WEB';
-    headingBot[0].innerText = 'DEVELOPMENT';
-    controlContent(1);
-    scrollintoViewMain();
+clickable[2].addEventListener('click', (e) => {
+  selectNew(e);
+  highLight(e);
+  headingTop[0].innerText = 'WEB';
+  headingBot[0].innerText = 'DEVELOPMENT';
+  controlContent(1);
+  scrollintoViewMain();
 })
-clickable[3].addEventListener('click',(e)=>{
-    selectNew(e);
-    highLight(e);
-    headingTop[0].innerText = 'UI/UX';
-    headingBot[0].innerText = 'DESIGN';
-    controlContent(0);
-    scrollintoViewMain();
+clickable[3].addEventListener('click', (e) => {
+  selectNew(e);
+  highLight(e);
+  headingTop[0].innerText = 'UI/UX';
+  headingBot[0].innerText = 'DESIGN';
+  controlContent(0);
+  scrollintoViewMain();
 })
 
-  // Load headings top/bot
+// Load headings top/bot
 function loadHeadings(ses) {
-  if(ses === 0){
+  if (ses === 0) {
     headingTop[0].innerText = 'UI/UX';
     headingBot[0].innerText = 'DESIGN';
   }
-  if(ses === 1){
+  if (ses === 1) {
     headingTop[0].innerText = 'WEB';
     headingBot[0].innerText = 'DEVELOPMENT';
   }
-  if(ses === 2){
+  if (ses === 2) {
     headingTop[0].innerText = 'SEO &';
     headingBot[0].innerText = 'MARKETING';
   }
-  if(ses === 3){
+  if (ses === 3) {
     headingTop[0].innerText = 'ECOMMERCE';
     headingBot[0].innerText = 'SOLUTIONS';
   }
 }
 
-  // load content
+// load content
 function loadContentFun() {
   content[parseInt(window.sessionStorage.selection)].style.display = 'block';
 }
 
-  // loadSelection
+// loadSelection
 function loadSelection() {
-  if(typeof window.sessionStorage.selection == 'undefined'){
+  if (typeof window.sessionStorage.selection == 'undefined') {
     content[0].style.display = 'block';
   }
-  if(typeof window.sessionStorage.selection !== 'undefined'){
+  if (typeof window.sessionStorage.selection !== 'undefined') {
     textChange();
     banDiv[window.sessionStorage.selection].style.width = '100%';
     uiuxText[window.sessionStorage.selection].style.transform = 'rotate(0deg)';
@@ -159,23 +159,24 @@ function webDevTextFun() {
 
 // ecoom cont js
 // ecoom cont js
-var ppheaderLeftContent = document.getElementsByClassName('ppheaderLeftContent');
-function ppheaderLeftContentFun() {
-  if (typeof ppheaderLeftContent[0].getClientRects()[0] != 'undefined') {
-    if(ppheaderLeftContent[0].getClientRects()[0].top < window.innerHeight /2){
-      ppheaderLeftContent[0].style.left = '-11vw';
-    }else{
-      ppheaderLeftContent[0].style.left = '-60vw';
-    }
-  }
-}
+// var ppheaderLeftContent = document.getElementsByClassName('ppheaderLeftContent');
+// function ppheaderLeftContentFun() {
+//   if (typeof ppheaderLeftContent[0].getClientRects()[0] != 'undefined') {
+//     if(ppheaderLeftContent[0].getClientRects()[0].top < window.innerHeight /2){
+//       ppheaderLeftContent[0].style.left = '-11vw';
+//     }else{
+//       ppheaderLeftContent[0].style.left = '-60vw';
+//     }
+//   }
+// }
 
 var eComMain = document.getElementsByClassName('eComMain');
+
 function eComMainFun() {
-  if (typeof eComMain[0].getClientRects()[0] != 'undefined'){
-    if(eComMain[0].getClientRects()[0].top < window.innerHeight /2){
+  if (typeof eComMain[0].getClientRects()[0] != 'undefined') {
+    if (eComMain[0].getClientRects()[0].top < window.innerHeight / 2) {
       eComMain[0].style.background = 'white';
-    }else{
+    } else {
       eComMain[0].style.background = '#e49b13';
     }
   }
@@ -188,17 +189,17 @@ var leftCarArrowBox = document.getElementsByClassName('leftCarArrowBox');
 
 var ecomProdImages = 3;
 // assets/images/desktop/eCommerce/1.png
-setInterval(function () {
+setInterval(function() {
   leftCarArrowBoxFunAnim();
   bigProductImg[0].style.opacity = '0';
   dust[0].style.transform = 'rotate(360deg)';
   dust[0].style.opacity = '0';
-  setTimeout(function () {
+  setTimeout(function() {
     ecomProdImages++;
-    bigProductImg[0].src = 'assets/images/desktop/eCommerce/' + (1 + ecomProdImages%3) + '.png';
+    bigProductImg[0].src = 'assets/images/desktop/eCommerce/' + (1 + ecomProdImages % 3) + '.png';
     prodMiniBoxFun();
   }, 1000);
-  setTimeout(function () {
+  setTimeout(function() {
     bigProductImg[0].style.opacity = '1';
     dust[0].style.opacity = '1';
     dust[0].style.transform = 'rotate(0deg)';
@@ -209,12 +210,12 @@ function prodMiniBoxFun() {
   for (var i = 0; i < prodMiniBox.length; i++) {
     prodMiniBox[i].style.transform = 'scale(1)';
   }
-  prodMiniBox[ecomProdImages%3].style.transform = 'scale(1.2)';
+  prodMiniBox[ecomProdImages % 3].style.transform = 'scale(1.2)';
 }
 
 function leftCarArrowBoxFunAnim() {
   leftCarArrowBox[0].style.background = 'rgb(230,230,230,0.65)';
-  setTimeout(function () {
+  setTimeout(function() {
     leftCarArrowBox[0].style.background = 'rgb(230,230,230,0.25)';
   }, 500);
 }
@@ -229,14 +230,15 @@ var leftPurpInsideTextContainer = document.getElementsByClassName('leftPurpInsid
 var purpleDivRight = document.getElementsByClassName('purpleDivRight');
 var purpleDivImgRight = document.getElementsByClassName('purpleDivImgRight');
 var rightPurpInsideTextContainer = document.getElementsByClassName('rightPurpInsideTextContainer');
-
+var imgAnim = document.getElementsByClassName('imgAnim');
 
 function purpDivAnimOne() {
   if (typeof purpleDiv[0].getClientRects()[0] != 'undefined') {
     if (purpleDiv[0].getClientRects()[0].top < 200) {
-      purpleDiv[0].style.marginLeft = '6.75vw';
-      purpleDivImg[0].style.left = '37vw';
-      leftPurpInsideTextContainer[0].style.left = '5vw';
+      // purpleDiv[0].style.marginLeft = '6.75vw';
+      // purpleDivImg[0].style.left = '37vw';
+      // leftPurpInsideTextContainer[0].style.left = '5vw';
+      imgAnim[0].style.width = '0';
     }
   }
 }
@@ -244,9 +246,10 @@ function purpDivAnimOne() {
 function purpDivAnimTwo() {
   if (typeof purpleDiv[1].getClientRects()[0] != 'undefined') {
     if (purpleDiv[1].getClientRects()[0].top < 200) {
-      purpleDivRight[0].style.marginLeft = '0vw';
-      purpleDivImgRight[0].style.left = '0vw';
-      rightPurpInsideTextContainer[0].style.right = '6vw';
+      // purpleDivRight[0].style.marginLeft = '0vw';
+      // purpleDivImgRight[0].style.left = '0vw';
+      // rightPurpInsideTextContainer[0].style.right = '6vw';
+      imgAnim[1].style.width = '0';
     }
   }
 }
@@ -254,9 +257,10 @@ function purpDivAnimTwo() {
 function purpDivAnimThree() {
   if (typeof purpleDiv[2].getClientRects()[0] != 'undefined') {
     if (purpleDiv[2].getClientRects()[0].top < 200) {
-      purpleDiv[2].style.marginLeft = '6.5vw';
-      purpleDivImg[1].style.left = '42.5vw';
-      leftPurpInsideTextContainer[2].style.left = '5vw';
+      // purpleDiv[2].style.marginLeft = '6.5vw';
+      // purpleDivImg[1].style.left = '42.5vw';
+      // leftPurpInsideTextContainer[2].style.left = '5vw';
+      imgAnim[2].style.width = '0';
     }
   }
 }
@@ -264,9 +268,25 @@ function purpDivAnimThree() {
 function purpDivAnimFour() {
   if (typeof purpleDiv[3].getClientRects()[0] != 'undefined') {
     if (purpleDiv[3].getClientRects()[0].top < 200) {
-      purpleDivRight[1].style.marginLeft = '0vw';
-      purpleDivImgRight[1].style.left = '-0vw';
-      rightPurpInsideTextContainer[1].style.right = '6.5vw';
+      // purpleDivRight[1].style.marginLeft = '0vw';
+      // purpleDivImgRight[1].style.left = '-0vw';
+      // rightPurpInsideTextContainer[1].style.right = '6.5vw';
+      imgAnim[3].style.width = '0';
+    }
+  }
+}
+
+
+//purple screen anim
+var purpScreenDiv = document.getElementsByClassName('purpScreenDiv')[0];
+var purpTabletDiv = document.getElementsByClassName('purpTabletDiv')[0];
+var purpleScreen = document.getElementsByClassName('purpScreen')[0];
+
+function purpleScreens() {
+  if (typeof purpScreenDiv.getClientRects()[0] != 'undefined') {
+    if (purpleScreen.getClientRects()[0].top < window.innerHeight / 100 * 30) {
+      purpScreenDiv.style.transform = "matrix3d(1,0,0.00,0,0.00,1,0.00,0,0,0,1,0,0,0,0,1)"
+      purpTabletDiv.style.transform = "matrix3d(1,0,0.00,0,0.00,1,0.00,0,0,0,1,0,0,0,0,1)"
     }
   }
 }
@@ -276,37 +296,37 @@ var headerbg = document.getElementsByClassName('headerbg');
 var shoterAray = Array.from(headerbg).reverse();
 var shooter = document.getElementsByClassName('shooter');
 
-function shooterFireFun() {
-  if (typeof shooter[0].getClientRects()[0] != 'undefined') {
-    if (shooter[0].getClientRects()[0].top < 100) {
-      shooterLoopFun();
+var shoterModulo = 0;
+var shoterLoop;
+
+function startLoop() {
+  shoterLoop = setInterval(function() {
+    for (var i = 0; i < headerbg.length; i++) {
+      headerbg[i].style.opacity = '0';
     }
-  }
+    headerbg[shoterModulo % 7].style.opacity = '1';
+    shoterModulo++;
+    // console.log(shoterModulo % 7);
+  }, 200);
 }
 
 
-var timer = 1000;
-function shooterLoopFun() {
-  for (var i = 0; i < shoterAray.length-1; i++) {
-    shoterFun(shoterAray[i]);
-    timer+= 1000;
-  }
-}
 
-function shoterFun(sht) {
-  setTimeout(function () {
-    sht.style.filter = 'brightness(10)';
-    sht.style.opacity = '0';
-  }, timer);
-}
+shooter[0].addEventListener('mouseenter', () => {
+  clearInterval(shoterLoop);
+});
 
+shooter[0].addEventListener('mouseleave', () => {
+  startLoop();
+});
+startLoop();
 
 // watches module
 var coloredWatches = document.getElementsByClassName('coloredWatches');
 var colorChangeButton = document.getElementsByClassName('colorChangeButton');
 
 for (var i = 0; i < colorChangeButton.length; i++) {
-  colorChangeButton[i].addEventListener('click',(e)=>{
+  colorChangeButton[i].addEventListener('click', (e) => {
     for (var i = 0; i < coloredWatches.length; i++) {
       coloredWatches[i].style.opacity = '0';
     };
@@ -317,7 +337,7 @@ for (var i = 0; i < colorChangeButton.length; i++) {
 
 
 var iterWatch = 0;
-setInterval(function () {
+setInterval(function() {
   for (var i = 0; i < coloredWatches.length; i++) {
     coloredWatches[i].style.opacity = '0';
   };
@@ -345,17 +365,17 @@ function colorChangeBGautoFun() {
 // windows events
 // windows events
 // windows events
-window.addEventListener('load',()=>{
+window.addEventListener('load', () => {
   loadSelection();
 })
 
-window.addEventListener('scroll',()=>{
-  ppheaderLeftContentFun();
+window.addEventListener('scroll', () => {
+  // ppheaderLeftContentFun();
   eComMainFun();
   purpDivAnimOne();
   purpDivAnimTwo();
   purpDivAnimThree();
   purpDivAnimFour();
-  shooterFireFun();
+  purpleScreens()
   // webDevTextFun();
 })

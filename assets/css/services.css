@@ -153,9 +153,8 @@ header {
   /* font-family: 'Montserrat-Black',serif; */
   font-family: 'Roboto-Black';
   font-family: 'Morganite-Thin';
-  font-size: 7vw;
   text-align: right;
-  color: #e49b13;
+  color: white;
 }
 
 main {
@@ -177,6 +176,7 @@ main {
   width: 100%;
   overflow: hidden;
   height: 6vw;
+  visibility: hidden;
 }
 
 .narrowBG {
@@ -211,7 +211,7 @@ main {
   /* border: 1px solid black; */
   padding-top: 0.1px;
   position: relative;
-  top: -0vw;
+  top: -4vw;
   background-color: white;
   width: 100%;
   min-height: 10vw;
@@ -397,13 +397,13 @@ main {
   opacity: 1;
 }
 
-.clickable span:nth-child(1) {
+.clickable span:nth-child(2) {
   font-family: 'Roboto-Thin';
   font-weight: 100;
   pointer-events: none;
 }
 
-.clickable span:nth-child(2) {
+.clickable span:nth-child(1) {
   pointer-events: none;
   font-family: 'Roboto-Black';
 }
@@ -1910,6 +1910,7 @@ h1 span {
 /* UI/UX content */
 .uiUXheader {
   overflow: hidden;
+  background: #fbfbfb;
 }
 
 .uiUxHeaderOne {
@@ -1923,12 +1924,24 @@ h1 span {
 
 .uiUxHeaderOne::after {
   content: '';
-  width: 10.35vw;
-  height: 5px;
+  width: 9.35vw;
+  height: 0.51vw;
   background: #f0b13b;
   position: absolute;
   left: 30.35vw;
-  top: -3px;
+  bottom: -1vw;
+  left: 43vw;
+}
+
+.uiUxHeaderOne::before {
+  content: '';
+  width: 25.35vw;
+  height: 1px;
+  background: black;
+  position: absolute;
+  left: 30.35vw;
+  bottom: -0.8vw;
+  left: 35vw;
 }
 
 .uiUxParagraph {
@@ -1949,10 +1962,75 @@ h1 span {
   margin-bottom: 3vw;
 }
 
+.shooter {
+  position: relative;
+  width: 59.8062vw;
+  margin-top: 4vw;
+  height: 32.05811vw;
+}
+.shoterAnimContainer{
+  width: 50vw;
+  height: 25vw;
+  position: absolute;
+  left: 25vw;
+  top: 35.5vw;
+  overflow: hidden;
+}
+.shoterAnim{
+  position: absolute;
+  width: 50vw;
+  height: 50vw;
+  border-radius: 50%;
+  left: 0;
+  top: -41vw;
+  background: #f0b13b;
+  animation-name: shoterAnim;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes shoterAnim {
+  0%{
+    top: -41vw;
+    opacity: 0.8
+  }
+  100%{
+    top: -38vw;
+    opacity: 0.5
+  }
+}
+
 .headerbgContainer {
   position: relative;
   /* border: 1px solid red; */
   /* overflow: hidden; */
+  background: #5925a3;
+  display: flex;
+  height: 50.169491vw;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.headerbgContainer p {
+  position: absolute;
+  font-size: ;
+  color: white;
+  opacity: 0.05;
+  font-size: 35vw;
+  font-family: 'Morganite-Bold';
+  margin: 0;
+}
+
+.headerbgContainer p:nth-child(1) {
+  left: 2vw;
+  top: 2vw;
+}
+
+.headerbgContainer p:nth-child(2) {
+  right: 2vw;
+  top: 2vw;
 }
 
 .headerbg {
@@ -1960,7 +2038,7 @@ h1 span {
   position: absolute;
   top: 0;
   left: 0;
-  transition: 1s ease;
+  transition: 0.4s ease;
 }
 
 .sCodeDesignProc {
@@ -1975,12 +2053,24 @@ h1 span {
 
 .sCodeDesignProc::after {
   content: '';
-  width: 10.35vw;
-  height: 5px;
+  width: 9.35vw;
+  height: 0.51vw;
   background: #f0b13b;
   position: absolute;
   left: 30.35vw;
-  top: -3px;
+  bottom: -1vw;
+  left: 43vw;
+}
+
+.sCodeDesignProc::before {
+  content: '';
+  width: 28.35vw;
+  height: 1px;
+  background: black;
+  position: absolute;
+  left: 30.35vw;
+  bottom: -0.8vw;
+  left: 35vw;
 }
 
 .solidCodeUsDesignProecesYellowUnderline {
@@ -2019,7 +2109,7 @@ h1 span {
   width: 92vw;
   height: 56.3680vw;
   /* margin-left: 6.5vw; */
-  margin-left: 11vw;
+  margin-left: 6.75vw;
   padding: 0.1px;
 }
 
@@ -2038,7 +2128,7 @@ h1 span {
   transition: 1s ease;
   width: 55.060vw;
   /* left: 26vw; */
-  left: 5.5vw;
+  left: 37vw;
   position: absolute;
   top: 0vw;
 }
@@ -2046,10 +2136,12 @@ h1 span {
 .purpleDivImgThree {
   width: 50.2vw;
   top: 4.5vw;
+  left: 42.5vw;
 }
 
 .purpleDivImgFour {
   width: 59.612vw;
+  left: 0 !important;
 }
 
 .imgRig {
@@ -2071,7 +2163,7 @@ h1 span {
 
 .purpleDivRight {
   /* margin-left: 16.5vw; */
-  margin-left: 10.5vw;
+  margin-left: 0vw;
   background: #ebb035;
   padding: 0.1px;
 }
@@ -2085,9 +2177,41 @@ h1 span {
   top: 5vw;
 }
 
+.imgAnim {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 1s ease;
+}
+
+.imgAnimOne {
+  background: #7b74ff;
+}
+
+.imgAnimTwo {
+  background: #ebb035;
+  width: 92%;
+  left: auto;
+  right: 8%;
+}
+
+.imgAnimThree {
+  background: #f48069;
+}
+
+.imgAnimFour {
+  background: #7cefc8;
+  left: auto;
+  right: 0;
+}
+
 .purpleDivImgRightTwo {
   width: 54vw;
   top: 3vw;
+  left: 0;
+  height: 65.5vw;
 }
 
 .orangeDiv {
@@ -2109,7 +2233,7 @@ h1 span {
   /* border: 1px solid black; */
   position: absolute;
   /* left: 3vw; */
-  left: 29vw;
+  left: 5vw;
   top: 12vw;
   width: 32vw;
 }
@@ -2137,7 +2261,7 @@ h1 span {
 
 .rightPurpInsideTextContainer {
   /* right: 3vw; */
-  right: 13vw;
+  right: 6vw;
   left: auto;
 }
 
@@ -2403,7 +2527,7 @@ h1 span {
   z-index: 123;
 }
 
-.screensContainerEcommerce{
+.screensContainerEcommerce {
   top: 3vw;
 }
 
@@ -2880,6 +3004,7 @@ h1 span {
 .watchesBG {
   width: 100%;
   position: relative;
+  margin-bottom: -5px;
 }
 
 .coloredWatches {
@@ -2960,7 +3085,7 @@ h1 span {
   top: 0;
   width: 100%;
   height: 100%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .productPhotographyContent h2 {
