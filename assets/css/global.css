@@ -558,6 +558,71 @@ video{
 .hideDesktop{
   display: none;
 }
+
+/* new footer start */
+.newFooter {
+  position: relative;
+  background: white;
+}
+
+.newFoterSocialMedia {
+  position: relative;
+}
+
+.newFoterSocialMediainside {
+  display: flex;
+  width: 11vw;
+  margin-left: 65vw;
+  margin-top: 2.3vw;
+}
+
+.newFoterSocialMedia .fab {
+  /* border: 2px solid white; */
+  background: #f0b13b;
+  border-radius: 50%;
+  font-size: 1.3vh;
+  width: 2vw;
+  height: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5vw;
+  color: white;
+}
+
+.footerLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Poppins-Regular';
+  color: #4a4a4a;
+  font-size: 1.162227vw;
+}
+
+.footerLinks a {
+  color: #4a4a4a;
+  margin: 0.261vw;
+}
+
+.footerLinks a:hover {
+  text-decoration: underline;
+}
+
+.footerLogoBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f2f2f2;
+  height: 7.7481vw;
+  margin-top: 5vw;
+}
+
+.footerNewLogo {
+  width: 21.259vw;
+}
+
+/*  new footer end */
+
 /* phone query */
 /* phone query */
 /* phone query */

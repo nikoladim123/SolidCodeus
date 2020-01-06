@@ -1,0 +1,273 @@
+header{
+  background: transparent;
+}
+
+.beautyproSection{
+  position: relative;
+  /* border: 1px solid red; */
+  min-height: 70vw;
+}
+
+.beautyproSection img{
+  position: absolute;
+}
+
+.leftBigPlant{
+  width: 18.62602vw;
+  left: 11.0304vw;
+  top: 26.8505vw;
+  /* transition: 10s ease; */
+  transform: scale(0.5);
+  animation-name: leftBigPlant;
+  animation-duration: 10s;
+  animation-timing-function: ease;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes leftBigPlant {
+  0%{
+    transform: scale(0.5);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+.tablet{
+  width: 41.5578vw;
+  top: 17vw;
+  left: 4vw;
+}
+
+.tabletScreen{
+  width: 22.3vw;
+  top: 19.3vw;
+  left: 21.1vw;
+}
+
+.tabletScreenTwo{
+  width: 22.3vw;
+  top: 19.3vw;
+  left: 21.1vw;
+  animation-name: tabletScreenTwo;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+@keyframes tabletScreenTwo {
+  0%{
+    opacity: 0;
+  }
+  5%{
+    opacity: 1;
+  }
+  25%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 1;
+  }
+  55%{
+    opacity:0;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+.mobile{
+  width: 22.06095vw;
+  left: 5vw;
+  top: 36vw;
+}
+
+.mobileScreen{
+  width: 8.3696vw;
+  top: 38vw;
+  left: 16.55vw;
+}
+.mobileScreenTwo{
+  animation-name: tabletScreenTwo;
+  animation-duration: 6s;
+  animation-delay: 1.25s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  width: 8.3696vw;
+  top: 38vw;
+  left: 16.55vw;
+}
+
+.leftSmallLeaf{
+  width: 6.2409vw;
+  top: 31vw;
+  left: 15vw;
+  opacity: 0;
+  transform-origin: top left;
+  animation-name: leftSmallLeaf;
+  animation-duration: 10s;
+  animation-timing-function: ease;
+  animation-delay: 5s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+@keyframes leftSmallLeaf {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.middlePlant{
+  width: 9.14368vw;
+  left: 43vw;
+  top: 17.2vw;
+  transform:scale(0.6);
+  top: 22.2vw;
+  opacity: 0.7;
+  animation-name: middlePlant;
+  animation-duration: 8s;
+  animation-delay: 3s;
+  animation-timing-function: linear;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+@keyframes middlePlant {
+  0%{
+    transform:scale(0.6);
+    top: 22.2vw;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    transform:scale(1);
+    top: 17.2vw;
+  }
+}
+
+.laptop{
+  width: 61.490vw;
+  top: 25vw;
+  left: 28.4vw;
+}
+
+.laptopScreenContainer{
+  /* border: 1px solid red; */
+  position: absolute;
+  width: 40.445vw;
+  top: 27vw;
+  left: 38.5vw;
+  height: 25.2vw;
+  overflow: hidden;
+}
+
+.laptopScreen{
+  width: 40.445vw;
+  top: 0vw;
+  left: 0vw;
+  animation-name: laptopScreen;
+  animation-duration: 6s;
+  animation-delay: 3s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+@keyframes laptopScreen {
+  0%{
+    z-index: 0;
+    left: 0vw;
+  }
+  90%{
+    left: 0vw;
+  }
+  95%{
+    left: 41vw;
+  }
+  100%{
+    left: 41vw;
+    z-index: 1;
+  }
+}
+
+.laptopScreenTwo{
+  width: 40.8vw;
+  top: 0vw;
+  left: 0vw;
+  animation-name: laptopScreenTwo;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  animation-direction:  normal;
+  animation-iteration-count: infinite;
+}
+@keyframes laptopScreenTwo {
+  0%{
+    z-index: 0;
+    left: 0vw;
+  }
+  90%{
+    left: 0vw;
+  }
+  95%{
+    left: 41vw;
+  }
+  100%{
+    left: 41vw;
+    z-index: 1;
+  }
+}
+
+.rightBigPlant{
+  width: 7.64392vw;
+  top: 27vw;
+  left: 80.6vw;
+  left: 79.6vw;
+  transform: skewX(-10deg);
+  animation-name: rightBigPlant;
+  animation-duration: 4s;
+  animation-delay: 4s;
+  animation-timing-function: linear;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+@keyframes rightBigPlant {
+  0%{
+    transform: skewX(-10deg);
+    left: 79.6vw;
+  }
+  100%{
+    transform: skewX(0deg);
+    left: 80.6vw;
+  }
+}
+
+.rightSmallLeaf{
+  width: 3.04789vw;
+  left: 79vw;
+  left: 80vw;
+  top: 37vw;
+  opacity: 0.8;
+  transform: scale(0.85);
+  animation-duration: 4s;
+  animation-delay: 4s;
+  animation-timing-function: ease;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rightSmallLeaf {
+  0%{
+    opacity: 0.8;
+    transform: scale(0.85);
+    left: 79vw;
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+    left: 80vw;
+  }
+}
