@@ -333,6 +333,8 @@ main {
 }
 .leftImgContainerRevealDivPurple{
   background: rgba(111,1,255);
+  left: auto;
+  right: 0;
 }
 .simpleArcPurple span{
   color: #6f01ff;
