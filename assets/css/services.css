@@ -130,19 +130,19 @@ header {
 .solidCodeUsBlog {
   margin-left: 5.5vw;
   position: absolute;
-  bottom: 0.65vw;
+  bottom: -0.7vw;
   z-index: 1;
   line-height: 0.85;
 }
 
 .solidCodeUsBlog p {
-  font-size: 12.444vw;
+  font-size: 8.34vw;
   margin: 0;
   color: white;
 }
 
 .solidCodeUsBlog p:nth-child(1) {
-  margin-bottom: -1.2vw;
+  margin-bottom: -0.2vw;
   /* font-family: 'Montserrat-ExtraLight',serif; */
   font-family: 'Roboto-Thin';
   font-weight: 100;
@@ -154,7 +154,7 @@ header {
   font-family: 'Roboto-Black';
   font-family: 'Morganite-Thin';
   text-align: right;
-  color: white;
+  color: #e49b13;
 }
 
 main {
@@ -176,7 +176,7 @@ main {
   width: 100%;
   overflow: hidden;
   height: 6vw;
-  visibility: hidden;
+  /* visibility: hidden; */
 }
 
 .narrowBG {
@@ -211,7 +211,7 @@ main {
   /* border: 1px solid black; */
   padding-top: 0.1px;
   position: relative;
-  top: -4vw;
+  top: 0vw;
   background-color: white;
   width: 100%;
   min-height: 10vw;
@@ -1994,11 +1994,11 @@ h1 span {
 @keyframes shoterAnim {
   0%{
     top: -41vw;
-    opacity: 0.8
+    opacity: 0.5;
   }
   100%{
     top: -38vw;
-    opacity: 0.5
+    opacity: 0.8;
   }
 }
 
@@ -2098,7 +2098,7 @@ h1 span {
   position: relative;
   padding-top: 4vw;
   overflow: hidden;
-  margin-top: -4vw;
+  /* margin-top: -4vw; */
 }
 
 .purpleDiv {
@@ -2443,6 +2443,8 @@ h1 span {
   font-family: 'Morganite-Bold';
   font-size: 21.7917vw;
   font-weight: 400;
+  position: relative;
+  left: -0.3vw;
 }
 
 .discussNewIdeashighPerformance {

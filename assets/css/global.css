@@ -59,6 +59,11 @@
   src: url('../fonts/Poppins-Black.otf') format('truetype');
 }
 @font-face {
+  font-family: 'Poppins-Bold';
+  font-display: auto;
+  src: url('../fonts/Poppins-Bold.otf') format('truetype');
+}
+@font-face {
   font-family: 'Poppins-SemiBold';
   font-display: auto;
   src: url('../fonts/Poppins-SemiBold.otf') format('truetype');
@@ -438,7 +443,7 @@ video{
   right: -10px;
   width: 0vw;
   height: 100vh;
-  background-color: rgb(231,231,231,0.9);
+  background-color: rgb(231,231,231,0.97);
   z-index: 3;
 }
 .burgerOverlayBlackBox{
@@ -479,7 +484,7 @@ video{
   margin-left: 10%;
 }
 .burgerBlackBoxText h2{
-  font-family: 'Montserrat-Bold';
+  font-family: 'Poppins-Black';
   font-size: 3vw;
 }
 .burgerBlackBoxText h2 span{
@@ -490,7 +495,7 @@ video{
   transition: 1s;
   border-bottom: 0.2vw solid #f1df34;
   position: relative;
-  font-family: 'Montserrat-Light';
+  font-family: Poppins-Regular;
   font-size: 1.5vw;
   padding-left: 0vw;
   margin-left: 0vw;
