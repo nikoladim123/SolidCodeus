@@ -24,8 +24,25 @@ header {
   overflow: hidden;
 }
 
-.bannerContainer img {
+.bnerImgBig{
+  position: relative;
+  /* border: 1px solid red; */
   height: 100%;
+  width: 34.6vw;
+}
+.bnerImgSmall{
+  /* border: 1px solid red; */
+  position: relative;
+  height: 100%;
+  width: 23vw;
+}
+
+.bannerContainer img {
+  transition: 0.75s ease;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .solidCodeUsBlog {

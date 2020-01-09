@@ -63,7 +63,34 @@ function fireRevealAndTextAnim(revealActualElement,textActualElement,sectionSide
   }
 }
 
-// simplify
+// baner change images
+var bnerImgBig = document.getElementsByClassName('bnerImgBig');
+var bnerImgSmall = document.getElementsByClassName('bnerImgSmall');
+
+function runBanerInterval() {
+  setTimeout(function () {
+    for (var i = 0; i < bnerImgBig.length+1; i++) {
+      bnerImgBig[0].children[i].style.opacity = '0';
+    };
+    bnerImgBig[0].children[Math.round(Math.random()*2)].style.opacity = '1';
+  }, 6000);
+  setTimeout(function () {
+    for (var i = 0; i < bnerImgBig.length+1; i++) {
+      bnerImgBig[1].children[i].style.opacity = '0';
+    };
+    bnerImgBig[1].children[Math.round(Math.random()*2)].style.opacity = '1';
+  }, 3000);
+  for (var i = 0; i < bnerImgBig.length+1; i++) {
+    bnerImgSmall[0].children[i].style.opacity = '0';
+  };
+  bnerImgSmall[0].children[Math.round(Math.random()*2)].style.opacity = '1';
+
+}
+runBanerInterval();
+
+setInterval(function () {
+  runBanerInterval();
+}, 9000);
 
 
 window.addEventListener('scroll',()=>{
