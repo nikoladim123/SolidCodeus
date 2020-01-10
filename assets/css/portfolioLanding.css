@@ -24,13 +24,14 @@ header {
   overflow: hidden;
 }
 
-.bnerImgBig{
+.bnerImgBig {
   position: relative;
   /* border: 1px solid red; */
   height: 100%;
   width: 34.6vw;
 }
-.bnerImgSmall{
+
+.bnerImgSmall {
   /* border: 1px solid red; */
   position: relative;
   height: 100%;
@@ -129,7 +130,8 @@ main {
   position: relative;
   margin-bottom: 21vw;
 }
-.portfolioLandingItemSectionLeft::after{
+
+.portfolioLandingItemSectionLeft::after {
   content: '';
   clear: both;
   display: block;
@@ -144,7 +146,17 @@ main {
   position: relative;
 }
 
-.imageOverlay{
+.leftImgContainer:hover .imageOverlay {
+  opacity: 0.1;
+}
+.leftImgContainer:hover .leftPortfolioText{
+  color: red;
+  transform: translate(1vw, 0);
+}
+
+
+.imageOverlay {
+  transition: 1s ease;
   display: block;
   position: absolute;
   width: 100%;
@@ -152,18 +164,18 @@ main {
   left: 0;
   top: 0;
   /* content: ''; */
-  background: rgba(1,255,213,0.8);
+  background: rgba(1, 255, 213, 0.8);
 }
 
 .leftImgContainerRevealDiv {
   transition: 1s ease;
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 55.78132vw;
+  height: 55.7813vw;
   left: 0;
   top: 0;
-  background: rgba(1,230,189);
-  z-index: 2;
+  background: rgba(1, 230, 189);
+  z-index: 3;
 }
 
 .portfolioImgNoisy {
@@ -178,11 +190,12 @@ main {
 }
 
 .leftPortfolioText {
+  pointer-events: none;
   z-index: 1;
   transition: 1s ease;
   text-align: right;
   position: absolute;
-  margin: 0;
+  /* margin: 0; */
   font-size: 4.685vw;
   mix-blend-mode: color;
   font-family: 'Poppins-Bold';
@@ -198,6 +211,103 @@ main {
   font-family: 'Poppins-Thin';
 }
 
+/* left color change white */
+.h2HolderLeft {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  pointer-events: none;
+}
+
+.h2HolderLeft .h2WhiteContainer {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  z-index: 3;
+  /* border: 1px solid red; */
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 55.78132vw;
+}
+
+.h2HolderLeft .h2WhiteContainer h2 {
+  color: white;
+}
+
+.h2HolderLeft .h2BlackContainer {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  z-index: 3;
+  /* border: 1px solid red; */
+  top: 0;
+  /* left: 50%; */
+  overflow: hidden;
+  width: calc(100vw - 55.78132vw);
+  margin-left: 55.78132vw;
+}
+
+.h2HolderLeft .h2BlackContainer h2 {
+  color: black;
+  margin-left: -55.78132vw;
+}
+
+/* left color change white */
+/* right color change white */
+.h2HolderRight {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+
+  pointer-events: none;
+}
+
+.h2HolderRight .h2WhiteContainer {
+  position: absolute;
+  /* width: 50%; */
+  height: 100%;
+  z-index: 3;
+  /* border: 1px solid red; */
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  width: 55.78132vw;
+}
+
+.h2HolderRight .h2WhiteContainer h2 {
+  color: white;
+  /* margin-left: 1vw; */
+}
+
+.h2HolderRight .h2BlackContainer {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  z-index: 3;
+  /* border: 1px solid red; */
+  top: 0;
+  right: 0;
+  /* left: 50%; */
+  overflow: hidden;
+  width: 55.78132vw;
+  right: 55.78132vw;
+}
+
+.h2HolderRight .h2BlackContainer h2 {
+  color: black;
+  position: relative;
+  margin-left: 100vw;
+  /* margin-left: 132vw; */
+}
+
+/* right color change white */
 .greenCircleText {
   width: 20.4644vw;
   position: absolute;
@@ -215,7 +325,7 @@ main {
 }
 
 .simpleArc span {
-  /* opacity: 0; */
+  opacity: 0.4;
   filter: blur(10px);
   color: #96eed8;
   transition: 2s ease;
@@ -254,7 +364,7 @@ main {
 
 .findMoreButOutside {
   border-radius: 50%;
-  background-color: rgba(1,230,189,0.3);
+  background-color: rgba(1, 230, 189, 0.3);
   width: 6.368vw;
   height: 6.368vw;
   display: flex;
@@ -269,7 +379,7 @@ main {
 .findMoreBut {
   transition: 0.4s;
   border-radius: 50%;
-  background-color: rgba(1,230,189);
+  background-color: rgba(1, 230, 189);
   width: 2.855vw;
   height: 2.8552vw;
   display: flex;
@@ -279,86 +389,100 @@ main {
   font-size: 1.5vw;
 }
 
- .findMoreButOutside:hover .findMoreBut {
+.findMoreButOutside:hover .findMoreBut {
   width: 6.368vw;
   height: 6.368vw;
 }
+
 /* rightImgContainer */
-.portfolioLandingItemSectionRight{
-}
-.rightImgContainer{
+.portfolioLandingItemSectionRight {}
+
+.rightImgContainer {
   float: right;
   justify-content: flex-start;
 }
 
 .portfolioLandingItemSectionRight .leftPortfolioText {
-    text-align: left;
-    left: auto;
-    right: 48.13vw;
-    right: 10vw;
+  text-align: left;
+  left: auto;
+  /* right: 48.13vw; */
+  position: relative;
+  right: 10vw;
+  margin-left: calc(100vw - 55.78132vw);
 }
 
-.portfolioLandingItemSectionRight .simpleArc{
+.portfolioLandingItemSectionRight .simpleArc {
   right: auto;
   left: 10vw;
 }
-.portfolioLandingItemSectionRight .findOutMore{
+
+.portfolioLandingItemSectionRight .findOutMore {
   left: 11vw;
 }
 
-
 /* red */
-.simpleArcRed span{
+.simpleArcRed span {
   color: #fecdd1;
 }
-.imageOverlayRed{
-  background: rgba(255,70,68,0.88);
+
+.imageOverlayRed {
+  background: rgba(255, 70, 68, 0.88);
 }
-.leftImgContainerRevealDivRed{
-  background-color: rgba(255,70,68);
+
+.leftImgContainerRevealDivRed {
+  background-color: rgba(255, 70, 68);
   left: auto;
   right: 0;
 }
 
-.findMoreButOutsidered{
-  background-color: rgba(255,70,68,0.3);
+.findMoreButOutsidered {
+  background-color: rgba(255, 70, 68, 0.3);
 }
-.findMoreButOutsidered .findMoreBut{
-  background-color: rgba(255,70,68);
+
+.findMoreButOutsidered .findMoreBut {
+  background-color: rgba(255, 70, 68);
 }
 
 /* orange */
-.simpleArcOrange span{
+.simpleArcOrange span {
   color: #fdedb2;
 }
-.imageOverlayOrange{
-  background-color: rgba(252,236,177,0.88);
+
+.imageOverlayOrange {
+  background-color: rgba(252, 236, 177, 0.88);
 }
-.leftImgContainerRevealDivOrange{
-  background-color:#fdedb2;
+
+.leftImgContainerRevealDivOrange {
+  background-color: #fdedb2;
 }
-.findMoreButOutsideOrange{
-  background-color: rgba(252,236,177,0.33);
+
+.findMoreButOutsideOrange {
+  background-color: rgba(252, 236, 177, 0.33);
 }
-.findMoreButOrange{
-  background-color: rgba(252,236,177);
+
+.findMoreButOrange {
+  background-color: rgba(252, 236, 177);
 }
 
 /* purple */
-.imageOverlayPurple{
-  background: rgba(111,1,255,0.88);
+.imageOverlayPurple {
+  background: rgba(111, 1, 255, 0.88);
 }
-.leftImgContainerRevealDivPurple{
-  background: rgba(111,1,255);
+
+.leftImgContainerRevealDivPurple {
+  background: rgba(111, 1, 255);
   left: auto;
   right: 0;
 }
-.simpleArcPurple span{
+
+.simpleArcPurple span {
   color: #6f01ff;
 }
-.findMoreButOutsidePurple{
-  background: rgba(111,1,255,0.33);
+
+.findMoreButOutsidePurple {
+  background: rgba(111, 1, 255, 0.33);
 }
-.findMoreButPurple{
-  background: rgba(111,1,255);
+
+.findMoreButPurple {
+  background: rgba(111, 1, 255);
 }

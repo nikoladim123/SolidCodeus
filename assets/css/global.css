@@ -170,6 +170,11 @@ a{
 .stickyMenu .navigation a{
   color: white !important;
 }
+.navigation a:nth-child(5){
+  left: 4vw;
+    position: relative;
+    font-size: 1.1vw;
+}
 /* sticky end */
 header{
   background: linear-gradient(135deg, #f2b441 0%, #e49b13 100%);
