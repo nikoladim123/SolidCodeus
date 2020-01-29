@@ -325,7 +325,7 @@ main {
 }
 
 .simpleArc span {
-  opacity: 0.4;
+  opacity: 0.3;
   filter: blur(10px);
   color: #96eed8;
   transition: 2s ease;

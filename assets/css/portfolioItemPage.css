@@ -55,7 +55,7 @@ header{
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
 }
-@keyframes tabletScreenTwo {
+/* @keyframes tabletScreenTwo {
   0%{
     opacity: 0;
   }
@@ -74,7 +74,7 @@ header{
   100%{
     opacity: 0;
   }
-}
+} */
 
 .mobile{
   width: 22.06095vw;
@@ -177,7 +177,7 @@ header{
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
 }
-@keyframes laptopScreen {
+/* @keyframes laptopScreen {
   0%{
     z-index: 0;
     left: 0vw;
@@ -192,7 +192,7 @@ header{
     left: 41vw;
     z-index: 1;
   }
-}
+} */
 
 .laptopScreenTwo{
   width: 40.8vw;
@@ -204,7 +204,7 @@ header{
   animation-direction:  normal;
   animation-iteration-count: infinite;
 }
-@keyframes laptopScreenTwo {
+/* @keyframes laptopScreenTwo {
   0%{
     z-index: 0;
     left: 0vw;
@@ -219,7 +219,7 @@ header{
     left: 41vw;
     z-index: 1;
   }
-}
+} */
 
 .rightBigPlant{
   width: 7.64392vw;
