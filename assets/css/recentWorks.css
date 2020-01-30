@@ -99,7 +99,7 @@ main {
 
 /* overview section */
 .overviewSection{
-  transition: 1s ease;
+  transition: 2s ease;
   position: relative;
   min-height: 10vw;
   background: rgb(226, 226, 226);

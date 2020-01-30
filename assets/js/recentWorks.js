@@ -11,12 +11,12 @@ var swch = 0;
 function functionName() {
   if(swch){
     gradScaler++;
-    if(gradScaler>100){
+    if(gradScaler>110){
       swch = 0;
     }
   }else{
     gradScaler--;
-    if(gradScaler<65){
+    if(gradScaler<55){
       swch = 1;
     }
   }
@@ -24,7 +24,7 @@ function functionName() {
 setInterval(function () {
   gardAnim();
   functionName()
-}, 100);
+}, 75);
 
 // images anim
 var imaeForAnim = document.getElementsByClassName('imaeForAnim');
