@@ -1,0 +1,176 @@
+body {
+  margin: 0;
+}
+
+main {
+  background: radial-gradient(ellipse at center, #f8eac3 0, #e3b63f 100%);
+  min-height: 100vh;
+}
+
+.animBox {
+  /* border: 1px solid red; */
+  overflow: hidden;
+  display: flex;
+  height: calc(100vh - 3.5vw);
+  align-items: baseline;
+  justify-content: center;
+  padding-top: 3.5vw;
+}
+
+.imaeForAnim{
+  transition: 1.5s ease;
+  /* -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(250, 250, 250, 0.15))); */
+  /* margin: 0 -3vw; */
+  margin: 0 15vw;
+  opacity: 0;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.ipad-land {
+  position: relative;
+  width: 16.6vw;
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(250, 250, 250, 0.15)));
+}
+
+.ipad-port {
+  z-index: 1;
+  position: relative;
+  width: 14.5vw;
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(250, 250, 250, 0.15)));
+}
+
+.mac-screen {
+  position: relative;
+  width: 31.3vw;
+  -webkit-box-reflect: below -7vw -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(250, 250, 250, 0.15)));
+}
+
+.mac-laptop {
+  z-index: 1;
+  position: relative;
+  width: 25.9vw;
+  -webkit-box-reflect: below -3vw -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(250, 250, 250, 0.15)));
+}
+
+.iphone {
+  left: 5vw;
+  position: relative;
+  width: 6vw;
+  -webkit-box-reflect: below -2vw -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(250, 250, 250, 0.15)));
+}
+
+
+.controlContainer{
+  position: absolute;
+  left: 5vw;
+  top: 5vw;
+  /* width: 10vw; */
+  height: 5vw;
+  background: rgba(255,255,255,0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.controlContainer p{
+  font-family: 'Poppins-Light';
+  transition: 0.4s ease;
+  cursor: pointer;
+  user-select: none;
+  background-color: rgba(255,255,255,0.3);
+  width: 3vw;
+  font-size: 5vw;
+  margin: 0;
+  margin: 0 0.1vw;
+  padding: 0 1vw;
+  /* top: -1vw; */
+  color: rgba(200,200,200,0.8);
+  position: relative;
+}
+.controlContainer div:nth-child(1) p{
+  font-size: 4vw;
+}
+.controlContainer p:hover{
+  background-color: rgba(255,255,255,0.8);
+  color: rgba(210,210,210,1);
+}
+
+/* overview section */
+.overviewSection{
+  transition: 1s ease;
+  position: relative;
+  min-height: 10vw;
+  background: rgb(226, 226, 226);
+  padding: 0.1px;
+  background: #e3b63f;
+}
+.mainDetail{
+  padding: 0.1px;
+  position: relative;
+  background: white;
+  top: -3vw;
+  width: calc(71.146vw - 10%);
+  margin: -3.1vw auto 0;
+  box-shadow: 0 0 30px -15px rgba(0,0,0,.22);
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.topTableRow{
+  display: flex;
+  align-items: center;
+}
+
+.mainDetail .col {
+  text-align: center;
+  width: calc(100% / 3);
+  font-size: 2.2vw;
+  font-family: 'Poppins-Thin';
+      line-height: 0.6;
+}
+.mainDetail .col  h2{
+  margin: 1.5vw;
+}
+.mainDetail .col span{
+  font-size: 1.2vw;
+}
+.mainDetail .col:nth-child(1){
+  border-right: 1px solid #b7b7b8;
+}
+.mainDetail .col:nth-child(3){
+  border-left: 1px solid #b7b7b8;
+}
+
+h1 {
+  font-family: 'Montserrat Black';
+    text-align: center;
+    color: #000;
+    font-size: 5.5vw;
+    letter-spacing: 1px;
+    position: relative;
+}
+h1::after {
+  content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 2px;
+    background: #e3b740;
+    bottom: .5vw;
+    width: 35%;
+}
+
+.description{
+  font-size: 1.25vw;
+  font-family: 'Poppins-Regular';
+  color: #454545;
+}
+
+.scrollShow{
+  transition: 0.5s ease;
+}
+.scrollShow:hover{
+  color:#e3b740 ;
+}
