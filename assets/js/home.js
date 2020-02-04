@@ -95,13 +95,17 @@ setInterval(function () {
 // video slider anim
 var arrow = document.getElementsByClassName('arrow')[0];
 var videoSlider = document.getElementsByClassName('videoSlider')[0];
+var videoDivAfter = document.getElementsByClassName('videoDivAfter')[0];
+
 var vidModulo =1;
 arrow.addEventListener('click',function(){
   if(vidModulo % 2 === 0){
     videoSlider.style.width = '0';
+    videoDivAfter.style.opacity = '0';
   }
   if(vidModulo % 2 === 1){
     videoSlider.style.width = '56vw';
+    videoDivAfter.style.opacity = '1';
   }
   vidModulo++;
 });
@@ -110,9 +114,11 @@ var arrowOne = document.getElementsByClassName('arrow')[1];
 arrowOne.addEventListener('click',function(){
   if(vidModulo % 2 === 0){
     videoSlider.style.width = '0';
+    videoDivAfter.style.opacity = '0';
   }
   if(vidModulo % 2 === 1){
     videoSlider.style.width = '56vw';
+    videoDivAfter.style.opacity = '1';
   }
   vidModulo++;
 });
