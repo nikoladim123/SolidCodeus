@@ -360,6 +360,21 @@ function colorChangeBGautoFun() {
 }
 
 
+// SEO and marketing
+// SEO and marketing
+var graphContainer = document.getElementsByClassName('graphContainer');
+var grapLineContaienr = document.getElementsByClassName('grapLineContaienr');
+
+
+function purpDivAnimOne() {
+  if (typeof graphContainer[0].getClientRects()[0] != 'undefined') {
+    if (grapLineContaienr[0].getClientRects()[0].top < window.innerHeight) {
+      for (var i = 0; i < grapLineContaienr.length; i++) {
+        grapLineContaienr[i].style.height = i*5 + Math.random() * 5 + 10 + 'vw';
+      }
+    }
+  }
+}
 
 
 // windows events
@@ -371,6 +386,7 @@ window.addEventListener('load', () => {
 
 window.addEventListener('scroll', () => {
   // ppheaderLeftContentFun();
+  purpDivAnimOne()
   eComMainFun();
   purpDivAnimOne();
   purpDivAnimTwo();

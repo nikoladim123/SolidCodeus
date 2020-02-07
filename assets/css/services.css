@@ -342,6 +342,176 @@ main {
   }
 }
 
+.seoGraphSection {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.graphContainer {
+  position: relative;
+  /* border: 1px solid red; */
+  min-height: 50vw;
+  width: 54.5vw;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  border-bottom: 0.338vw solid gray;
+}
+
+.grapLineContaienr {
+  transition: 2s ease;
+  background: yellow;
+  height: 10vw;
+  width: 8.6115vw;
+  position: relative;
+  background: linear-gradient(135deg, rgba(255, 255, 115, 1) 26%, rgba(255, 255, 115, 1) 38%, rgba(255, 208, 107, 1) 100%);
+}
+
+.grapLineContaienr:nth-child(1) {}
+
+.grapLineContaienr:nth-child(2) {
+  background: linear-gradient(135deg, rgba(255, 182, 255, 1) 26%, rgba(255, 182, 255, 1) 38%, rgba(165, 120, 255, 1) 100%);
+}
+
+.grapLineContaienr:nth-child(3) {
+  background: linear-gradient(135deg, rgba(255, 182, 255, 1) 26%, rgba(255, 182, 255, 1) 38%, rgba(165, 120, 255, 1) 100%);
+}
+
+.grapLineContaienr:nth-child(4) {
+  background: linear-gradient(135deg, rgba(216, 99, 255, 1) 26%, rgba(216, 99, 255, 1) 38%, rgba(144, 104, 255, 1) 100%);
+}
+
+.grapLineContaienr:nth-child(5) {
+  background: linear-gradient(135deg, rgba(173, 80, 255, 1) 26%, rgba(173, 80, 255, 1) 38%, rgba(115, 84, 215, 1) 100%);
+}
+
+.graphCircleBox {
+  /* border: 1px solid black; */
+  position: absolute;
+  bottom: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 1.74165vw;
+}
+
+.graphCircleBox p {
+  font-size: 0.7740vw;
+  font-family: 'Poppins-Regular';
+  writing-mode: tb;
+}
+
+.graphCircle {
+  background: linear-gradient(135deg, rgba(255, 255, 115, 1) 26%, rgba(255, 255, 115, 1) 38%, rgba(255, 208, 107, 1) 100%);
+  width: 1.45137vw;
+  height: 1.45137vw;
+  border-radius: 50%;
+  position: relative;
+  margin-bottom: 1.0643vw;
+}
+
+.grapLineContaienr:nth-child(2) .graphCircle {
+  background: linear-gradient(135deg, rgba(255, 182, 255, 1) 26%, rgba(255, 182, 255, 1) 38%, rgba(165, 120, 255, 1) 100%);
+}
+
+.grapLineContaienr:nth-child(3) .graphCircle {
+  background: linear-gradient(135deg, rgba(255, 182, 255, 1) 26%, rgba(255, 182, 255, 1) 38%, rgba(165, 120, 255, 1) 100%);
+}
+
+.grapLineContaienr:nth-child(4) .graphCircle {
+  background: linear-gradient(135deg, rgba(216, 99, 255, 1) 26%, rgba(216, 99, 255, 1) 38%, rgba(144, 104, 255, 1) 100%);
+}
+
+.grapLineContaienr:nth-child(5) .graphCircle {
+  background: linear-gradient(135deg, rgba(173, 80, 255, 1) 26%, rgba(173, 80, 255, 1) 38%, rgba(115, 84, 215, 1) 100%);
+}
+
+.graphHideContainer {
+  /* border: 1px solid purple; */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.graphHideBox {
+  /* border: 1px solid green; */
+  background: white;
+  width: 7vw;
+  height: 7vw;
+  transform: rotate(45deg);
+  position: absolute;
+  top: -4vw;
+  left: -3.5vw;
+}
+
+.graphHideBox:nth-child(1) {
+  top: -4vw;
+  left: auto;
+  right: -3.5vw;
+}
+
+.seoGraphSection h3 {
+  font-size: 0.8708vw;
+  font-family: 'Poppins-Light';
+  font-weight: 100;
+  margin: 0;
+}
+
+.divider{
+  width: 16.44895vw;
+  background: black;
+  height: 1px;
+  display: flex;
+  justify-content: center;
+  margin-top: 3.241vw;
+  margin-bottom: 1.548vw;
+}
+.dividerYellowLine{
+  width: 6.5312vw;
+  background: #debc43;
+  position: relative;
+  top: -0.193vw;
+  height: 0.387vw;
+}
+
+.optimiseExplanation{
+  font-family: 'Poppins-Light';
+  font-size: 1.45137vw;
+  color: #555555;
+  width: 57vw;
+  text-align: justify;
+}
+
+.technicalSeoAudit{
+  position: relative;
+  border: 1px solid red;
+}
+
+.SEOaudit{
+  width: 100%;
+  position: relative;
+}
+
+.readMoreAudit{
+  font-family: 'Poppins-Bold';
+font-size: 1.1611vw;
+color: #ffc131;
+position: absolute;
+top: 44vw;
+left: 9vw;
+}
+.readMoreAudit:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+
+/* seo end*/
 .uiuxText {
   width: 40vw;
   margin: 0;
@@ -1968,7 +2138,8 @@ h1 span {
   margin-top: 4vw;
   height: 32.05811vw;
 }
-.shoterAnimContainer{
+
+.shoterAnimContainer {
   width: 50vw;
   height: 25vw;
   position: absolute;
@@ -1976,7 +2147,8 @@ h1 span {
   top: 35.5vw;
   overflow: hidden;
 }
-.shoterAnim{
+
+.shoterAnim {
   position: absolute;
   width: 50vw;
   height: 50vw;
@@ -1992,11 +2164,12 @@ h1 span {
 }
 
 @keyframes shoterAnim {
-  0%{
+  0% {
     top: -41vw;
     opacity: 0.5;
   }
-  100%{
+
+  100% {
     top: -38vw;
     opacity: 0.8;
   }
