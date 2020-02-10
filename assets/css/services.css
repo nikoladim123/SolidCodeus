@@ -595,6 +595,7 @@ main {
   flex-direction: column;
   /* justify-content: center; */
   align-items: center;
+  background: #f2f2f2;
 }
 
 .seoServicesHeading h3 {
@@ -623,13 +624,202 @@ main {
   width: 61vw;
   font-size: 1.4527vw;
   font-family: 'Poppins-Light';
+  margin-bottom: 1vw;
   color: #35363b;
+  text-align: center;
+}
+
+.seoServiceContainer {
+  /* border: 1px solid black; */
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  width: 81%;
+  margin-top: 6vw;
+  margin-bottom: 16vw;
+}
+
+.seoServiceBox {
+  position: relative;
+  width: 25.23vw;
+}
+
+.seoServiceBox img {
+  width: 100%;
+}
+
+.seoServiceBox:nth-child(2) img {
+  width: 99%;
+}
+
+.seoServiceBoxContent {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid red; */
+  left: 0;
+  top: 0;
+}
+
+.seoServiceBoxContent h3 {
+  font-size: 1.743vw;
+  font-family: 'Poppins-Bold';
+  color: #af6649;
+  margin-top: 18vw;
+  margin-left: 5%;
+}
+
+.seoServiceBoxContent p {
+  font-family: 'Poppins-Thin';
+  font-size: 1.162vw;
+  color: white;
+  width: 80%;
+  margin-left: 5%;
+  padding: 5%;
+  font-weight: 100;
+  background: rgba(255, 255, 255, 0.2);
+  height: 23vw;
+  text-align: center;
+}
+
+.seoServiceBoxContent a {
+  transition: 0.5s;
+  font-size: 1.16222vw;
+  font-family: 'Poppins-Regular';
+  color: #f6c77b;
+  text-decoration: none;
+  margin-left: 5%;
+}
+
+.seoServiceBoxContent a:hover {
+  cursor: pointer;
+  filter: brightness(1.2);
+}
+
+.ecomSEO {
+  background: linear-gradient(to bottom, rgba(255, 226, 184, 1) 0%, #f4ac1c 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  border-top: 1.7vw solid #f0f0f0;
+}
+
+.ecomSEOHeaderBox {
+  position: relative;
+  top: -1.8vw;
+  margin-bottom: -3vw;
+}
+
+.ecomSEOHeaderBox h3 {
+  font-size: 1.7433vw;
+  font-family: 'Poppins-Thin';
+  color: #8a7c69;
+  margin: 0;
+  position: relative;
+  top: 3vw;
+  left: 2vw;
+}
+
+.ecomSEOHeaderBox h2 {
+  font-size: 9.685vw;
+  font-family: 'Morganite-Bold';
+  margin: 0;
+}
+
+.ecomSEOHeaderBox h2 span {
+  font-family: 'Morganite-Thin';
+  font-weight: 100;
+}
+
+.ecomSEOHeaderBox h4 {
+  font-family: 'Poppins-Thin';
+  font-size: 3.4866vw;
+  font-weight: 100;
+  margin: 0;
+  color: #fe4848;
+  margin-top: -2.8vw;
+  font-kerning: 14vw;
+  letter-spacing: 1.335vw;
+}
+
+.ecomSEO p {
+  font-family: 'Poppins-Regular';
+  color: #41424b;
+  font-size: 1.3559vw;
+  width: 62.518vw;
+  text-align: center;
+}
+
+.ecomSeoContentContainer {
+  /* border: 1px solid red; */
+  width: 100%;
+  margin-top: 5vw;
+  margin-bottom: 3.4vw;
+}
+
+.ecomSeoBox {
+  border: 1px solid white;
+  display: flex;
+  background: linear-gradient(to right, rgba(153, 103, 254, 1) 0%, rgba(153, 103, 254, 1) 22%, rgba(255, 255, 255, 0)100%);
+  width: 43.728vw;
+  height: 5.6658vw;
+  margin-left: 6.6vw;
+  align-items: center;
+  margin-bottom: 0.75vw;
+}
+
+.ecomSeoBox img {
+  width: 4vw;
+  height: 4vw;
+  margin-left: 1vw;
+  margin-right: 0.7vw;
+}
+
+.ecomSeoBox p {
+  text-align: left;
+  font-size: 0.9685vw;
+  font-family: 'Poppins-Light';
+  margin-right: 0.8vw;
+}
+
+.sidePhoneAnim {
+  width: 46.97336vw;
+  position: absolute;
+  right: 0vw;
+  top: 14vw;
+  animation-duration: 2s;
+  animation-name: sidePhoneAnim;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes sidePhoneAnim {
+  0%{
+    right: 0vw;
+  }
+  100%{
+    right: 1vw;
+  }
+}
+
+
+
+
+
+.feedBackContainerSection {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4vw;
+  padding-bottom: 4vw;
 }
 
 .feedBackContainer {
   padding: 0.1px;
   position: relative;
-  background-color: rgb(211, 80, 66);
+  background-color: #9969c9;
   width: 77.5vw;
   height: 32vw;
   margin-bottom: 2vw;
@@ -672,7 +862,7 @@ main {
   margin-top: 4.17vw;
   font-family: 'Roboto-Regular';
   font-size: 2.63vw;
-  color: white;
+  color: #ddb046;
   text-align: center;
   margin-bottom: 1vw;
 }
@@ -714,6 +904,7 @@ main {
   margin-top: 6.368vw;
   margin-left: 2.928vw;
   width: 37vw;
+  color: #888888;
 }
 
 .halfCircle {
@@ -731,7 +922,7 @@ main {
 .half {
   height: 100%;
   width: 5px;
-  background-color: rgb(211, 80, 66);
+  background-color: #9969c9;
 }
 
 .contactUsButtonTextbryon {
@@ -740,7 +931,7 @@ main {
   cursor: pointer;
 }
 
-.contactUsButtonTextbryon h3::after{
+.contactUsButtonTextbryon h3::after {
   transition: 0.5s ease;
   position: absolute;
   width: 5vw;
@@ -751,10 +942,10 @@ main {
   top: 0vw;
   left: 0;
 }
-.contactUsButtonTextbryon h3:hover:after{
+
+.contactUsButtonTextbryon h3:hover:after {
   width: 80%;
 }
-
 
 /* seo end*/
 .uiuxText {
@@ -3542,5 +3733,7 @@ h1 span {
   margin-top: 3.501vw;
   line-height: 1.9276;
 }
+
+
 
 /* productPhotographySection end */
