@@ -510,6 +510,35 @@ main {
   margin-bottom: 8.135593vw;
 }
 
+.contactUsButtonTextSEOAUDIT {
+  left: 46vw;
+  position: absolute;
+  bottom: 10vw;
+  cursor: pointer;
+}
+
+.contactUsButtonTextSEOAUDIT h3 {
+  color: white !important;
+  font-family: 'Poppins-Thin' !important;
+  font-weight: 100;
+}
+
+.contactUsButtonTextSEOAUDIT h3::after {
+  transition: 0.5s ease;
+  position: absolute;
+  width: 5vw;
+  height: 0.3vw;
+  background-color: #ffc131;
+  content: '';
+  display: block;
+  top: 0vw;
+  left: 0;
+}
+
+.contactUsButtonTextSEOAUDIT h3:hover:after {
+  width: 80%;
+}
+
 .free {
   position: absolute;
   width: 30.7506vw;
@@ -538,8 +567,6 @@ main {
   margin-bottom: 0;
 }
 
-
-
 .readMoreAudit {
   font-family: 'Poppins-Bold';
   font-size: 1.1611vw;
@@ -561,38 +588,42 @@ main {
   top: 7.55vw;
 }
 
-
-.seoServicesSection{
+.seoServicesSection {
   position: relative;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
   align-items: center;
 }
-.seoServicesHeading h3{
-  font-size: 1.74334vw;
+
+.seoServicesHeading h3 {
+  font-size: 1.674334vw;
   font-family: 'Poppins-Thin';
   color: #a9aaab;
   margin: 0;
   margin-top: 9.45vw;
+  font-weight: 100;
 }
-.seoServicesHeading h2{
+
+.seoServicesHeading h2 {
   color: #414047;
   margin: 0;
   font-size: 9.68523vw;
   font-family: 'Morganite-Bold';
   margin-top: -1.4vw;
 }
-.seoServicesHeading h2 span{
+
+.seoServicesHeading h2 span {
   font-family: 'Morganite-Thin';
   font-weight: 100;
 }
-.seoServicesSection p{
- width: 61vw;
- font-size: 1.4527vw;
- font-family: 'Poppins-Light';
- color: #35363b;
+
+.seoServicesSection p {
+  width: 61vw;
+  font-size: 1.4527vw;
+  font-family: 'Poppins-Light';
+  color: #35363b;
 }
 
 .feedBackContainer {
@@ -602,7 +633,7 @@ main {
   width: 77.5vw;
   height: 32vw;
   margin-bottom: 2vw;
-      margin-top: 3.6vw;
+  margin-top: 3.6vw;
 }
 
 .bryonProf {
@@ -703,6 +734,26 @@ main {
   background-color: rgb(211, 80, 66);
 }
 
+.contactUsButtonTextbryon {
+  left: 25vw;
+  position: relative;
+  cursor: pointer;
+}
+
+.contactUsButtonTextbryon h3::after{
+  transition: 0.5s ease;
+  position: absolute;
+  width: 5vw;
+  height: 0.3vw;
+  background-color: #ffc131;
+  content: '';
+  display: block;
+  top: 0vw;
+  left: 0;
+}
+.contactUsButtonTextbryon h3:hover:after{
+  width: 80%;
+}
 
 
 /* seo end*/
@@ -3478,7 +3529,7 @@ h1 span {
   left: 9vw;
 }
 
-.seoServicesSectionDivider{
+.seoServicesSectionDivider {
   width: 33vw;
   margin-top: 0vw;
 }
