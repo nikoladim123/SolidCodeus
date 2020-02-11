@@ -239,6 +239,7 @@ function purpDivAnimOne() {
       // purpleDivImg[0].style.left = '37vw';
       // leftPurpInsideTextContainer[0].style.left = '5vw';
       imgAnim[0].style.width = '0';
+      console.log(23);
     }
   }
 }
@@ -250,6 +251,7 @@ function purpDivAnimTwo() {
       // purpleDivImgRight[0].style.left = '0vw';
       // rightPurpInsideTextContainer[0].style.right = '6vw';
       imgAnim[1].style.width = '0';
+      console.log(123);
     }
   }
 }
@@ -366,7 +368,7 @@ var graphContainer = document.getElementsByClassName('graphContainer');
 var grapLineContaienr = document.getElementsByClassName('grapLineContaienr');
 
 
-function purpDivAnimOne() {
+function purpleGraphAnim() {
   if (typeof graphContainer[0].getClientRects()[0] != 'undefined') {
     if (grapLineContaienr[0].getClientRects()[0].top < window.innerHeight) {
       for (var i = 0; i < grapLineContaienr.length; i++) {
@@ -374,6 +376,26 @@ function purpDivAnimOne() {
       }
     }
   }
+}
+
+
+// Disscus new project paralax
+// Disscus new project paralax
+// Disscus new project paralax
+var discussNewIdeas = document.getElementsByClassName('discussNewIdeas');
+
+function newIdeasParalaxFun(){
+
+  if (window.innerWidth>window.innerHeight) {
+    if(discussNewIdeas[0].getBoundingClientRect().y < window.innerHeight){
+      discussNewIdeas[0].style.backgroundPosition = "0 " + ((-discussNewIdeas[0].getBoundingClientRect().y/7) - discussNewIdeas[0].getBoundingClientRect().height/3) + "px";
+    }
+  }else{
+    if(discussNewIdeas[0].getBoundingClientRect().y < window.innerHeight){
+      discussNewIdeas[0].style.backgroundPosition = "-25vw " + (50+(-discussNewIdeas[0].getBoundingClientRect().y/7) - discussNewIdeas[0].getBoundingClientRect().height/3) + "px";
+    }
+  }
+
 }
 
 
@@ -388,10 +410,11 @@ window.addEventListener('scroll', () => {
   // ppheaderLeftContentFun();
   purpDivAnimOne()
   eComMainFun();
-  purpDivAnimOne();
+  purpleGraphAnim();
   purpDivAnimTwo();
   purpDivAnimThree();
   purpDivAnimFour();
-  purpleScreens()
+  purpleScreens();
+  newIdeasParalaxFun()
   // webDevTextFun();
 })
