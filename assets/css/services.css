@@ -150,11 +150,13 @@ header {
 }
 
 .solidCodeUsBlog p:nth-child(2) {
+  font-size: 7.34vw;
   /* font-family: 'Montserrat-Black',serif; */
   font-family: 'Roboto-Black';
   font-family: 'Morganite-Thin';
   text-align: right;
   color: #e49b13;
+  margin-bottom: 0.5vw;
 }
 
 main {
@@ -491,7 +493,7 @@ main {
   display: flex;
   justify-content: center;
   margin-top: 3.241vw;
-  margin-bottom: 1.548vw;
+  margin-bottom: 1vw;
 }
 
 .dividerYellowLine {
@@ -506,8 +508,10 @@ main {
   font-family: 'Poppins-Light';
   font-size: 1.45137vw;
   color: #555555;
-  width: 57vw;
+  width: 58vw;
   text-align: justify;
+  margin-top: 0;
+  margin-bottom: 9vw;
 }
 
 .technicalSeoAudit {
@@ -733,7 +737,7 @@ main {
   flex-direction: column;
   align-items: center;
   position: relative;
-  border-top: 1.7vw solid #f0f0f0;
+  border-top: 1.6vw solid #f0f0f0;
 }
 
 .ecomSEOHeaderBox {
@@ -798,6 +802,12 @@ main {
   margin-left: 6.6vw;
   align-items: center;
   margin-bottom: 0.75vw;
+  transition: 3s ease;
+  background-position: -40vw;
+  background-repeat: no-repeat;
+}
+.ecomSeoBox:hover{
+  background-position: -30vw !important;
 }
 
 .ecomSeoBox img {
@@ -846,7 +856,7 @@ main {
   flex-direction: column;
   align-items: center;
   margin-top: 4vw;
-  padding-bottom: 4vw;
+  padding-bottom: 0vw;
 }
 
 .feedBackContainer {
@@ -3133,7 +3143,7 @@ h1 span {
   position: absolute;
   left: 0;
   top: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.15);
   content: '';
 }
 
@@ -3824,7 +3834,7 @@ h1 span {
 }
 
 .seoServicesSectionDivider {
-  width: 33vw;
+  /* width: 17vw; */
   margin-top: 0vw;
 }
 

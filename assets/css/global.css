@@ -585,6 +585,7 @@ video{
 .newFooter {
   position: relative;
   background: white;
+  padding: 0.1px;
 }
 
 .newFoterSocialMedia {
@@ -877,6 +878,8 @@ video{
   font-size: 3vw;
   color: white;
   font-size: 2.7vw;
+  left: -4.5vw;
+  font-size: 2.2vw;
 }
 
 /* discus new ideas section end */

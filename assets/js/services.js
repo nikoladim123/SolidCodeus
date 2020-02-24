@@ -372,7 +372,7 @@ function purpleGraphAnim() {
   if (typeof graphContainer[0].getClientRects()[0] != 'undefined') {
     if (grapLineContaienr[0].getClientRects()[0].top < window.innerHeight) {
       for (var i = 0; i < grapLineContaienr.length; i++) {
-        grapLineContaienr[i].style.height = i*5 + Math.random() * 5 + 10 + 'vw';
+        grapLineContaienr[i].style.height = i * 5 + Math.random() * 5 + 10 + 'vw';
       }
     }
   }
@@ -384,19 +384,43 @@ function purpleGraphAnim() {
 // Disscus new project paralax
 var discussNewIdeas = document.getElementsByClassName('discussNewIdeas');
 
-function newIdeasParalaxFun(){
+function newIdeasParalaxFun() {
 
-  if (window.innerWidth>window.innerHeight) {
-    if(discussNewIdeas[0].getBoundingClientRect().y < window.innerHeight){
-      discussNewIdeas[0].style.backgroundPosition = "0 " + ((-discussNewIdeas[0].getBoundingClientRect().y/7) - discussNewIdeas[0].getBoundingClientRect().height/3) + "px";
+  if (window.innerWidth > window.innerHeight) {
+    if (discussNewIdeas[0].getBoundingClientRect().y < window.innerHeight) {
+      discussNewIdeas[0].style.backgroundPosition = "0 " + ((-discussNewIdeas[0].getBoundingClientRect().y / 7) - discussNewIdeas[0].getBoundingClientRect().height / 3) + "px";
     }
-  }else{
-    if(discussNewIdeas[0].getBoundingClientRect().y < window.innerHeight){
-      discussNewIdeas[0].style.backgroundPosition = "-25vw " + (50+(-discussNewIdeas[0].getBoundingClientRect().y/7) - discussNewIdeas[0].getBoundingClientRect().height/3) + "px";
+  } else {
+    if (discussNewIdeas[0].getBoundingClientRect().y < window.innerHeight) {
+      discussNewIdeas[0].style.backgroundPosition = "-25vw " + (50 + (-discussNewIdeas[0].getBoundingClientRect().y / 7) - discussNewIdeas[0].getBoundingClientRect().height / 3) + "px";
     }
   }
 
 }
+
+
+// ecomSeoBox gradient BG
+var ecomSeoBox = document.getElementsByClassName('ecomSeoBox');
+
+
+
+function ecomSeoBoxFunGradient() {
+  for (var i = 0; i < ecomSeoBox.length; i++) {
+    if (ecomSeoBox[i].getBoundingClientRect().y < window.innerHeight/1.3){
+      console.log(123);
+      ecomSeoBox[i].style.backgroundPosition = '-0vw';
+    }else{
+      ecomSeoBox[i].style.backgroundPosition = '-20vw';
+    }
+  }
+  // if (ecomSeoBox[0].getBoundingClientRect().y < window.innerHeight/1.3){
+  //   console.log(123);
+  //   ecomSeoBox[0].style.backgroundPosition = '-0vw';
+  // }else{
+  //   ecomSeoBox[0].style.backgroundPosition = '-20vw';
+  // }
+}
+
 
 
 // windows events
@@ -408,6 +432,7 @@ window.addEventListener('load', () => {
 
 window.addEventListener('scroll', () => {
   // ppheaderLeftContentFun();
+  ecomSeoBoxFunGradient();
   purpDivAnimOne()
   eComMainFun();
   purpleGraphAnim();
