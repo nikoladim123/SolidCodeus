@@ -239,7 +239,8 @@ main {
   overflow: hidden;
   position: relative;
   transition: 0.5s;
-  background-color: blue;
+  /* background-color: blue; */
+  background-image: url('../images/desktop/UIUX/placehold.jpg');
   width: 100%;
 }
 
