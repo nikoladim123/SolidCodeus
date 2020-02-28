@@ -416,12 +416,6 @@ function ecomSeoBoxFunGradient() {
       ecomSeoBox[i].style.backgroundPosition = '-20vw';
     }
   }
-  // if (ecomSeoBox[0].getBoundingClientRect().y < window.innerHeight/1.3){
-  //   console.log(123);
-  //   ecomSeoBox[0].style.backgroundPosition = '-0vw';
-  // }else{
-  //   ecomSeoBox[0].style.backgroundPosition = '-20vw';
-  // }
 }
 
 
@@ -432,7 +426,7 @@ function ecomSeoBoxFunGradient() {
 window.addEventListener('load', () => {
   loadSelection();
 })
-
+loadSelection();
 window.addEventListener('scroll', () => {
   // ppheaderLeftContentFun();
   ecomSeoBoxFunGradient();
