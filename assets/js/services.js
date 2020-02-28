@@ -302,6 +302,9 @@ var shoterModulo = 0;
 var shoterLoop;
 
 function startLoop() {
+  if (typeof shoterLoop !== 'undefined') {
+
+  }
   shoterLoop = setInterval(function() {
     for (var i = 0; i < headerbg.length; i++) {
       headerbg[i].style.opacity = '0';
